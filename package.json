@@ -1,0 +1,34 @@
+{
+  "name": "@fbngrm/zh-dictionary",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./lookup": {
+      "types": "./dist/lookup.d.ts",
+      "default": "./dist/lookup.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.js"
+    },
+    "./dictionary.json": "./src/data/dictionary.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
