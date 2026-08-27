@@ -6810,6 +6810,11 @@
         "pinyin": "nǐ de",
         "translation": "your; yours"
     },
+    "你看": {
+        "part_of_speech": "verb",
+        "pinyin": "nǐ kàn",
+        "translation": "look; you see"
+    },
     "佩": {
         "part_of_speech": "verb",
         "pinyin": "pèi",
@@ -13441,6 +13446,46 @@
         ],
         "translation": "again; also"
     },
+    "又努力": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu nǔlì",
+        "translation": "again hardworking"
+    },
+    "又圆": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu yuán",
+        "translation": "again round"
+    },
+    "又复习": {
+        "part_of_speech": "verb",
+        "pinyin": "yòu fùxí",
+        "translation": "review again"
+    },
+    "又好": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu hǎo",
+        "translation": "again good"
+    },
+    "又好吃": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu hǎochī",
+        "translation": "again delicious"
+    },
+    "又好看": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu hǎokàn",
+        "translation": "again good-looking"
+    },
+    "又拥挤": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu yōngjǐ",
+        "translation": "again crowded"
+    },
+    "又整齐": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu zhěngqí",
+        "translation": "again neat"
+    },
     "又是": {
         "part_of_speech": "adverb",
         "pinyin": "yòushì",
@@ -13450,6 +13495,41 @@
             "还"
         ],
         "translation": "it is again; once again"
+    },
+    "又有特色": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu yǒu tèsè",
+        "translation": "again distinctive"
+    },
+    "又深刻": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu shēnkè",
+        "translation": "again profound"
+    },
+    "又热情": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu rèqíng",
+        "translation": "again enthusiastic"
+    },
+    "又甜": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu tián",
+        "translation": "again sweet"
+    },
+    "又美味": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu měiwèi",
+        "translation": "again tasty"
+    },
+    "又预习": {
+        "part_of_speech": "verb",
+        "pinyin": "yòu yùxí",
+        "translation": "preview again"
+    },
+    "又黄": {
+        "part_of_speech": "adjective",
+        "pinyin": "yòu huáng",
+        "translation": "again yellow"
     },
     "叉烧肉": {
         "part_of_speech": "noun",
@@ -18325,6 +18405,11 @@
         "pinyin": "ké",
         "translation": "shell, husk"
     },
+    "壳壳仔": {
+        "part_of_speech": "noun",
+        "pinyin": "ké ké zǎi",
+        "translation": "shell shell kid"
+    },
     "壶": {
         "part_of_speech": "noun",
         "pinyin": "hú",
@@ -22599,6 +22684,11 @@
             "诗歌"
         ],
         "translation": "novel; fiction"
+    },
+    "小豆豆": {
+        "part_of_speech": "noun",
+        "pinyin": "xiǎo dòudou",
+        "translation": "little bean"
     },
     "小费": {
         "part_of_speech": "noun",
@@ -28169,6 +28259,11 @@
         "pinyin": "mànmàn",
         "translation": "slowly; gradually"
     },
+    "慢慢宝": {
+        "part_of_speech": "noun",
+        "pinyin": "màn màn bǎo",
+        "translation": "slow slow treasure"
+    },
     "慢慢来": {
         "part_of_speech": "phrase",
         "pinyin": "mànmàn lái",
@@ -28188,6 +28283,16 @@
             "再见"
         ],
         "translation": "walk slowly; take care (when leaving)"
+    },
+    "慢慢龟": {
+        "part_of_speech": "noun",
+        "pinyin": "màn màn guī",
+        "translation": "slow turtle"
+    },
+    "慢慢龟的": {
+        "part_of_speech": "adjective",
+        "pinyin": "mànmàn guī de",
+        "translation": "slow turtle's (slang for slowpoke)"
     },
     "慧": {
         "part_of_speech": "adjective",
@@ -28253,6 +28358,11 @@
         "part_of_speech": "adjective",
         "pinyin": "lǎnsǎn",
         "translation": "lazy; sluggish"
+    },
+    "懒滚滚": {
+        "part_of_speech": "noun",
+        "pinyin": "lǎn gǔngǔn",
+        "translation": "lazy roll (slang for lazy person)"
     },
     "懒腰": {
         "part_of_speech": "noun",
@@ -28399,6 +28509,16 @@
         ],
         "translation": "I; me"
     },
+    "我买三个": {
+        "part_of_speech": "verb",
+        "pinyin": "wǒ mǎi sān gè",
+        "translation": "I'll buy three"
+    },
+    "我买两个": {
+        "part_of_speech": "verb",
+        "pinyin": "wǒ mǎi liǎng gè",
+        "translation": "I'll buy two"
+    },
     "我们": {
         "part_of_speech": "pronoun",
         "pinyin": "wǒmen",
@@ -28413,6 +28533,11 @@
         "part_of_speech": "noun",
         "pinyin": "wǒmen gōngsī",
         "translation": "our company"
+    },
+    "我们去吧": {
+        "part_of_speech": "verb",
+        "pinyin": "wǒmen qù ba",
+        "translation": "Let's go"
     },
     "我们在": {
         "part_of_speech": "verb",
@@ -28448,6 +28573,11 @@
         "part_of_speech": "verb",
         "pinyin": "wǒxīwàng",
         "translation": "I hope"
+    },
+    "我很喜欢": {
+        "part_of_speech": "verb",
+        "pinyin": "wǒ hěn xǐhuān",
+        "translation": "I like it very much"
     },
     "我想": {
         "part_of_speech": "verb",
@@ -38349,6 +38479,11 @@
         "pinyin": "qìliú",
         "translation": "airflow"
     },
+    "气虾虾": {
+        "part_of_speech": "adjective",
+        "pinyin": "qì xiāxiā",
+        "translation": "angry shrimp (slang for angry)"
+    },
     "气象": {
         "part_of_speech": "noun",
         "pinyin": "qìxiàng",
@@ -41028,6 +41163,11 @@
         "part_of_speech": "verb",
         "pinyin": "huáluò",
         "translation": "slide down"
+    },
+    "滚仔": {
+        "part_of_speech": "noun",
+        "pinyin": "gǔn zǎi",
+        "translation": "rolling kid (slang for troublemaker)"
     },
     "滚滚": {
         "part_of_speech": "adjective",
@@ -44569,6 +44709,11 @@
         "part_of_speech": "noun",
         "pinyin": "tānhuàn",
         "translation": "paralysis"
+    },
+    "瘫瘫": {
+        "part_of_speech": "adjective",
+        "pinyin": "tān tān",
+        "translation": "limp, collapsed (slang for exhausted)"
     },
     "癌": {
         "part_of_speech": "noun",
@@ -50178,6 +50323,11 @@
         "pinyin": "fānchǎo",
         "translation": "stir-fry repeatedly"
     },
+    "翻翻龟": {
+        "part_of_speech": "noun",
+        "pinyin": "fān fān guī",
+        "translation": "flipping turtle (slang for clumsy)"
+    },
     "翻腾": {
         "part_of_speech": "verb",
         "pinyin": "fānténg",
@@ -51557,6 +51707,11 @@
         "part_of_speech": "noun",
         "pinyin": "zìzhuàn",
         "translation": "rotation (of a celestial body)"
+    },
+    "臭脸虾": {
+        "part_of_speech": "noun",
+        "pinyin": "chòu liǎn xiā",
+        "translation": "stinky-face shrimp (slang for grumpy)"
     },
     "至": {
         "part_of_speech": "preposition",
@@ -55557,6 +55712,11 @@
         "pinyin": "dòuyá",
         "translation": "bean sprouts"
     },
+    "豆豆": {
+        "part_of_speech": "noun",
+        "pinyin": "dòu dòu",
+        "translation": "beans (affectionate term for little one)"
+    },
     "象": {
         "part_of_speech": "noun",
         "pinyin": "xiàng",
@@ -58136,6 +58296,11 @@
             "那个"
         ],
         "translation": "this; this one"
+    },
+    "这个又红": {
+        "part_of_speech": "adjective",
+        "pinyin": "zhège yòu hóng",
+        "translation": "this one is red again"
     },
     "这个地区": {
         "part_of_speech": "noun",
