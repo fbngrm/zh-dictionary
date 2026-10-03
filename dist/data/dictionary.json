@@ -4873,6 +4873,11 @@
         "pinyin": "èrshífēnzhōng",
         "translation": "twenty minutes"
     },
+    "二十年": {
+        "part_of_speech": "noun",
+        "pinyin": "èrshínián",
+        "translation": "twenty years"
+    },
     "二战": {
         "part_of_speech": "proper noun",
         "pinyin": "èrzhàn",
@@ -5945,6 +5950,11 @@
         "pinyin": "cóng'ér",
         "translation": "thus; thereby"
     },
+    "从长远来看": {
+        "part_of_speech": "adverb",
+        "pinyin": "cóngchángyuánláikàn",
+        "translation": "in the long run"
+    },
     "仓": {
         "part_of_speech": "noun",
         "pinyin": "cāng",
@@ -6239,6 +6249,11 @@
             "除外"
         ],
         "translation": "outside; beyond; except"
+    },
+    "以情": {
+        "part_of_speech": "adverb",
+        "pinyin": "yǐqíng",
+        "translation": "by feeling; through emotion"
     },
     "以此": {
         "part_of_speech": "adverb",
@@ -16961,6 +16976,11 @@
         "pinyin": "tīngcóng",
         "translation": "to obey"
     },
+    "听众": {
+        "part_of_speech": "noun",
+        "pinyin": "tīngzhòng",
+        "translation": "audience; listeners"
+    },
     "听到": {
         "part_of_speech": "verb",
         "pinyin": "tīngdào",
@@ -17045,6 +17065,11 @@
         "part_of_speech": "verb",
         "pinyin": "qǐdòng",
         "translation": "to start; to launch"
+    },
+    "启发": {
+        "part_of_speech": "verb",
+        "pinyin": "qǐfā",
+        "translation": "to inspire; to enlighten; inspiration"
     },
     "启发式": {
         "part_of_speech": "adjective",
@@ -29951,6 +29976,11 @@
         "pinyin": "qià",
         "translation": "exactly; just"
     },
+    "恰到": {
+        "part_of_speech": "adverb",
+        "pinyin": "qiàdào",
+        "translation": "just right; precisely to"
+    },
     "恰到好处": {
         "part_of_speech": "adjective",
         "pinyin": "qiàdàohǎochù",
@@ -36238,6 +36268,11 @@
         "part_of_speech": "adjective",
         "pinyin": "zhěngbù",
         "translation": "whole volume; entire"
+    },
+    "整齐": {
+        "part_of_speech": "adjective",
+        "pinyin": "zhěngqí",
+        "translation": "neat; orderly; tidy"
     },
     "敵": {
         "part_of_speech": "noun",
@@ -47325,6 +47360,11 @@
         ],
         "translation": "environmental protection"
     },
+    "环保主义者": {
+        "part_of_speech": "noun",
+        "pinyin": "huánbǎozhǔyìzhě",
+        "translation": "environmentalist"
+    },
     "环卫": {
         "part_of_speech": "noun",
         "pinyin": "huánwèi",
@@ -56023,6 +56063,11 @@
         "pinyin": "bèimiàn",
         "translation": "back side; reverse side"
     },
+    "胖友": {
+        "part_of_speech": "noun",
+        "pinyin": "pàngyǒu",
+        "translation": "chubby friend; fellow fat person"
+    },
     "胜任": {
         "part_of_speech": "verb",
         "pinyin": "shèngrèn",
@@ -58653,6 +58698,11 @@
         ],
         "translation": "to show; to display; performance; behavior"
     },
+    "表示": {
+        "part_of_speech": "verb",
+        "pinyin": "biǎoshì",
+        "translation": "to express; to indicate; to show"
+    },
     "表达": {
         "part_of_speech": "verb",
         "pinyin": "biǎodá",
@@ -59448,6 +59498,11 @@
         "part_of_speech": "noun",
         "pinyin": "yán",
         "translation": "speech, word"
+    },
+    "言之有物": {
+        "part_of_speech": "adjective",
+        "pinyin": "yánzhīyǒuwù",
+        "translation": "to have substance in one's words; meaningful speech"
     },
     "言行": {
         "part_of_speech": "noun",
@@ -61871,6 +61926,11 @@
         "part_of_speech": "verb",
         "pinyin": "zǒucuò",
         "translation": "go the wrong way"
+    },
+    "走马观花式": {
+        "part_of_speech": "adjective",
+        "pinyin": "zǒumǎguānhuāshì",
+        "translation": "cursory; superficial (as in a quick glance)"
     },
     "赴": {
         "part_of_speech": "verb",
@@ -69367,6 +69427,11 @@
         "pinyin": "yù",
         "translation": "to prepare; in advance"
     },
+    "预习": {
+        "part_of_speech": "verb",
+        "pinyin": "yùxí",
+        "translation": "to preview; to prepare lessons beforehand"
+    },
     "预兆": {
         "part_of_speech": "noun",
         "pinyin": "yùzhào",
@@ -70982,6 +71047,11 @@
         ],
         "translation": "trouble; to bother"
     },
+    "黄": {
+        "part_of_speech": "adjective",
+        "pinyin": "huáng",
+        "translation": "yellow"
+    },
     "黄河": {
         "part_of_speech": "proper noun",
         "pinyin": "Huáng Hé",
@@ -71091,6 +71161,11 @@
             "打击"
         ],
         "translation": "to encourage"
+    },
+    "鼓舞": {
+        "part_of_speech": "verb",
+        "pinyin": "gǔwǔ",
+        "translation": "to inspire; to encourage; to hearten"
     },
     "鼓起": {
         "part_of_speech": "verb",
