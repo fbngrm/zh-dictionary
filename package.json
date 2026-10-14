@@ -29,6 +29,10 @@
       "types": "./modes/cedict.d.ts",
       "default": "./modes/cedict.js"
     },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    },
     "./data/zh.json": "./data/zh/dictionary.json",
     "./data/cedict.json": "./data/cedict/cedict.json",
     "./data/cedict.meta.json": "./data/cedict/meta.json",
