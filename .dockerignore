@@ -1,0 +1,5 @@
+*
+!server/
+!data/
+!LICENSE
+data/zh/dictionary.skipped.json
