@@ -28,7 +28,7 @@ modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 The package installs straight from GitHub (it is not on the npm registry):
 
 ```bash
-npm install github:fbngrm/zh-dictionary#v0.4.0
+npm install --allow-git=root github:fbngrm/zh-dictionary#v0.4.0
 # or
 yarn add github:fbngrm/zh-dictionary#v0.4.0
 pnpm add github:fbngrm/zh-dictionary#v0.4.0
@@ -41,6 +41,12 @@ which adds:
   "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.4.0"
 }
 ```
+
+npm 12 and later refuse git dependencies unless you opt in. Pass
+`--allow-git=root` as above, or add `allow-git=root` to your project's
+`.npmrc` so later `npm install` runs work too. The built code is committed,
+so no install script needs to run. You can ignore npm's `install-scripts`
+warning.
 
 ## Usage
 
