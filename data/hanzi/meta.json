@@ -1,0 +1,24 @@
+{
+  "name": "hanzi",
+  "sources": {
+    "unihan": {
+      "version": "18.0.0",
+      "url": "https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip",
+      "license": "Unicode-3.0"
+    },
+    "cjkRadicals": {
+      "version": "18.0.0",
+      "url": "https://www.unicode.org/Public/UCD/latest/ucd/CJKRadicals.txt",
+      "license": "Unicode-3.0"
+    },
+    "babelstoneIds": {
+      "date": "2025-06-27",
+      "url": "https://babelstone.co.uk/CJK/IDS.TXT",
+      "license": "no rights claimed"
+    }
+  },
+  "characters": 14950,
+  "license": "Unicode-3.0",
+  "licenseUrl": "https://www.unicode.org/license.txt",
+  "attribution": "Character data from the Unicode Character Database (Unihan), Copyright © Unicode, Inc., Unicode License v3 (https://www.unicode.org/license.txt); decompositions from the BabelStone IDS database by Andrew West (https://babelstone.co.uk/CJK/IDS.TXT)."
+}
