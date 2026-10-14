@@ -9,6 +9,9 @@ decomposition into components.
 - Works in browsers, Node, React Native / Expo, Deno, Bun and any bundler
 - Code and data are separate: the code is MIT, and each dataset is a plain
   JSON file under [`data/`](data) with its own license
+- Bundle the data into your app, or run the [API server](#api-server-docker)
+  in a container and use the [API client](#api-client), so the data comes
+  over the network instead
 
 ## Modes
 
@@ -28,17 +31,17 @@ modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 The package installs straight from GitHub (it is not on the npm registry):
 
 ```bash
-npm install --allow-git=root github:fbngrm/zh-dictionary#v0.4.0
+npm install --allow-git=root github:fbngrm/zh-dictionary#v0.5.0
 # or
-yarn add github:fbngrm/zh-dictionary#v0.4.0
-pnpm add github:fbngrm/zh-dictionary#v0.4.0
+yarn add github:fbngrm/zh-dictionary#v0.5.0
+pnpm add github:fbngrm/zh-dictionary#v0.5.0
 ```
 
 which adds:
 
 ```json
 "dependencies": {
-  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.4.0"
+  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.5.0"
 }
 ```
 
@@ -163,7 +166,7 @@ quick start, GitHub serves them directly:
 ```ts
 import { createDictionary } from '@fbngrm/zh-dictionary';
 
-const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.4.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.5.0/data';
 const [words, hanzi] = await Promise.all([
   fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
   fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
@@ -185,6 +188,71 @@ attribute:
 import hanzi from '@fbngrm/zh-dictionary/data/hanzi.json' with { type: 'json' };
 ```
 
+## API server (Docker)
+
+[`server/`](server) is a small Go server (standard library only) that
+answers the same functions over HTTP, using the data in the container. Build
+and run it from the repo root:
+
+```bash
+docker build -t zh-dictionary .
+docker run -p 8080:8080 zh-dictionary
+```
+
+Without Docker (Go ≥ 1.24):
+
+```bash
+cd server && DATA_DIR=../data go run .
+```
+
+Endpoints (all `GET`, JSON responses identical to the library's return
+values, CORS enabled for any origin):
+
+| Endpoint | Returns |
+| --- | --- |
+| `/v1/{mode}/lookup?q=头发` | entry or `null` |
+| `/v1/{mode}/lookupAll?q=行` | array of entries |
+| `/v1/{mode}/has?q=好` | `true` / `false` |
+| `/v1/{mode}/describe?q=银行` | word details with character breakdown, or `null` |
+| `/v1/{mode}/character?q=好` | character data or `null` |
+| `/v1/{mode}/attribution` | `{ "attribution": "…" }` |
+| `/healthz` | `{ "status": "ok" }` |
+
+`{mode}` is `zh` or `cedict`. Settings: `ADDR` (default `:8080`) and
+`DATA_DIR` (default `/data` in the image). The image is about 42 MB and the
+server uses about 90 MB of memory with both modes loaded.
+
+```bash
+curl 'http://localhost:8080/v1/zh/describe?q=银行'
+```
+
+If you run a public server with the `cedict` mode, you are sharing CC-CEDICT
+data, so show its attribution (`/v1/cedict/attribution`) in the apps that
+use it.
+
+## API client
+
+`@fbngrm/zh-dictionary/client` has the same functions as the modes, but it
+calls the API server, so your app bundles no dictionary data. Every
+function returns a Promise:
+
+```ts
+import { createClient } from '@fbngrm/zh-dictionary/client';
+
+const dict = createClient({ baseUrl: 'https://dict.example.com', mode: 'zh' });
+
+await dict.lookup('头发');     // { pinyin: 'tóufa', translation: 'hair', … }
+await dict.describe('银行');   // same WordDetails as describe() in the modes
+await dict.character('好');    // { pinyin: ['hǎo', 'hào'], decomposition: '⿰女子', … }
+await dict.has('不存在');       // false
+await dict.attribution();      // credit line to show
+```
+
+Switching modes means creating a second client with `mode: 'cedict'`.
+Failed requests (network errors, non-2xx responses) reject with an `Error`.
+The client uses the global `fetch`, which browsers, React Native, Node ≥ 18,
+Deno and Bun all provide.
+
 ## API
 
 | Function | Returns |
@@ -197,6 +265,9 @@ import hanzi from '@fbngrm/zh-dictionary/data/hanzi.json' with { type: 'json' };
 | `attribution` | `string`: credit line your app must show (see Licensing) |
 | `createDictionary(sources, { hanzi })` | the functions above, for your own data |
 
+Through the [API client](#api-client), the same functions return Promises
+and `attribution` is the function `attribution()`.
+
 Words can be given in simplified or traditional characters. All types
 (`DictionaryEntry`, `WordDetails`, `WordCharacter`, `CharacterData`, …) are
 exported from `@fbngrm/zh-dictionary`. The raw files are exported as
@@ -207,7 +278,7 @@ exported from `@fbngrm/zh-dictionary`. The raw files are exported as
 
 | Part | License | What you must do |
 | --- | --- | --- |
-| Code (`src/`, `dist/`, `modes/`, `scripts/`, `test/`) | [MIT](LICENSE) | keep the license notice |
+| Code (`src/`, `dist/`, `modes/`, `server/`, `scripts/`, `test/`) | [MIT](LICENSE) | keep the license notice |
 | [`data/zh`](data/zh) | [CC0 1.0](data/zh/LICENSE) | nothing |
 | [`data/hanzi`](data/hanzi) | [Unicode License v3](data/hanzi/LICENSE) | include the Unicode notice |
 | [`data/cedict`](data/cedict) | [CC BY-SA 4.0](data/cedict/LICENSE) | credit CC-CEDICT; modified or merged CEDICT data stays CC BY-SA |
@@ -226,8 +297,13 @@ or our data would have to become CC BY-SA too.
 npm run build:cedict        # latest CC-CEDICT from MDBG
 npm run build:traditional   # traditional forms for data/zh (OpenCC)
 npm run build:hanzi         # character data for every character in use
-npm test
+npm test                    # includes the server tests when Go is installed
 ```
+
+`npm test` builds the Go server, runs it, and checks that the API client
+returns exactly what the bundled library returns, for every 20th word.
+`CONTRACT_STEP=1 npm test` checks every word, and `cd server && go test ./...`
+runs the server's own tests.
 
 ## Migrating from 0.3
 
