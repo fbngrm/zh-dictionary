@@ -1,0 +1,74 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+// Imported through the package's own exports map, as an app would.
+import { createDictionary, splitPinyin } from '@fbngrm/zh-dictionary';
+
+const data = {
+  好: { pinyin: 'hǎo', translation: 'good', part_of_speech: 'adjective' },
+  行: [
+    { pinyin: 'xíng', translation: 'to walk' },
+    { pinyin: 'háng', translation: 'row' },
+  ],
+  发: [
+    { pinyin: 'fā', translation: 'to send out', traditional: '發' },
+    { pinyin: 'fà', translation: 'hair', traditional: '髮' },
+  ],
+};
+
+test('looks up single and multi-reading words', () => {
+  const dict = createDictionary(data);
+  assert.equal(dict.lookup('好').translation, 'good');
+  assert.equal(dict.lookup('行').pinyin, 'xíng');
+  assert.equal(dict.lookupAll('行').length, 2);
+});
+
+test('missing words and prototype keys are not found', () => {
+  const dict = createDictionary(data);
+  assert.equal(dict.lookup('不在'), null);
+  assert.deepEqual(dict.lookupAll('不在'), []);
+  assert.equal(dict.has('constructor'), false);
+  assert.equal(dict.lookup('toString'), null);
+});
+
+test('traditional forms resolve to the matching reading only', () => {
+  const dict = createDictionary(data);
+  assert.deepEqual(dict.lookupAll('髮').map((e) => e.translation), ['hair']);
+  assert.equal(dict.lookup('發').pinyin, 'fā');
+});
+
+test('earlier sources take priority, lookupAll merges in order', () => {
+  const dict = createDictionary([{ 好: { pinyin: 'hǎo', translation: 'override' } }, data]);
+  assert.equal(dict.lookup('好').translation, 'override');
+  assert.deepEqual(dict.lookupAll('好').map((e) => e.translation), ['override', 'good']);
+});
+
+test('splitPinyin matches each character against its readings', () => {
+  const readings = { 银: ['yín'], 行: ['xíng', 'háng'], 一: ['yī'], 点: ['diǎn'], 儿: ['ér'], 西: ['xī'], 安: ['ān'] };
+  const of = (c) => readings[c] ?? [];
+  assert.deepEqual(splitPinyin('yínháng', [...'银行'], of), ['yín', 'háng']);
+  assert.deepEqual(splitPinyin('yīdiǎnr', [...'一点儿'], of), ['yī', 'diǎn', 'r']);
+  assert.deepEqual(splitPinyin("Xī'ān", [...'西安'], of), ['Xī', 'ān']);
+  assert.deepEqual(splitPinyin('yí háng', [...'一行'], of), ['yí', 'háng']); // tone sandhi
+  assert.equal(splitPinyin('yínhángxíng', [...'银行'], of), null);
+});
+
+test('describe breaks a word into characters', () => {
+  const dict = createDictionary(data, {
+    hanzi: {
+      发: { pinyin: ['fā', 'fà'], radical: '又', strokes: 5, decomposition: '⿺⿸⿻𠃋丿又丶', components: ['𠃋', '丿', '又', '丶'] },
+      好: { pinyin: ['hǎo'], definition: 'good, excellent', decomposition: '⿰女子', components: ['女', '子'] },
+    },
+  });
+  assert.equal(dict.describe('不在'), null);
+  assert.deepEqual(dict.describe('髮'), {
+    word: '发', traditional: '髮', pinyin: 'fà', translation: 'hair',
+    characters: [{
+      char: '发', traditional: '髮', pinyin: 'fà', meaning: 'hair', radical: '又', strokes: 5,
+      decomposition: '⿺⿸⿻𠃋丿又丶', components: ['𠃋', '丿', '又', '丶'],
+    }],
+  });
+  assert.equal(dict.describe('好').characters[0].meaning, 'good');
+  assert.equal(dict.character('好').decomposition, '⿰女子');
+  assert.equal(dict.character('constructor'), null);
+  assert.equal(createDictionary(data).character('好'), null);
+});
