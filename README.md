@@ -31,17 +31,17 @@ modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 The package installs straight from GitHub (it is not on the npm registry):
 
 ```bash
-npm install --allow-git=root github:fbngrm/zh-dictionary#v0.5.0
+npm install --allow-git=root github:fbngrm/zh-dictionary#v0.6.0
 # or
-yarn add github:fbngrm/zh-dictionary#v0.5.0
-pnpm add github:fbngrm/zh-dictionary#v0.5.0
+yarn add github:fbngrm/zh-dictionary#v0.6.0
+pnpm add github:fbngrm/zh-dictionary#v0.6.0
 ```
 
 which adds:
 
 ```json
 "dependencies": {
-  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.5.0"
+  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.6.0"
 }
 ```
 
@@ -166,7 +166,7 @@ quick start, GitHub serves them directly:
 ```ts
 import { createDictionary } from '@fbngrm/zh-dictionary';
 
-const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.5.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.6.0/data';
 const [words, hanzi] = await Promise.all([
   fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
   fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
@@ -218,6 +218,17 @@ values, CORS enabled for any origin):
 | `/v1/{mode}/attribution` | `{ "attribution": "…" }` |
 | `/healthz` | `{ "status": "ok" }` |
 
+**Batch:** `POST` to the same paths (`lookup`, `lookupAll`, `has`,
+`describe`, `character`) with a JSON body `{"q": [...]}`. The response is
+an array with one result per item, in the same order and with the same
+shapes as the single `GET` answers. A batch can hold up to 1,000 items and
+1 MiB. Larger batches get `413`, and malformed bodies get `400`.
+
+```bash
+curl -X POST 'http://localhost:8080/v1/zh/describe' \
+  -H 'Content-Type: application/json' -d '{"q": ["银行", "头发"]}'
+```
+
 `{mode}` is `zh` or `cedict`. Settings: `ADDR` (default `:8080`) and
 `DATA_DIR` (default `/data` in the image). The image is about 42 MB and the
 server uses about 90 MB of memory with both modes loaded.
@@ -246,7 +257,15 @@ await dict.describe('银行');   // same WordDetails as describe() in the modes
 await dict.character('好');    // { pinyin: ['hǎo', 'hào'], decomposition: '⿰女子', … }
 await dict.has('不存在');       // false
 await dict.attribution();      // credit line to show
+
+// Many words in one request, e.g. every word on a screen:
+await dict.batch('describe', ['银行', '头发', '不存在']);
+// [WordDetails, WordDetails, null], in the same order as the input
 ```
+
+`batch(fn, words)` works with `lookup`, `lookupAll`, `has`, `describe` and
+`character`, and its results are typed per function. Lists longer than
+1,000 are split into several requests automatically.
 
 Switching modes means creating a second client with `mode: 'cedict'`.
 Failed requests (network errors, non-2xx responses) reject with an `Error`.
@@ -265,8 +284,9 @@ Deno and Bun all provide.
 | `attribution` | `string`: credit line your app must show (see Licensing) |
 | `createDictionary(sources, { hanzi })` | the functions above, for your own data |
 
-Through the [API client](#api-client), the same functions return Promises
-and `attribution` is the function `attribution()`.
+Through the [API client](#api-client), the same functions return Promises,
+`attribution` is the function `attribution()`, and `batch(fn, words)` looks
+up many words at once.
 
 Words can be given in simplified or traditional characters. All types
 (`DictionaryEntry`, `WordDetails`, `WordCharacter`, `CharacterData`, …) are
