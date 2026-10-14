@@ -1,0 +1,16 @@
+{
+  "name": "frequency",
+  "unit": "occurrences per million characters, averaged over the corpora",
+  "characters": {
+    "tatoeba": 368937,
+    "aishell1": 1938269,
+    "aishell3": 762379
+  },
+  "sentences": {
+    "tatoeba": 38211,
+    "aishell1": 133826,
+    "aishell3": 68928
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "Character and word frequencies computed from Tatoeba (https://tatoeba.org/, CC BY 2.0 FR) and the AISHELL-1 and AISHELL-3 transcripts (Apache License 2.0)."
+}

@@ -1,5 +1,6 @@
 import { splitPinyin, toneless } from './pinyin.js';
 export { splitPinyin, toneless } from './pinyin.js';
+export { createCharacterIndex, sentenceFile, strokeFile } from './characters.js';
 // Object.prototype.hasOwnProperty rather than Object.hasOwn, for older
 // runtimes; guards against keys like "constructor".
 const { hasOwnProperty } = Object.prototype;

@@ -1,0 +1,10 @@
+{
+  "name": "hsk",
+  "source": {
+    "url": "https://github.com/drkameleon/complete-hsk-vocabulary",
+    "commit": "7ac65bf1a6387d35f1ade478906172a19311c7f9"
+  },
+  "words": 11470,
+  "license": "MIT",
+  "attribution": "HSK levels from complete-hsk-vocabulary by Yanis Zafirópulos (https://github.com/drkameleon/complete-hsk-vocabulary), MIT License."
+}

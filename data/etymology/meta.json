@@ -1,0 +1,11 @@
+{
+  "name": "etymology",
+  "source": {
+    "url": "https://github.com/skishore/makemeahanzi",
+    "commit": "bddc96d41bef78427ed0e034e9f7e31d71fd1b92"
+  },
+  "characters": 9547,
+  "license": "LGPL-3.0-or-later",
+  "licenseUrl": "https://www.gnu.org/licenses/lgpl-3.0.html",
+  "attribution": "Etymologies and stroke-to-component data from Make Me a Hanzi by Shaunak Kishore (https://github.com/skishore/makemeahanzi), LGPL 3.0 or later."
+}

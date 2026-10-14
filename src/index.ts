@@ -4,9 +4,12 @@ import type {
 import { splitPinyin, toneless } from './pinyin.js';
 
 export type {
-  CharacterData, Dictionary, DictionaryData, DictionaryEntry, HanziData, WordCharacter, WordDetails,
+  CharacterData, CharacterIndex, DecompositionNode, Dictionary, DictionaryData, DictionaryEntry, Etymology,
+  EtymologyData, FrequencyData, HanziData, HskData, HskLevels, Sentence, SentenceData, StrokeData, UnihanData,
+  UnihanReadings, WordCharacter, WordDetails,
 } from './types';
 export { splitPinyin, toneless } from './pinyin.js';
+export { createCharacterIndex, sentenceFile, strokeFile } from './characters.js';
 
 // Object.prototype.hasOwnProperty rather than Object.hasOwn, for older
 // runtimes; guards against keys like "constructor".
