@@ -155,13 +155,15 @@ function Word({ text }: { text: string }) {
 
 ### Loading data at runtime (web)
 
-To keep CC-CEDICT out of a web bundle, fetch the JSON (from your own
-server or a CDN) and build the dictionary with `createDictionary`:
+To keep CC-CEDICT out of a web bundle, fetch the JSON and build the
+dictionary with `createDictionary`. For production, host the files yourself
+and serve them gzipped (cedict.json is 14 MB, about 4 MB gzipped). For a
+quick start, GitHub serves them directly:
 
 ```ts
 import { createDictionary } from '@fbngrm/zh-dictionary';
 
-const base = 'https://cdn.jsdelivr.net/gh/fbngrm/zh-dictionary@v0.4.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.4.0/data';
 const [words, hanzi] = await Promise.all([
   fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
   fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
