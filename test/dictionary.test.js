@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 // Imported through the package's own exports map, as an app would.
 import { createDictionary, splitPinyin } from '@fbngrm/zh-dictionary';
 import zhData from '@fbngrm/zh-dictionary/data/zh.json' with { type: 'json' };
+import cedict from '@fbngrm/zh-dictionary/data/cedict.json' with { type: 'json' };
+import cedictMeta from '@fbngrm/zh-dictionary/data/cedict.meta.json' with { type: 'json' };
 
 const data = {
   好: { pinyin: 'hǎo', translation: 'good', part_of_speech: 'adjective' },
@@ -46,6 +48,19 @@ test('earlier sources take priority, lookupAll merges in order', () => {
 test('bundled zh data', () => {
   const dict = createDictionary(zhData);
   assert.equal(dict.lookup('口罩').translation, 'face mask');
+});
+
+test('bundled CC-CEDICT data', () => {
+  const dict = createDictionary(cedict);
+  assert.equal(dict.lookup('口罩').pinyin, 'kǒu zhào');
+  assert.equal(dict.lookup('女').pinyin, 'nǚ');
+  assert.equal(dict.lookup('绿').pinyin, 'lù');
+  assert.ok(dict.lookupAll('绿').some((e) => e.pinyin === 'lǜ'));
+  assert.equal(dict.lookup('安').pinyin, 'ān'); // not "surname An"
+  assert.equal(dict.lookup('北京').pinyin, 'Běi jīng');
+  assert.equal(dict.lookup('女兒').translation, 'daughter');
+  assert.equal(Object.keys(cedict).length, cedictMeta.words);
+  assert.match(cedictMeta.attribution, /CC-CEDICT.*CC BY-SA 4\.0/);
 });
 
 test('splitPinyin matches each character against its readings', () => {

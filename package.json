@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "private": true,
   "description": "Chinese–English word lookup for JS apps, with data shipped separately from the code.",
-  "license": "MIT AND CC0-1.0",
+  "license": "MIT AND CC0-1.0 AND CC-BY-SA-4.0",
   "repository": "github:fbngrm/zh-dictionary",
   "type": "module",
   "sideEffects": false,
@@ -20,10 +20,13 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./data/zh.json": "./data/zh/dictionary.json"
+    "./data/zh.json": "./data/zh/dictionary.json",
+    "./data/cedict.json": "./data/cedict/cedict.json",
+    "./data/cedict.meta.json": "./data/cedict/meta.json"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "build:cedict": "node scripts/build-cedict.mjs",
     "build:traditional": "node scripts/build-traditional.mjs",
     "test": "npm run build && node --test",
     "prepare": "npm run build"

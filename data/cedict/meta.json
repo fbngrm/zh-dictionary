@@ -1,0 +1,11 @@
+{
+  "name": "CC-CEDICT",
+  "source": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+  "publisher": "MDBG",
+  "date": "2026-10-14T03:29:55Z",
+  "entries": 125271,
+  "words": 121507,
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "Contains data from CC-CEDICT (https://cc-cedict.org/wiki/), published by MDBG, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modified: converted to JSON, grouped by simplified form, pinyin converted to tone marks, proper-noun readings ordered last."
+}
