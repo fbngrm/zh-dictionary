@@ -144,3 +144,71 @@ func TestHandler(t *testing.T) {
 		}
 	}
 }
+
+func TestBatch(t *testing.T) {
+	d := testDictionary(t)
+	srv := httptest.NewServer(newHandler(map[string]*mode{"zh": {d, "credit"}}))
+	defer srv.Close()
+
+	tooMany := `{"q": [` + strings.Repeat(`"好",`, maxBatch) + `"好"]}`
+	for _, tc := range []struct {
+		path, body string
+		status     int
+		want       string
+	}{
+		{"/v1/zh/has", `{"q": ["好", "x", "髮", "好"]}`, 200, `[true, false, true, true]`},
+		{"/v1/zh/lookup", `{"q": ["好", "x"]}`, 200, `[{"pinyin": "hǎo", "translation": "good", "part_of_speech": "adjective"}, null]`},
+		{"/v1/zh/lookupAll", `{"q": []}`, 200, `[]`},
+		{"/v1/zh/describe", `{"q": ["x"]}`, 200, `[null]`},
+		{"/v1/zh/has", `{"q": "好"}`, 400, `{"error": "body must be {\"q\": [\"word\", ...]} (max 1 MiB)"}`},
+		{"/v1/zh/has", `not json`, 400, `{"error": "body must be {\"q\": [\"word\", ...]} (max 1 MiB)"}`},
+		{"/v1/zh/has", tooMany, 413, `{"error": "at most 1000 items per batch"}`},
+		{"/v1/zh/attribution", `{"q": []}`, 405, `{"error": "attribution has no batch form, use GET"}`},
+		{"/v1/zh/nope", `{"q": []}`, 404, `{"error": "unknown function nope"}`},
+	} {
+		res, err := http.Post(srv.URL+tc.path, "application/json", strings.NewReader(tc.body))
+		if err != nil {
+			t.Fatal(err)
+		}
+		var got, want any
+		if err := json.NewDecoder(res.Body).Decode(&got); err != nil {
+			t.Fatal(err)
+		}
+		res.Body.Close()
+		json.Unmarshal([]byte(tc.want), &want)
+		if res.StatusCode != tc.status || !reflect.DeepEqual(got, want) {
+			t.Errorf("POST %s %.40s = %d %v, want %d %v", tc.path, tc.body, res.StatusCode, got, tc.status, want)
+		}
+	}
+
+	// Results match the single GET answers item for item.
+	for _, fn := range []string{"lookup", "lookupAll", "has", "describe", "character"} {
+		words := []string{"好", "行", "髮", "发", "x"}
+		body, _ := json.Marshal(map[string][]string{"q": words})
+		res, _ := http.Post(srv.URL+"/v1/zh/"+fn, "application/json", strings.NewReader(string(body)))
+		var batch []any
+		json.NewDecoder(res.Body).Decode(&batch)
+		res.Body.Close()
+		for i, w := range words {
+			if single := asJSON(t, call(d, fn, w)); !reflect.DeepEqual(batch[i], single) {
+				t.Errorf("%s batch[%d] = %v, single = %v", fn, i, batch[i], single)
+			}
+		}
+	}
+}
+
+func TestPreflight(t *testing.T) {
+	srv := httptest.NewServer(newHandler(map[string]*mode{"zh": {testDictionary(t), ""}}))
+	defer srv.Close()
+	req, _ := http.NewRequest(http.MethodOptions, srv.URL+"/v1/zh/describe", nil)
+	res, err := http.DefaultClient.Do(req)
+	if err != nil {
+		t.Fatal(err)
+	}
+	res.Body.Close()
+	h := res.Header
+	if res.StatusCode != 204 || h.Get("Access-Control-Allow-Origin") != "*" ||
+		h.Get("Access-Control-Allow-Methods") != "GET, POST" || h.Get("Access-Control-Allow-Headers") != "Content-Type" {
+		t.Errorf("preflight = %d %v", res.StatusCode, h)
+	}
+}

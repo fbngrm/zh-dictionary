@@ -2,13 +2,15 @@
 // library: GET /v1/{mode}/{function}?q=<word or character>, where mode is
 // zh or cedict and function is lookup, lookupAll, has, describe or
 // character, plus GET /v1/{mode}/attribution. Responses are the same JSON
-// the library returns.
+// the library returns. POST /v1/{mode}/{function} with {"q": [...]} answers
+// a batch: one result per item, in order.
 //
 // Environment: DATA_DIR (default "data"), ADDR (default ":8080").
 package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -57,54 +59,120 @@ func loadModes(dataDir string) (map[string]*mode, error) {
 	}, nil
 }
 
+// Batch requests: at most maxBatch items and maxBody bytes.
+const (
+	maxBatch = 1000
+	maxBody  = 1 << 20
+)
+
 func newHandler(modes map[string]*mode) http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, r *http.Request) {
 		writeJSON(w, http.StatusOK, map[string]string{"status": "ok"})
 	})
 	mux.HandleFunc("GET /v1/{mode}/{fn}", func(w http.ResponseWriter, r *http.Request) {
-		m, ok := modes[r.PathValue("mode")]
+		m, fn, ok := resolve(w, r, modes)
 		if !ok {
-			writeJSON(w, http.StatusNotFound, map[string]string{"error": "unknown mode, use zh or cedict"})
 			return
 		}
-		fn := r.PathValue("fn")
 		if fn == "attribution" {
+			cache(w)
 			writeJSON(w, http.StatusOK, map[string]string{"attribution": m.attribution})
 			return
 		}
 		if !r.URL.Query().Has("q") {
-			writeJSON(w, http.StatusBadRequest, map[string]string{"error": "missing query parameter q"})
+			writeError(w, http.StatusBadRequest, "missing query parameter q")
 			return
 		}
-		q := r.URL.Query().Get("q")
-		switch fn {
-		case "lookup":
-			writeJSON(w, http.StatusOK, m.dict.Lookup(q))
-		case "lookupAll":
-			writeJSON(w, http.StatusOK, m.dict.LookupAll(q))
-		case "has":
-			writeJSON(w, http.StatusOK, m.dict.Has(q))
-		case "describe":
-			writeJSON(w, http.StatusOK, m.dict.Describe(q))
-		case "character":
-			writeJSON(w, http.StatusOK, m.dict.Character(q))
-		default:
-			writeJSON(w, http.StatusNotFound, map[string]string{"error": "unknown function " + fn})
+		cache(w)
+		writeJSON(w, http.StatusOK, call(m.dict, fn, r.URL.Query().Get("q")))
+	})
+	// Batch: POST {"q": [...]} → one result per item, in the same order.
+	mux.HandleFunc("POST /v1/{mode}/{fn}", func(w http.ResponseWriter, r *http.Request) {
+		m, fn, ok := resolve(w, r, modes)
+		if !ok {
+			return
 		}
+		if fn == "attribution" {
+			writeError(w, http.StatusMethodNotAllowed, "attribution has no batch form, use GET")
+			return
+		}
+		var body struct{ Q []string }
+		if err := json.NewDecoder(http.MaxBytesReader(w, r.Body, maxBody)).Decode(&body); err != nil || body.Q == nil {
+			writeError(w, http.StatusBadRequest, `body must be {"q": ["word", ...]} (max 1 MiB)`)
+			return
+		}
+		if len(body.Q) > maxBatch {
+			writeError(w, http.StatusRequestEntityTooLarge, fmt.Sprintf("at most %d items per batch", maxBatch))
+			return
+		}
+		results := make([]any, len(body.Q))
+		for i, q := range body.Q {
+			results[i] = call(m.dict, fn, q)
+		}
+		writeJSON(w, http.StatusOK, results)
+	})
+	// CORS preflight, which browsers send before a JSON POST.
+	mux.HandleFunc("OPTIONS /v1/{mode}/{fn}", func(w http.ResponseWriter, r *http.Request) {
+		h := w.Header()
+		h.Set("Access-Control-Allow-Origin", "*")
+		h.Set("Access-Control-Allow-Methods", "GET, POST")
+		h.Set("Access-Control-Allow-Headers", "Content-Type")
+		h.Set("Access-Control-Max-Age", "86400")
+		w.WriteHeader(http.StatusNoContent)
 	})
 	return mux
+}
+
+var functions = map[string]bool{
+	"lookup": true, "lookupAll": true, "has": true, "describe": true, "character": true, "attribution": true,
+}
+
+// resolve checks the mode and function in the path, writing a 404 if
+// either is unknown.
+func resolve(w http.ResponseWriter, r *http.Request, modes map[string]*mode) (*mode, string, bool) {
+	m, ok := modes[r.PathValue("mode")]
+	if !ok {
+		writeError(w, http.StatusNotFound, "unknown mode, use zh or cedict")
+		return nil, "", false
+	}
+	fn := r.PathValue("fn")
+	if !functions[fn] {
+		writeError(w, http.StatusNotFound, "unknown function "+fn)
+		return nil, "", false
+	}
+	return m, fn, true
+}
+
+func call(d *Dictionary, fn, q string) any {
+	switch fn {
+	case "lookup":
+		return d.Lookup(q)
+	case "lookupAll":
+		return d.LookupAll(q)
+	case "has":
+		return d.Has(q)
+	case "describe":
+		return d.Describe(q)
+	default: // "character"; resolve() rejects anything else
+		return d.Character(q)
+	}
+}
+
+// cache marks a GET answer cacheable: answers only change with the image.
+func cache(w http.ResponseWriter) {
+	w.Header().Set("Cache-Control", "public, max-age=3600")
+}
+
+func writeError(w http.ResponseWriter, status int, message string) {
+	writeJSON(w, status, map[string]string{"error": message})
 }
 
 func writeJSON(w http.ResponseWriter, status int, v any) {
 	h := w.Header()
 	h.Set("Content-Type", "application/json; charset=utf-8")
-	// Read-only public data: any web app may call it, and answers only
-	// change when the image does.
+	// Read-only public data: any web app may call it.
 	h.Set("Access-Control-Allow-Origin", "*")
-	if status == http.StatusOK {
-		h.Set("Cache-Control", "public, max-age=3600")
-	}
 	w.WriteHeader(status)
 	enc := json.NewEncoder(w)
 	enc.SetEscapeHTML(false)
