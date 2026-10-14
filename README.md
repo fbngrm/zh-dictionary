@@ -1,37 +1,237 @@
-# @fbngrm/zh-dictionary
+# zh-dictionary
 
-A shared tap-to-translate word dictionary for Mandarin-learning apps
-(`word → {pinyin, translation, part_of_speech}`), used as the fallback
-lookup for words that aren't already covered by an app's own vocabulary
-list (e.g. HSK word lists). Originally split between tingting's
-`data/storyDictionary.json` and zh-patterns' `story_dictionary.json`;
-merged here as the single source of truth so both apps (and future ones)
-read and grow the same data instead of maintaining separate copies.
+Chinese–English dictionary for JavaScript apps. Look up a word and get its
+pinyin, traditional form and translation, plus a breakdown of each
+character: its reading in that word, meaning, radical, stroke count and
+decomposition into components.
+
+- Zero dependencies, plain ES module, TypeScript types included
+- Works in browsers, Node, React Native / Expo, Deno, Bun and any bundler
+- Code and data are separate: the code is MIT, and each dataset is a plain
+  JSON file under [`data/`](data) with its own license
+
+## Modes
+
+| Mode | Import | Words | License |
+| --- | --- | --- | --- |
+| `zh` | `@fbngrm/zh-dictionary/zh` | [our own data](data/zh): ~19k learner words with part of speech | CC0 1.0 |
+| `cedict` | `@fbngrm/zh-dictionary/cedict` | [CC-CEDICT](data/cedict): ~121k words | CC BY-SA 4.0 |
+
+Both modes share the [character data](data/hanzi) (~15k characters, from
+Unicode Unihan and BabelStone IDS, Unicode License v3).
+
+Each mode is its own entry point, so a bundle only contains the data of the
+modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 
 ## Install
 
-Add as a git-ref dependency, same pattern as `@fbngrm/app-sdk`:
+The package installs straight from GitHub (it is not on the npm registry):
+
+```bash
+npm install github:fbngrm/zh-dictionary#v0.4.0
+# or
+yarn add github:fbngrm/zh-dictionary#v0.4.0
+pnpm add github:fbngrm/zh-dictionary#v0.4.0
+```
+
+which adds:
 
 ```json
 "dependencies": {
-  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.1.0"
+  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.4.0"
 }
 ```
 
-## Use
+## Usage
+
+### Look up a word
 
 ```ts
-import { lookupWord } from '@fbngrm/zh-dictionary/lookup';
+import { lookup, lookupAll, has } from '@fbngrm/zh-dictionary/zh';
 
-const entry = lookupWord('口罩');
-// { pinyin: 'kǒuzhào', translation: 'mask', part_of_speech: 'noun' }
+lookup('头发');
+// { pinyin: 'tóufa', translation: 'hair', part_of_speech: 'noun', traditional: '頭髮' }
+
+lookup('頭髮');   // traditional input works too
+lookupAll('行');  // all entries for the word (several readings in cedict mode)
+has('不存在');     // false
 ```
 
-Or import the raw dictionary JSON directly:
+### Word details with a character breakdown
 
 ```ts
-import dictionary from '@fbngrm/zh-dictionary/dictionary.json';
+import { describe } from '@fbngrm/zh-dictionary/zh';
+
+describe('头发');
+// {
+//   word: '头发',
+//   traditional: '頭髮',
+//   pinyin: 'tóufa',
+//   translation: 'hair',
+//   part_of_speech: 'noun',
+//   characters: [
+//     { char: '头', traditional: '頭', pinyin: 'tóu', meaning: 'head; …',
+//       radical: '大', strokes: 5, decomposition: '⿻⺀大', components: ['⺀', '大'] },
+//     { char: '发', traditional: '髮', pinyin: 'fa', meaning: 'to send; to issue; to grow (hair)',
+//       radical: '又', strokes: 5, decomposition: '⿺⿸⿻𠃋丿又丶', components: ['𠃋', '丿', '又', '丶'] },
+//   ],
+// }
 ```
+
+Each character's `pinyin` is its reading **in that word** (行 is `háng` in
+银行, `xíng` in 行人), and `meaning` is the dictionary entry for that
+reading where there is one.
+
+### Characters and decomposition
+
+```ts
+import { character } from '@fbngrm/zh-dictionary/zh';
+
+character('好');
+// { pinyin: ['hǎo', 'hào'], definition: 'good, excellent, fine; well', radical: '女',
+//   strokes: 6, decomposition: '⿰女子', components: ['女', '子'] }
+
+character('說');
+// { …, decomposition: '⿰訁兌', components: ['訁', '兌'], simplified: ['说'] }
+```
+
+`decomposition` is an
+[ideographic description sequence](https://en.wikipedia.org/wiki/Ideographic_Description_Characters)
+(`⿰` = left/right, `⿱` = top/bottom, …). Call `character()` on a
+component to decompose it further.
+
+### CC-CEDICT mode
+
+Same functions, larger vocabulary, no part of speech:
+
+```ts
+import { lookup, describe, attribution } from '@fbngrm/zh-dictionary/cedict';
+
+lookup('口罩');   // { pinyin: 'kǒu zhào', translation: 'mask (surgical etc)' }
+describe('银行'); // same shape as in zh mode
+```
+
+### Switching modes at runtime
+
+Both modes export the same functions, so import them as namespaces:
+
+```ts
+import * as zh from '@fbngrm/zh-dictionary/zh';
+import * as cedict from '@fbngrm/zh-dictionary/cedict';
+
+const dict = settings.mode === 'zh' ? zh : cedict;
+dict.describe('银行');
+```
+
+### React example
+
+```tsx
+import { describe } from '@fbngrm/zh-dictionary/zh';
+
+function Word({ text }: { text: string }) {
+  const word = describe(text);
+  if (!word) return <span>{text}</span>;
+  return (
+    <div>
+      <h2>{word.word} ({word.traditional})</h2>
+      <p>{word.pinyin}: {word.translation}</p>
+      <ul>
+        {word.characters.map((c, i) => (
+          <li key={i}>
+            {c.char} {c.pinyin}: {c.meaning} [{c.decomposition}]
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### Loading data at runtime (web)
+
+To keep CC-CEDICT out of a web bundle, fetch the JSON (from your own
+server or a CDN) and build the dictionary with `createDictionary`:
+
+```ts
+import { createDictionary } from '@fbngrm/zh-dictionary';
+
+const base = 'https://cdn.jsdelivr.net/gh/fbngrm/zh-dictionary@v0.4.0/data';
+const [words, hanzi] = await Promise.all([
+  fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
+  fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
+]);
+const dict = createDictionary(words, { hanzi });
+```
+
+`createDictionary(sources, { hanzi })` accepts one dataset or an array,
+where earlier sources win. That way you can also layer your own words on
+top of either dataset.
+
+### Node
+
+Node ≥ 22 runs it as is. CommonJS `require('@fbngrm/zh-dictionary/zh')`
+works on Node ≥ 22.12. To import the raw JSON files yourself, use an import
+attribute:
+
+```js
+import hanzi from '@fbngrm/zh-dictionary/data/hanzi.json' with { type: 'json' };
+```
+
+## API
+
+| Function | Returns |
+| --- | --- |
+| `lookup(word)` | `DictionaryEntry \| null`: the first entry |
+| `lookupAll(word)` | `DictionaryEntry[]`: every reading |
+| `has(word)` | `boolean` |
+| `describe(word)` | `WordDetails \| null`: entry plus `characters` breakdown |
+| `character(char)` | `CharacterData \| null` |
+| `attribution` | `string`: credit line your app must show (see Licensing) |
+| `createDictionary(sources, { hanzi })` | the functions above, for your own data |
+
+Words can be given in simplified or traditional characters. All types
+(`DictionaryEntry`, `WordDetails`, `WordCharacter`, `CharacterData`, …) are
+exported from `@fbngrm/zh-dictionary`. The raw files are exported as
+`/data/zh.json`, `/data/cedict.json`, `/data/hanzi.json` and their
+`*.meta.json` files.
+
+## Licensing
+
+| Part | License | What you must do |
+| --- | --- | --- |
+| Code (`src/`, `dist/`, `modes/`, `scripts/`, `test/`) | [MIT](LICENSE) | keep the license notice |
+| [`data/zh`](data/zh) | [CC0 1.0](data/zh/LICENSE) | nothing |
+| [`data/hanzi`](data/hanzi) | [Unicode License v3](data/hanzi/LICENSE) | include the Unicode notice |
+| [`data/cedict`](data/cedict) | [CC BY-SA 4.0](data/cedict/LICENSE) | credit CC-CEDICT; modified or merged CEDICT data stays CC BY-SA |
+
+Each mode exports `attribution`, the credit line for the data it ships.
+Show it where users can see it, for example on an About or licenses screen.
+Commercial use is allowed for all of it. CC BY-SA applies to the CEDICT data
+only, not to your app's code. See [data/cedict/README.md](data/cedict/README.md).
+
+Keep the datasets in separate files. Don't merge CC-CEDICT into `data/zh`,
+or our data would have to become CC BY-SA too.
+
+## Updating the data
+
+```bash
+npm run build:cedict        # latest CC-CEDICT from MDBG
+npm run build:traditional   # traditional forms for data/zh (OpenCC)
+npm run build:hanzi         # character data for every character in use
+npm test
+```
+
+## Migrating from 0.3
+
+```diff
+- import { lookupWord } from '@fbngrm/zh-dictionary/lookup';
+- lookupWord('口罩');
++ import { lookup } from '@fbngrm/zh-dictionary/zh';
++ lookup('口罩');
+```
+
+`@fbngrm/zh-dictionary/dictionary.json` is now `@fbngrm/zh-dictionary/data/zh.json`.
+`part_of_speech` is optional in the types, because CC-CEDICT has none.
 
 ## Filling gaps with DeepSeek
 
@@ -52,19 +252,20 @@ python3 scripts/export-dictionary-candidates.py \
 # then, from this repo:
 DEEPSEEK_API_KEY=<key> python3 scripts/generate-dictionary.py \
   --candidates /tmp/candidates.json --known /tmp/known.json
+npm run build:traditional && npm run build:hanzi
 ```
 
-This updates `src/data/dictionary.json` in place (resumable — already-covered
+This updates `data/zh/dictionary.json` in place (resumable — already-covered
 words are skipped unless `--force`). Commit, tag a new version, push tags,
 then bump the `#vX.Y.Z` ref in each consuming app's `package.json`:
 
 ```bash
-git add src/data/dictionary.json
+git add data/
 git commit -m "Add words from <app> gap"
 git tag vX.Y.Z
 git push && git push --tags
 ```
 
 Tokens longer than `--max-len` (default 4 hanzi) are treated as likely
-word-segmentation artifacts and written to `src/data/dictionary.skipped.json`
+word-segmentation artifacts and written to `data/zh/dictionary.skipped.json`
 for manual review instead of being sent to DeepSeek.
