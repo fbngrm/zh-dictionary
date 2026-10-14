@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fills gaps in data/dictionary.json using DeepSeek — the canonical tap-to-
+Fills gaps in data/zh/dictionary.json using DeepSeek — the canonical tap-to-
 translate word dictionary shared across apps (originally split between
 tingting's data/storyDictionary.json and zh-patterns' story_dictionary.json,
 merged here as the single source of truth).
@@ -25,7 +25,7 @@ Usage:
                         artifacts, not real dictionary words. Written to
                         dictionary.skipped.json instead, for manual review.
 
-Output: data/dictionary.json — { "word": {"pinyin", "translation",
+Output: data/zh/dictionary.json — { "word": {"pinyin", "translation",
 "part_of_speech"}, ... }. Resumable: skips words already present unless
 --force.
 """
@@ -42,7 +42,7 @@ from threading import Lock
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SCRIPT_DIR = Path(__file__).parent
-DATA_DIR = SCRIPT_DIR / '../src/data'
+DATA_DIR = SCRIPT_DIR / '../data/zh'
 OUT_PATH = DATA_DIR / 'dictionary.json'
 SKIPPED_PATH = DATA_DIR / 'dictionary.skipped.json'
 

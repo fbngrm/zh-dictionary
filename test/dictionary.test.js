@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 // Imported through the package's own exports map, as an app would.
 import { createDictionary, splitPinyin } from '@fbngrm/zh-dictionary';
+import zhData from '@fbngrm/zh-dictionary/data/zh.json' with { type: 'json' };
 
 const data = {
   好: { pinyin: 'hǎo', translation: 'good', part_of_speech: 'adjective' },
@@ -40,6 +41,11 @@ test('earlier sources take priority, lookupAll merges in order', () => {
   const dict = createDictionary([{ 好: { pinyin: 'hǎo', translation: 'override' } }, data]);
   assert.equal(dict.lookup('好').translation, 'override');
   assert.deepEqual(dict.lookupAll('好').map((e) => e.translation), ['override', 'good']);
+});
+
+test('bundled zh data', () => {
+  const dict = createDictionary(zhData);
+  assert.equal(dict.lookup('口罩').translation, 'face mask');
 });
 
 test('splitPinyin matches each character against its readings', () => {

@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "private": true,
   "description": "Chinese–English word lookup for JS apps, with data shipped separately from the code.",
-  "license": "MIT",
+  "license": "MIT AND CC0-1.0",
   "repository": "github:fbngrm/zh-dictionary",
   "type": "module",
   "sideEffects": false,
@@ -11,6 +11,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "data",
     "LICENSE",
     "README.md"
   ],
@@ -18,7 +19,8 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
-    }
+    },
+    "./data/zh.json": "./data/zh/dictionary.json"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
