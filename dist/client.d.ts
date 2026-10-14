@@ -6,7 +6,16 @@ export interface DictionaryClient {
     describe(word: string): Promise<WordDetails | null>;
     character(char: string): Promise<CharacterData | null>;
     attribution(): Promise<string>;
+    batch<F extends BatchFunction>(fn: F, items: string[]): Promise<BatchResults[F][]>;
 }
+export interface BatchResults {
+    lookup: DictionaryEntry | null;
+    lookupAll: DictionaryEntry[];
+    has: boolean;
+    describe: WordDetails | null;
+    character: CharacterData | null;
+}
+export type BatchFunction = keyof BatchResults;
 export interface ClientOptions {
     baseUrl: string;
     mode: 'zh' | 'cedict';

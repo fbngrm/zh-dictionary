@@ -63,6 +63,14 @@ for (const [mode, local, data] of [['zh', zh, zhData], ['cedict', cedict, cedict
     await inBatches(chars, async (char) => {
       assert.deepEqual(await client.character(char), local.character(char), `character ${char}`);
     });
+
+    // Batch endpoint: same answers, in order, across several requests.
+    const items = [...words, ...traditional, '不存在的词', words[0]];
+    for (const fn of ['lookup', 'lookupAll', 'has', 'describe']) {
+      assert.deepEqual(await client.batch(fn, items), items.map((w) => local[fn](w)), `batch ${fn}`);
+    }
+    assert.deepEqual(await client.batch('character', chars), chars.map((c) => local.character(c)));
+    assert.deepEqual(await client.batch('has', []), []);
     assert.deepEqual(await client.lookup('好'), local.lookup('好'));
     assert.equal(await client.lookup('不存在的词'), null);
     assert.equal(await client.describe('不存在的词'), null);
@@ -73,6 +81,7 @@ for (const [mode, local, data] of [['zh', zh, zhData], ['cedict', cedict, cedict
 
 test('client reports HTTP errors', { skip: !hasGo && 'Go not installed' }, async () => {
   await assert.rejects(createClient({ baseUrl, mode: 'xx' }).lookup('好'), /HTTP 404/);
+  await assert.rejects(createClient({ baseUrl, mode: 'xx' }).batch('has', ['好']), /HTTP 404/);
 });
 
 async function inBatches(items, fn, size = 64) {
