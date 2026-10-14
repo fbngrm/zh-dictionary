@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "build:traditional": "node scripts/build-traditional.mjs",
     "test": "npm run build && node --test",
     "prepare": "npm run build"
   },
