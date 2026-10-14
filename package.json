@@ -2,7 +2,7 @@
   "name": "@fbngrm/zh-dictionary",
   "version": "0.4.0",
   "private": true,
-  "description": "Chinese–English word lookup for JS apps, with data shipped separately from the code.",
+  "description": "Chinese–English word lookup for JS apps: pinyin, traditional forms, translations and character decomposition, with data shipped separately from the code.",
   "license": "MIT AND CC0-1.0 AND CC-BY-SA-4.0 AND Unicode-3.0",
   "repository": "github:fbngrm/zh-dictionary",
   "type": "module",
@@ -11,6 +11,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "modes",
     "data",
     "LICENSE",
     "README.md"
@@ -19,6 +20,14 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./zh": {
+      "types": "./modes/zh.d.ts",
+      "default": "./modes/zh.js"
+    },
+    "./cedict": {
+      "types": "./modes/cedict.d.ts",
+      "default": "./modes/cedict.js"
     },
     "./data/zh.json": "./data/zh/dictionary.json",
     "./data/cedict.json": "./data/cedict/cedict.json",
