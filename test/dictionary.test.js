@@ -5,6 +5,7 @@ import { createDictionary, splitPinyin } from '@fbngrm/zh-dictionary';
 import zhData from '@fbngrm/zh-dictionary/data/zh.json' with { type: 'json' };
 import cedict from '@fbngrm/zh-dictionary/data/cedict.json' with { type: 'json' };
 import cedictMeta from '@fbngrm/zh-dictionary/data/cedict.meta.json' with { type: 'json' };
+import hanzi from '@fbngrm/zh-dictionary/data/hanzi.json' with { type: 'json' };
 import * as zh from '@fbngrm/zh-dictionary/zh';
 import * as cedictMode from '@fbngrm/zh-dictionary/cedict';
 
@@ -50,6 +51,19 @@ test('earlier sources take priority, lookupAll merges in order', () => {
 test('bundled zh data', () => {
   const dict = createDictionary(zhData);
   assert.equal(dict.lookup('口罩').translation, 'face mask');
+});
+
+// Words are keyed by their simplified form. A key is written in traditional
+// characters if it has a character only traditional text uses (one with a
+// simplified form that is not itself a CC-CEDICT headword: 會, 國) or is
+// CC-CEDICT's traditional form of another word (瞭解 for 了解).
+test('bundled zh data is keyed by simplified words', () => {
+  const traditionalOnly = (c) => hanzi[c]?.simplified && !Object.hasOwn(cedict, c);
+  const traditionalForms = new Set(Object.entries(cedict)
+    .flatMap(([w, v]) => [v].flat().map((e) => e.traditional).filter((t) => t && t !== w)));
+  const traditional = Object.keys(zhData)
+    .filter((w) => [...w].some(traditionalOnly) || (traditionalForms.has(w) && !Object.hasOwn(cedict, w)));
+  assert.deepEqual(traditional, []);
 });
 
 test('bundled CC-CEDICT data', () => {

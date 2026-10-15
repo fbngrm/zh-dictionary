@@ -554,11 +554,6 @@
     "pinyin": "yīwèi",
     "translation": "blindly, stubbornly"
   },
-  "一嚮": {
-    "part_of_speech": "adverb",
-    "pinyin": "yīxiàng",
-    "translation": "always, consistently"
-  },
   "一回事": {
     "part_of_speech": "noun",
     "pinyin": "yīhuíshì",
@@ -3255,11 +3250,6 @@
     "pinyin": "bùtíngde",
     "translation": "incessantly; without stopping"
   },
-  "不僅": {
-    "part_of_speech": "conjunction",
-    "pinyin": "bùjǐn",
-    "translation": "not only"
-  },
   "不像话": {
     "part_of_speech": "adjective",
     "pinyin": "bùxiànghuà",
@@ -3995,11 +3985,6 @@
     "traditional": "不斷",
     "translation": "continuously; constantly"
   },
-  "不斷": {
-    "part_of_speech": "adjective",
-    "pinyin": "bùduàn",
-    "translation": "continuous; unceasing"
-  },
   "不方便": {
     "part_of_speech": "adjective",
     "pinyin": "bùfāngbiàn",
@@ -4042,11 +4027,6 @@
     "part_of_speech": "adverb",
     "pinyin": "bùcéng",
     "translation": "never; have not (ever)"
-  },
-  "不會": {
-    "part_of_speech": "verb",
-    "pinyin": "bùhuì",
-    "translation": "cannot; will not"
   },
   "不服": {
     "part_of_speech": "verb",
@@ -4955,11 +4935,6 @@
     "traditional": "世界觀",
     "translation": "worldview"
   },
-  "世紀": {
-    "part_of_speech": "noun",
-    "pinyin": "shìjì",
-    "translation": "century"
-  },
   "世纪": {
     "part_of_speech": "noun",
     "pinyin": "shìjì",
@@ -5655,16 +5630,6 @@
     "traditional": "嚴重的",
     "translation": "serious"
   },
-  "並": {
-    "part_of_speech": "conjunction",
-    "pinyin": "bìng",
-    "translation": "and; also"
-  },
-  "並且": {
-    "part_of_speech": "conjunction",
-    "pinyin": "bìngqiě",
-    "translation": "and; moreover"
-  },
   "丧": {
     "part_of_speech": "verb",
     "pinyin": "sàng",
@@ -5883,11 +5848,6 @@
     "pinyin": "zhōngguócài",
     "traditional": "中國菜",
     "translation": "Chinese food"
-  },
-  "中國": {
-    "part_of_speech": "proper noun",
-    "pinyin": "zhōngguó",
-    "translation": "China"
   },
   "中场": {
     "part_of_speech": "noun",
@@ -6771,11 +6731,6 @@
     "traditional": "久違",
     "translation": "(haven't done sth) for a long time, a long time since we last met"
   },
-  "久遠": {
-    "part_of_speech": "adjective",
-    "pinyin": "jiǔyuǎn",
-    "translation": "long ago; remote"
-  },
   "么": {
     "part_of_speech": "particle",
     "pinyin": "me",
@@ -6973,11 +6928,6 @@
     "part_of_speech": "noun",
     "pinyin": "zhīdū",
     "translation": "capital, city"
-  },
-  "之間": {
-    "part_of_speech": "preposition",
-    "pinyin": "zhījiān",
-    "translation": "between; among"
   },
   "之间": {
     "part_of_speech": "preposition",
@@ -9225,11 +9175,6 @@
     "traditional": "人體",
     "translation": "human body"
   },
-  "人們": {
-    "part_of_speech": "noun",
-    "pinyin": "rénmen",
-    "translation": "people"
-  },
   "人力": {
     "part_of_speech": "noun",
     "pinyin": "rénlì",
@@ -9538,11 +9483,6 @@
     "traditional": "人靜",
     "translation": "quiet, still (of people)"
   },
-  "人類": {
-    "part_of_speech": "noun",
-    "pinyin": "rénlèi",
-    "translation": "humanity, mankind"
-  },
   "亿": {
     "part_of_speech": "number",
     "pinyin": "yì",
@@ -9581,11 +9521,6 @@
     ],
     "traditional": "什麼樣",
     "translation": "what kind of; what does it look like"
-  },
-  "什麼": {
-    "part_of_speech": "pronoun",
-    "pinyin": "shénme",
-    "translation": "what"
   },
   "仁慈": {
     "part_of_speech": "adjective",
@@ -10050,11 +9985,6 @@
     "traditional": "他們",
     "translation": "they; them"
   },
-  "他們": {
-    "part_of_speech": "pronoun",
-    "pinyin": "tāmen",
-    "translation": "they, them"
-  },
   "他在": {
     "part_of_speech": "verb",
     "pinyin": "tā zài",
@@ -10325,11 +10255,6 @@
     "pinyin": "yǐwéiyì",
     "traditional": "以為意",
     "translation": "take seriously"
-  },
-  "以來": {
-    "part_of_speech": "preposition",
-    "pinyin": "yǐlái",
-    "translation": "since, from ... onwards"
   },
   "以便": {
     "part_of_speech": "conjunction",
@@ -10677,11 +10602,6 @@
     "pinyin": "qǐtú",
     "traditional": "企圖",
     "translation": "to attempt, to try, attempt"
-  },
-  "企業": {
-    "part_of_speech": "noun",
-    "pinyin": "qǐyè",
-    "translation": "enterprise; company"
   },
   "企鹅": {
     "part_of_speech": "noun",
@@ -12179,11 +12099,6 @@
     "traditional": "作為學生",
     "translation": "as a student"
   },
-  "作傢": {
-    "part_of_speech": "noun",
-    "pinyin": "zuòjiā",
-    "translation": "writer"
-  },
   "作出": {
     "part_of_speech": "verb",
     "pinyin": "zuòchū",
@@ -12486,16 +12401,6 @@
     "part_of_speech": "noun",
     "pinyin": "zhízi",
     "translation": "nephew"
-  },
-  "來": {
-    "part_of_speech": "verb",
-    "pinyin": "lái",
-    "translation": "to come"
-  },
-  "來臨": {
-    "part_of_speech": "verb",
-    "pinyin": "láilín",
-    "translation": "to arrive, approach"
   },
   "例": {
     "part_of_speech": "noun",
@@ -12838,16 +12743,6 @@
     "traditional": "便飯",
     "translation": "an ordinary meal, simple home cooking"
   },
-  "係": {
-    "part_of_speech": "verb",
-    "pinyin": "xì",
-    "translation": "to be; system; relation"
-  },
-  "係統": {
-    "part_of_speech": "noun",
-    "pinyin": "xìtǒng",
-    "translation": "system"
-  },
   "促": {
     "part_of_speech": "verb",
     "pinyin": "cù",
@@ -12873,16 +12768,6 @@
     ],
     "traditional": "促進",
     "translation": "to promote; to advance"
-  },
-  "促進": {
-    "part_of_speech": "verb",
-    "pinyin": "cùjìn",
-    "translation": "to promote; to accelerate"
-  },
-  "促銷": {
-    "part_of_speech": "noun",
-    "pinyin": "cùxiāo",
-    "translation": "promotion; to promote sales"
   },
   "促销": {
     "part_of_speech": "verb",
@@ -13107,16 +12992,6 @@
     "part_of_speech": "verb",
     "pinyin": "bǎoguǎn",
     "translation": "to take care of, to keep"
-  },
-  "保證": {
-    "part_of_speech": "verb",
-    "pinyin": "bǎozhèng",
-    "translation": "to guarantee; guarantee"
-  },
-  "保護": {
-    "part_of_speech": "verb",
-    "pinyin": "bǎohù",
-    "translation": "to protect; protection"
   },
   "保证": {
     "part_of_speech": "verb",
@@ -13478,11 +13353,6 @@
     "pinyin": "jùpí",
     "translation": "all exhausted"
   },
-  "個": {
-    "part_of_speech": "measure word",
-    "pinyin": "gè",
-    "translation": "individual; general measure word"
-  },
   "倍": {
     "part_of_speech": "measure word",
     "pinyin": "bèi",
@@ -13502,11 +13372,6 @@
     "part_of_speech": "verb",
     "pinyin": "bèizēng",
     "translation": "to double"
-  },
-  "們": {
-    "part_of_speech": "particle",
-    "pinyin": "men",
-    "translation": "plural marker for pronouns and nouns"
   },
   "倒": {
     "part_of_speech": "verb",
@@ -13629,11 +13494,6 @@
     "pinyin": "juéjiàng",
     "traditional": "倔強",
     "translation": "stubborn; obstinate; unbending"
-  },
-  "倖": {
-    "part_of_speech": "adjective",
-    "pinyin": "xìng",
-    "translation": "lucky; fortunate"
   },
   "倘使": {
     "part_of_speech": "conjunction",
@@ -14587,11 +14447,6 @@
     "pinyin": "àomàn",
     "translation": "arrogant, haughty"
   },
-  "傷口": {
-    "part_of_speech": "noun",
-    "pinyin": "shāngkǒu",
-    "translation": "wound, cut"
-  },
   "傻": {
     "part_of_speech": "adjective",
     "pinyin": "shǎ",
@@ -14653,11 +14508,6 @@
     "pinyin": "jiāngyìng",
     "translation": "stiff, rigid"
   },
-  "價值": {
-    "part_of_speech": "noun",
-    "pinyin": "jiàzhí",
-    "translation": "value, worth"
-  },
   "僻": {
     "part_of_speech": "adjective",
     "pinyin": "pì",
@@ -14689,16 +14539,6 @@
     "part_of_speech": "proper noun",
     "pinyin": "rújiā",
     "translation": "Confucianism, Confucian school"
-  },
-  "優勢": {
-    "part_of_speech": "noun",
-    "pinyin": "yōushì",
-    "translation": "advantage, superiority"
-  },
-  "優化": {
-    "part_of_speech": "verb",
-    "pinyin": "yōuhuà",
-    "translation": "optimize"
   },
   "儿": {
     "part_of_speech": "noun",
@@ -15423,21 +15263,6 @@
     "traditional": "入門",
     "translation": "to get started, to learn the basics; introduction"
   },
-  "內": {
-    "part_of_speech": "noun",
-    "pinyin": "nèi",
-    "translation": "inside"
-  },
-  "內容": {
-    "part_of_speech": "noun",
-    "pinyin": "nèiróng",
-    "translation": "content"
-  },
-  "內部": {
-    "part_of_speech": "noun",
-    "pinyin": "nèibù",
-    "translation": "internal"
-  },
   "全": {
     "part_of_speech": "adjective",
     "pinyin": "quán",
@@ -15500,11 +15325,6 @@
     "part_of_speech": "noun",
     "pinyin": "quánchéng",
     "translation": "the whole city"
-  },
-  "全場": {
-    "part_of_speech": "noun",
-    "pinyin": "quánchǎng",
-    "translation": "whole audience"
   },
   "全天候": {
     "part_of_speech": "adjective",
@@ -15691,11 +15511,6 @@
       "完整"
     ],
     "translation": "comprehensive; all-round; overall"
-  },
-  "兩": {
-    "part_of_speech": "number",
-    "pinyin": "liǎng",
-    "translation": "two"
   },
   "八": {
     "part_of_speech": "number",
@@ -15925,11 +15740,6 @@
     "traditional": "公園裡",
     "translation": "in the park"
   },
-  "公園": {
-    "part_of_speech": "noun",
-    "pinyin": "gōngyuán",
-    "translation": "park"
-  },
   "公墓": {
     "part_of_speech": "noun",
     "pinyin": "gōngmù",
@@ -16130,11 +15940,6 @@
     "part_of_speech": "measure word",
     "pinyin": "gōnglǐ",
     "translation": "kilometer"
-  },
-  "公開": {
-    "part_of_speech": "adjective",
-    "pinyin": "gōngkāi",
-    "translation": "open, public"
   },
   "公顷": {
     "part_of_speech": "measure word",
@@ -19745,11 +19550,6 @@
     "traditional": "分階段",
     "translation": "in stages; phased"
   },
-  "分類": {
-    "part_of_speech": "noun",
-    "pinyin": "fēnlèi",
-    "translation": "classification, categorize"
-  },
   "切": {
     "part_of_speech": "verb",
     "pinyin": "qiē",
@@ -20359,11 +20159,6 @@
     "part_of_speech": "noun",
     "pinyin": "lìrùn",
     "traditional": "利潤",
-    "translation": "profit"
-  },
-  "利潤": {
-    "part_of_speech": "noun",
-    "pinyin": "lìrùn",
     "translation": "profit"
   },
   "利率": {
@@ -21404,21 +21199,6 @@
     "pinyin": "gēpò",
     "translation": "cut open; gash"
   },
-  "創建": {
-    "part_of_speech": "verb",
-    "pinyin": "chuàngjiàn",
-    "translation": "to establish; create"
-  },
-  "創新": {
-    "part_of_speech": "noun",
-    "pinyin": "chuàngxīn",
-    "translation": "innovation"
-  },
-  "創造": {
-    "part_of_speech": "verb",
-    "pinyin": "chuàngzào",
-    "translation": "to create"
-  },
   "劈": {
     "part_of_speech": "verb",
     "pinyin": "pī",
@@ -21770,11 +21550,6 @@
     "part_of_speech": "verb",
     "pinyin": "jiāgōng",
     "translation": "to process"
-  },
-  "加強": {
-    "part_of_speech": "verb",
-    "pinyin": "jiāqiáng",
-    "translation": "strengthen"
   },
   "加强": {
     "part_of_speech": "verb",
@@ -22397,11 +22172,6 @@
     "pinyin": "kāntàn",
     "translation": "prospect; explore"
   },
-  "勞動": {
-    "part_of_speech": "noun",
-    "pinyin": "láodòng",
-    "translation": "labor; work"
-  },
   "募捐": {
     "part_of_speech": "verb",
     "pinyin": "mùjuān",
@@ -22777,11 +22547,6 @@
     "part_of_speech": "noun",
     "pinyin": "běibù",
     "translation": "northern part, north"
-  },
-  "北風": {
-    "part_of_speech": "noun",
-    "pinyin": "běifēng",
-    "translation": "north wind"
   },
   "北风": {
     "part_of_speech": "noun",
@@ -24216,11 +23981,6 @@
     "traditional": "卸載",
     "translation": "uninstall"
   },
-  "卻": {
-    "part_of_speech": "adverb",
-    "pinyin": "què",
-    "translation": "but; yet"
-  },
   "厂": {
     "part_of_speech": "noun",
     "pinyin": "chǎng",
@@ -25002,11 +24762,6 @@
     "pinyin": "cānsàizhě",
     "traditional": "參賽者",
     "translation": "contestant"
-  },
-  "參與": {
-    "part_of_speech": "verb",
-    "pinyin": "cānyù",
-    "translation": "participate"
   },
   "又": {
     "part_of_speech": "adverb",
@@ -28176,11 +27931,6 @@
     "pinyin": "tóngzhuō",
     "translation": "deskmate"
   },
-  "同樣": {
-    "part_of_speech": "adjective",
-    "pinyin": "tóngyàng",
-    "translation": "same; equally"
-  },
   "同步": {
     "part_of_speech": "verb",
     "pinyin": "tóngbù",
@@ -28761,11 +28511,6 @@
     ],
     "traditional": "否則",
     "translation": "otherwise, or else"
-  },
-  "否則": {
-    "part_of_speech": "conjunction",
-    "pinyin": "fǒuzé",
-    "translation": "otherwise"
   },
   "否定": {
     "part_of_speech": "verb",
@@ -29639,11 +29384,6 @@
     "pinyin": "hūjiù",
     "translation": "to call for help"
   },
-  "呼籲": {
-    "part_of_speech": "verb",
-    "pinyin": "hūyù",
-    "translation": "to appeal, to call for"
-  },
   "呼风唤雨": {
     "part_of_speech": "verb",
     "pinyin": "hūfēnghuànyǔ",
@@ -30141,11 +29881,6 @@
     "traditional": "譁然",
     "translation": "in uproar, commotion, causing a storm of protest"
   },
-  "員工": {
-    "part_of_speech": "noun",
-    "pinyin": "yuángōng",
-    "translation": "employee, staff"
-  },
   "哥": {
     "part_of_speech": "noun",
     "pinyin": "gē",
@@ -30326,11 +30061,6 @@
     "pinyin": "zhéxuéjiā",
     "traditional": "哲學家",
     "translation": "philosopher"
-  },
-  "哲學": {
-    "part_of_speech": "noun",
-    "pinyin": "zhéxué",
-    "translation": "philosophy"
   },
   "哲理": {
     "part_of_speech": "noun",
@@ -30649,17 +30379,6 @@
     ],
     "translation": "ah; oh (particle)"
   },
-  "問題": {
-    "part_of_speech": "noun",
-    "pinyin": "wèntí",
-    "translation": "question; problem"
-  },
-  "啓示": {
-    "part_of_speech": "noun",
-    "pinyin": "qǐshì",
-    "traditional": "啟示",
-    "translation": "enlightenment; revelation"
-  },
   "啡": {
     "part_of_speech": "noun",
     "pinyin": "fēi",
@@ -30846,11 +30565,6 @@
       "讨厌"
     ],
     "traditional": "喜歡",
-    "translation": "to like; to be fond of"
-  },
-  "喜歡": {
-    "part_of_speech": "verb",
-    "pinyin": "xǐhuān",
     "translation": "to like; to be fond of"
   },
   "喜洋洋": {
@@ -31151,16 +30865,6 @@
     "pinyin": "pīlǐpālā",
     "traditional": "噼裡啪啦",
     "translation": "crackling sound"
-  },
-  "嚮": {
-    "part_of_speech": "preposition",
-    "pinyin": "xiàng",
-    "translation": "toward; direction"
-  },
-  "嚴格": {
-    "part_of_speech": "adjective",
-    "pinyin": "yángé",
-    "translation": "strict; rigorous"
   },
   "嚷": {
     "part_of_speech": "verb",
@@ -31595,11 +31299,6 @@
       "于是"
     ],
     "translation": "therefore; consequently"
-  },
-  "因為": {
-    "part_of_speech": "conjunction",
-    "pinyin": "yīnwèi",
-    "translation": "because"
   },
   "因素": {
     "part_of_speech": "noun",
@@ -32194,31 +31893,6 @@
     "pinyin": "quānzi",
     "translation": "circle"
   },
-  "國傢": {
-    "part_of_speech": "noun",
-    "pinyin": "guójiā",
-    "translation": "country; nation"
-  },
-  "國內": {
-    "part_of_speech": "noun",
-    "pinyin": "guónèi",
-    "translation": "domestic; internal"
-  },
-  "國際": {
-    "part_of_speech": "adjective",
-    "pinyin": "guójì",
-    "translation": "international"
-  },
-  "圖像": {
-    "part_of_speech": "noun",
-    "pinyin": "túxiàng",
-    "translation": "image; picture"
-  },
-  "團隊": {
-    "part_of_speech": "noun",
-    "pinyin": "tuánduì",
-    "translation": "team; group"
-  },
   "土": {
     "part_of_speech": "noun",
     "pinyin": "tǔ",
@@ -32500,11 +32174,6 @@
     ],
     "traditional": "地區",
     "translation": "area; region; district"
-  },
-  "地區": {
-    "part_of_speech": "noun",
-    "pinyin": "dìqū",
-    "translation": "area; region"
   },
   "地名": {
     "part_of_speech": "noun",
@@ -33524,11 +33193,6 @@
     "traditional": "基礎設施",
     "translation": "infrastructure"
   },
-  "基礎": {
-    "part_of_speech": "noun",
-    "pinyin": "jīchǔ",
-    "translation": "foundation, base"
-  },
   "基金": {
     "part_of_speech": "noun",
     "pinyin": "jījīn",
@@ -33544,11 +33208,6 @@
     "part_of_speech": "noun",
     "pinyin": "táng",
     "translation": "hall; main room"
-  },
-  "堅持": {
-    "part_of_speech": "verb",
-    "pinyin": "jiānchí",
-    "translation": "to persist, to insist"
   },
   "堆": {
     "part_of_speech": "verb",
@@ -33611,16 +33270,6 @@
     "pinyin": "kānchēng",
     "traditional": "堪稱",
     "translation": "can be called, worthy of being called"
-  },
-  "報告": {
-    "part_of_speech": "noun",
-    "pinyin": "bàogào",
-    "translation": "report, to report"
-  },
-  "場": {
-    "part_of_speech": "noun",
-    "pinyin": "chǎng",
-    "translation": "field, place, occasion"
   },
   "堵": {
     "part_of_speech": "verb",
@@ -33939,11 +33588,6 @@
     "traditional": "增進",
     "translation": "to enhance; to promote"
   },
-  "增長": {
-    "part_of_speech": "verb",
-    "pinyin": "zēngzhǎng",
-    "translation": "increase, grow"
-  },
   "增长": {
     "part_of_speech": "verb",
     "pinyin": "zēngzhǎng",
@@ -33998,11 +33642,6 @@
     "pinyin": "bìhuà",
     "traditional": "壁畫",
     "translation": "mural, fresco"
-  },
-  "壓力": {
-    "part_of_speech": "noun",
-    "pinyin": "yālì",
-    "translation": "pressure, stress"
   },
   "士": {
     "part_of_speech": "noun",
@@ -34154,11 +33793,6 @@
     ],
     "traditional": "壺",
     "translation": "pot, kettle"
-  },
-  "壽命": {
-    "part_of_speech": "noun",
-    "pinyin": "shòumìng",
-    "translation": "lifespan, life"
   },
   "处": {
     "part_of_speech": "noun",
@@ -35252,11 +34886,6 @@
     "traditional": "夠朋友",
     "translation": "be a true friend; be loyal to friends"
   },
-  "夢": {
-    "part_of_speech": "noun",
-    "pinyin": "mèng",
-    "translation": "dream"
-  },
   "大": {
     "part_of_speech": "adjective",
     "pinyin": "dà",
@@ -35360,11 +34989,6 @@
     "pinyin": "dàshǐguǎn",
     "traditional": "大使館",
     "translation": "embassy"
-  },
-  "大傢": {
-    "part_of_speech": "pronoun",
-    "pinyin": "dàjiā",
-    "translation": "everyone"
   },
   "大公无私": {
     "part_of_speech": "verb",
@@ -39306,26 +38930,6 @@
     "pinyin": "fūdàn",
     "translation": "hatch eggs"
   },
-  "學位": {
-    "part_of_speech": "noun",
-    "pinyin": "xuéwèi",
-    "translation": "academic degree"
-  },
-  "學會": {
-    "part_of_speech": "verb",
-    "pinyin": "xuéhuì",
-    "translation": "to learn; to master"
-  },
-  "學術": {
-    "part_of_speech": "noun",
-    "pinyin": "xuéshù",
-    "translation": "academic; scholarly"
-  },
-  "學院": {
-    "part_of_speech": "noun",
-    "pinyin": "xuéyuàn",
-    "translation": "college; academy"
-  },
   "宁可": {
     "part_of_speech": "adverb",
     "pinyin": "nìngkě",
@@ -39364,11 +38968,6 @@
     ],
     "traditional": "它們",
     "translation": "they (for non-human things)"
-  },
-  "它們": {
-    "part_of_speech": "pronoun",
-    "pinyin": "tāmen",
-    "translation": "they (for animals/things)"
   },
   "它的": {
     "part_of_speech": "pronoun",
@@ -41229,16 +40828,6 @@
     "traditional": "寥寥無幾",
     "translation": "very few"
   },
-  "實行": {
-    "part_of_speech": "verb",
-    "pinyin": "shíxíng",
-    "translation": "implement"
-  },
-  "實踐": {
-    "part_of_speech": "verb",
-    "pinyin": "shíjiàn",
-    "translation": "practice"
-  },
   "寸": {
     "part_of_speech": "measure word",
     "pinyin": "cùn",
@@ -41737,16 +41326,6 @@
     "traditional": "將近",
     "translation": "almost, nearly"
   },
-  "將": {
-    "part_of_speech": "verb",
-    "pinyin": "jiāng",
-    "translation": "will; to lead; general"
-  },
-  "專傢": {
-    "part_of_speech": "noun",
-    "pinyin": "zhuānjiā",
-    "translation": "expert"
-  },
   "尊": {
     "part_of_speech": "verb",
     "pinyin": "zūn",
@@ -41773,21 +41352,6 @@
     "part_of_speech": "verb",
     "pinyin": "zūnzhòng",
     "translation": "respect; value"
-  },
-  "對": {
-    "part_of_speech": "adjective",
-    "pinyin": "duì",
-    "translation": "correct; toward; pair"
-  },
-  "對比": {
-    "part_of_speech": "verb",
-    "pinyin": "duìbǐ",
-    "translation": "contrast; comparison"
-  },
-  "導演": {
-    "part_of_speech": "noun",
-    "pinyin": "dǎoyǎn",
-    "translation": "director; to direct"
   },
   "小": {
     "part_of_speech": "adjective",
@@ -42105,11 +41669,6 @@
     "part_of_speech": "proper noun",
     "pinyin": "Xiǎomíng",
     "translation": "Xiaoming (name)"
-  },
-  "小時候": {
-    "part_of_speech": "noun",
-    "pinyin": "xiǎoshíhou",
-    "translation": "childhood; when young"
   },
   "小曲": {
     "part_of_speech": "noun",
@@ -43372,11 +42931,6 @@
     "traditional": "山區",
     "translation": "mountain area"
   },
-  "山區": {
-    "part_of_speech": "noun",
-    "pinyin": "shānqū",
-    "translation": "mountain area"
-  },
   "山坡": {
     "part_of_speech": "noun",
     "pinyin": "shānpō",
@@ -44145,11 +43699,6 @@
     "traditional": "差點兒",
     "translation": "poor, not good enough; almost, nearly"
   },
-  "差異": {
-    "part_of_speech": "noun",
-    "pinyin": "chāyì",
-    "translation": "difference"
-  },
   "差距": {
     "part_of_speech": "noun",
     "pinyin": "chājù",
@@ -44202,11 +43751,6 @@
   "已然": {
     "part_of_speech": "adverb",
     "pinyin": "yǐrán",
-    "translation": "already"
-  },
-  "已經": {
-    "part_of_speech": "adverb",
-    "pinyin": "yǐjīng",
     "translation": "already"
   },
   "已经": {
@@ -44331,11 +43875,6 @@
     "pinyin": "shìchǎngbù",
     "traditional": "市場部",
     "translation": "marketing department"
-  },
-  "市場": {
-    "part_of_speech": "noun",
-    "pinyin": "shìchǎng",
-    "translation": "market"
   },
   "市政": {
     "part_of_speech": "noun",
@@ -44797,11 +44336,6 @@
     "traditional": "幫手",
     "translation": "helper; assistant"
   },
-  "帶": {
-    "part_of_speech": "noun",
-    "pinyin": "dài",
-    "translation": "belt; to bring"
-  },
   "帷幄": {
     "part_of_speech": "noun",
     "pinyin": "wéiwò",
@@ -44955,11 +44489,6 @@
     "part_of_speech": "measure word",
     "pinyin": "chuáng",
     "translation": "banner"
-  },
-  "幫助": {
-    "part_of_speech": "noun",
-    "pinyin": "bāngzhù",
-    "translation": "help; assistance"
   },
   "干": {
     "part_of_speech": "verb",
@@ -45450,16 +44979,6 @@
     "pinyin": "niánhuò",
     "traditional": "年貨",
     "translation": "New Year goods"
-  },
-  "年輕": {
-    "part_of_speech": "adjective",
-    "pinyin": "niánqīng",
-    "translation": "young"
-  },
-  "年輕人": {
-    "part_of_speech": "noun",
-    "pinyin": "niánqīngrén",
-    "translation": "young person"
   },
   "年轻": {
     "part_of_speech": "adjective",
@@ -46242,11 +45761,6 @@
     "traditional": "度過的",
     "translation": "spent; passed (time)"
   },
-  "度過": {
-    "part_of_speech": "verb",
-    "pinyin": "dùguò",
-    "translation": "spend (time), pass"
-  },
   "座": {
     "part_of_speech": "measure word",
     "pinyin": "zuò",
@@ -46334,11 +45848,6 @@
     "traditional": "廉潔",
     "translation": "incorruptible; unbribable; honest"
   },
-  "廣大": {
-    "part_of_speech": "adjective",
-    "pinyin": "guǎngdà",
-    "translation": "vast, extensive"
-  },
   "延": {
     "part_of_speech": "verb",
     "pinyin": "yán",
@@ -46388,11 +45897,6 @@
     "pinyin": "yánchí",
     "traditional": "延遲",
     "translation": "delay, postpone"
-  },
-  "延長": {
-    "part_of_speech": "verb",
-    "pinyin": "yáncháng",
-    "translation": "extend, lengthen"
   },
   "延长": {
     "part_of_speech": "verb",
@@ -47377,11 +46881,6 @@
     "traditional": "弱項",
     "translation": "weak point; weakness"
   },
-  "張": {
-    "part_of_speech": "verb",
-    "pinyin": "zhāng",
-    "translation": "to open up; to spread; measure word for flat objects"
-  },
   "弹": {
     "part_of_speech": "verb",
     "pinyin": "tán",
@@ -47585,16 +47084,6 @@
     "pinyin": "qiángxiàng",
     "traditional": "強項",
     "translation": "key strength, strong suit, specialty"
-  },
-  "彆人": {
-    "part_of_speech": "noun",
-    "pinyin": "biérén",
-    "translation": "other people; others"
-  },
-  "彈": {
-    "part_of_speech": "noun",
-    "pinyin": "dàn",
-    "translation": "bullet; shell; bomb"
   },
   "归": {
     "part_of_speech": "verb",
@@ -48003,11 +47492,6 @@
     "traditional": "形勢",
     "translation": "situation; circumstances; terrain"
   },
-  "形勢": {
-    "part_of_speech": "noun",
-    "pinyin": "xíngshì",
-    "translation": "situation; circumstances"
-  },
   "形容": {
     "part_of_speech": "verb",
     "pinyin": "xíngróng",
@@ -48200,11 +47684,6 @@
     "part_of_speech": "noun",
     "pinyin": "yǐngmí",
     "translation": "film enthusiast, movie fan"
-  },
-  "影響": {
-    "part_of_speech": "noun",
-    "pinyin": "yǐngxiǎng",
-    "translation": "influence; effect"
   },
   "彻": {
     "part_of_speech": "adjective",
@@ -48675,16 +48154,6 @@
     "traditional": "律師",
     "translation": "lawyer; attorney"
   },
-  "後": {
-    "part_of_speech": "preposition",
-    "pinyin": "hòu",
-    "translation": "after; behind; later"
-  },
-  "後門": {
-    "part_of_speech": "noun",
-    "pinyin": "hòumén",
-    "translation": "back door; backdoor (influence)"
-  },
   "徐徐": {
     "part_of_speech": "adverb",
     "pinyin": "xúxú",
@@ -48932,21 +48401,6 @@
     "part_of_speech": "verb",
     "pinyin": "páihuái",
     "translation": "to pace back and forth, to dither; to hesitate, (of sales figures etc) to fluctuate"
-  },
-  "從": {
-    "part_of_speech": "preposition",
-    "pinyin": "cóng",
-    "translation": "from; through; to follow"
-  },
-  "從而": {
-    "part_of_speech": "conjunction",
-    "pinyin": "cóng'ér",
-    "translation": "thereby; thus"
-  },
-  "復雜": {
-    "part_of_speech": "adjective",
-    "pinyin": "fùzá",
-    "translation": "complex, complicated"
   },
   "循": {
     "part_of_speech": "verb",
@@ -49511,11 +48965,6 @@
     "pinyin": "bìxū",
     "translation": "must have, essential"
   },
-  "必須": {
-    "part_of_speech": "verb",
-    "pinyin": "bìxū",
-    "translation": "must; have to"
-  },
   "必须": {
     "part_of_speech": "verb",
     "pinyin": "bìxū",
@@ -49790,11 +49239,6 @@
     "traditional": "忠實",
     "translation": "faithful; loyal"
   },
-  "忠實": {
-    "part_of_speech": "adjective",
-    "pinyin": "zhōngshí",
-    "translation": "faithful; loyal"
-  },
   "忠心": {
     "part_of_speech": "noun",
     "pinyin": "zhōngxīn",
@@ -49930,11 +49374,6 @@
     ],
     "traditional": "快來",
     "translation": "come quickly"
-  },
-  "快樂": {
-    "part_of_speech": "adjective",
-    "pinyin": "kuàilè",
-    "translation": "happy; joyful"
   },
   "快步": {
     "part_of_speech": "noun",
@@ -51164,11 +50603,6 @@
     "traditional": "悲傷",
     "translation": "sad"
   },
-  "悲傷": {
-    "part_of_speech": "adjective",
-    "pinyin": "bēishāng",
-    "translation": "sad"
-  },
   "悲剧": {
     "part_of_speech": "noun",
     "pinyin": "bēijù",
@@ -51310,11 +50744,6 @@
     "pinyin": "qíngyǒudúzhōng",
     "traditional": "情有獨鍾",
     "translation": "have a special preference"
-  },
-  "情緒": {
-    "part_of_speech": "noun",
-    "pinyin": "qíngxù",
-    "translation": "emotion"
   },
   "情结": {
     "part_of_speech": "noun",
@@ -51844,11 +51273,6 @@
       "加剧"
     ],
     "translation": "to become increasingly intense; to escalate"
-  },
-  "愈閤": {
-    "part_of_speech": "verb",
-    "pinyin": "yùhé",
-    "translation": "to heal; to close up (of a wound)"
   },
   "愉快": {
     "part_of_speech": "adjective",
@@ -52484,11 +51908,6 @@
     "pinyin": "xièdài",
     "translation": "slack, negligent"
   },
-  "應": {
-    "part_of_speech": "verb",
-    "pinyin": "yīng",
-    "translation": "should, answer"
-  },
   "懊悔": {
     "part_of_speech": "noun",
     "pinyin": "àohuǐ",
@@ -52714,11 +52133,6 @@
     "pinyin": "chéngguǒ",
     "translation": "achievement, result"
   },
-  "成為": {
-    "part_of_speech": "verb",
-    "pinyin": "chéngwéi",
-    "translation": "become"
-  },
   "成熟": {
     "part_of_speech": "adjective",
     "pinyin": "chéngshú",
@@ -52869,11 +52283,6 @@
     "pinyin": "wǒ huì",
     "traditional": "我會",
     "translation": "I will; I can"
-  },
-  "我們": {
-    "part_of_speech": "pronoun",
-    "pinyin": "wǒmen",
-    "translation": "we"
   },
   "我国": {
     "part_of_speech": "noun",
@@ -53246,16 +52655,6 @@
     "part_of_speech": "verb",
     "pinyin": "jiézhì",
     "translation": "as of, up to"
-  },
-  "戰": {
-    "part_of_speech": "noun",
-    "pinyin": "zhàn",
-    "translation": "war; battle"
-  },
-  "戰略": {
-    "part_of_speech": "noun",
-    "pinyin": "zhànlüè",
-    "translation": "strategy"
   },
   "戳": {
     "part_of_speech": "verb",
@@ -54878,20 +54277,10 @@
     "traditional": "承擔責任",
     "translation": "to bear responsibility"
   },
-  "承擔": {
-    "part_of_speech": "verb",
-    "pinyin": "chéngdān",
-    "translation": "to bear; to undertake"
-  },
   "承租人": {
     "part_of_speech": "noun",
     "pinyin": "chéngzūrén",
     "translation": "lessee; tenant"
-  },
-  "承諾": {
-    "part_of_speech": "noun",
-    "pinyin": "chéngnuò",
-    "translation": "promise; commitment"
   },
   "承认": {
     "part_of_speech": "verb",
@@ -54980,11 +54369,6 @@
     ],
     "traditional": "技藝",
     "translation": "craftsmanship, artistry, skill"
-  },
-  "技術": {
-    "part_of_speech": "noun",
-    "pinyin": "jìshù",
-    "translation": "technology; technique"
   },
   "抄": {
     "part_of_speech": "verb",
@@ -56113,11 +55497,6 @@
     "traditional": "拉鎖",
     "translation": "zipper"
   },
-  "拋": {
-    "part_of_speech": "verb",
-    "pinyin": "pāo",
-    "translation": "to throw"
-  },
   "拌": {
     "part_of_speech": "verb",
     "pinyin": "bàn",
@@ -57040,11 +56419,6 @@
     "pinyin": "zhǐlù",
     "translation": "to show the way"
   },
-  "指齣": {
-    "part_of_speech": "verb",
-    "pinyin": "zhǐchū",
-    "translation": "to point out"
-  },
   "按": {
     "part_of_speech": "verb/preposition",
     "pinyin": "àn",
@@ -57164,11 +56538,6 @@
     "pinyin": "tiǎozhànxìng",
     "traditional": "挑戰性",
     "translation": "challenging nature"
-  },
-  "挑戰": {
-    "part_of_speech": "noun",
-    "pinyin": "tiǎozhàn",
-    "translation": "challenge"
   },
   "挑水": {
     "part_of_speech": "verb",
@@ -58428,11 +57797,6 @@
     "traditional": "推斷",
     "translation": "infer, deduce"
   },
-  "推斷": {
-    "part_of_speech": "verb",
-    "pinyin": "tuīduàn",
-    "translation": "infer; deduce"
-  },
   "推测": {
     "part_of_speech": "verb",
     "pinyin": "tuīcè",
@@ -58516,11 +57880,6 @@
     "pinyin": "tuīxuǎn",
     "traditional": "推選",
     "translation": "elect; choose"
-  },
-  "推進": {
-    "part_of_speech": "verb",
-    "pinyin": "tuījìn",
-    "translation": "push forward; advance"
   },
   "推销": {
     "part_of_speech": "verb",
@@ -58945,11 +58304,6 @@
     "part_of_speech": "verb",
     "pinyin": "jiēlù",
     "translation": "to expose, to unmask, to ferret out"
-  },
-  "揮": {
-    "part_of_speech": "verb",
-    "pinyin": "huī",
-    "translation": "wave; wield"
   },
   "援": {
     "part_of_speech": "verb",
@@ -60277,11 +59631,6 @@
     "traditional": "改簽",
     "translation": "change (ticket)"
   },
-  "改編": {
-    "part_of_speech": "verb",
-    "pinyin": "gǎibiān",
-    "translation": "adapt, rearrange"
-  },
   "改编": {
     "part_of_speech": "verb",
     "pinyin": "gǎibiān",
@@ -60298,11 +59647,6 @@
     "pinyin": "gǎizhuāng",
     "traditional": "改裝",
     "translation": "to change one's costume, to repackage, to remodel"
-  },
-  "改變": {
-    "part_of_speech": "verb",
-    "pinyin": "gǎibiàn",
-    "translation": "change, alter"
   },
   "改进": {
     "part_of_speech": "verb",
@@ -60591,11 +59935,6 @@
     "pinyin": "fàngfēi",
     "traditional": "放飛",
     "translation": "to fly freely"
-  },
-  "放鬆": {
-    "part_of_speech": "verb",
-    "pinyin": "fàngsōng",
-    "translation": "relax, loosen"
   },
   "政": {
     "part_of_speech": "noun",
@@ -61399,11 +60738,6 @@
     "traditional": "整體",
     "translation": "whole, entirety"
   },
-  "整個": {
-    "part_of_speech": "adjective",
-    "pinyin": "zhěnggè",
-    "translation": "whole; entire"
-  },
   "整合": {
     "part_of_speech": "verb",
     "pinyin": "zhěnghé",
@@ -61504,11 +60838,6 @@
     "traditional": "整齊",
     "translation": "neat; orderly; tidy"
   },
-  "敵": {
-    "part_of_speech": "noun",
-    "pinyin": "dí",
-    "translation": "enemy; foe"
-  },
   "敷": {
     "part_of_speech": "verb",
     "pinyin": "fū",
@@ -61523,16 +60852,6 @@
       "马虎"
     ],
     "translation": "to be perfunctory; to go through the motions"
-  },
-  "數": {
-    "part_of_speech": "noun",
-    "pinyin": "shù",
-    "translation": "number; count"
-  },
-  "數據": {
-    "part_of_speech": "noun",
-    "pinyin": "shùjù",
-    "translation": "data"
   },
   "文": {
     "part_of_speech": "noun",
@@ -62147,11 +61466,6 @@
     "traditional": "新穎",
     "translation": "novel, innovative"
   },
-  "新鮮": {
-    "part_of_speech": "adjective",
-    "pinyin": "xīnxiān",
-    "translation": "fresh"
-  },
   "新鲜": {
     "part_of_speech": "adjective",
     "pinyin": "xīnxiān",
@@ -62270,11 +61584,6 @@
       "角度"
     ],
     "translation": "aspect, side, field"
-  },
-  "方麵": {
-    "part_of_speech": "noun",
-    "pinyin": "fāngmiàn",
-    "translation": "aspect; side"
   },
   "於": {
     "part_of_speech": "preposition",
@@ -62428,11 +61737,6 @@
     "part_of_speech": "adverb",
     "pinyin": "lǚtúzhōng",
     "translation": "during a journey; on the road"
-  },
-  "旅遊": {
-    "part_of_speech": "noun",
-    "pinyin": "lǚyóu",
-    "translation": "travel, tourism"
   },
   "旅馆": {
     "part_of_speech": "noun",
@@ -63887,11 +63191,6 @@
     "traditional": "明確",
     "translation": "clear; explicit"
   },
-  "明確": {
-    "part_of_speech": "adjective",
-    "pinyin": "míngquè",
-    "translation": "clear, explicit"
-  },
   "明面": {
     "part_of_speech": "noun",
     "pinyin": "míngmiàn",
@@ -64312,26 +63611,6 @@
     "pinyin": "xiǎnlù",
     "traditional": "顯露",
     "translation": "to reveal"
-  },
-  "時": {
-    "part_of_speech": "noun",
-    "pinyin": "shí",
-    "translation": "time; period"
-  },
-  "時代": {
-    "part_of_speech": "noun",
-    "pinyin": "shídài",
-    "translation": "era; epoch"
-  },
-  "時候": {
-    "part_of_speech": "noun",
-    "pinyin": "shíhou",
-    "translation": "time; moment"
-  },
-  "時間": {
-    "part_of_speech": "noun",
-    "pinyin": "shíjiān",
-    "translation": "time"
   },
   "晃": {
     "part_of_speech": "verb",
@@ -65193,11 +64472,6 @@
     ],
     "translation": "higher"
   },
-  "書": {
-    "part_of_speech": "noun",
-    "pinyin": "shū",
-    "translation": "book"
-  },
   "曾": {
     "part_of_speech": "adverb",
     "pinyin": "céng",
@@ -65333,11 +64607,6 @@
     "pinyin": "zuìhǎochī",
     "translation": "most delicious"
   },
-  "最後": {
-    "part_of_speech": "adjective",
-    "pinyin": "zuìhòu",
-    "translation": "final, last"
-  },
   "最快": {
     "part_of_speech": "adjective",
     "pinyin": "zuìkuài",
@@ -65369,11 +64638,6 @@
     "pinyin": "zuì'ài",
     "traditional": "最愛",
     "translation": "favorite"
-  },
-  "最終": {
-    "part_of_speech": "adjective",
-    "pinyin": "zuìzhōng",
-    "translation": "final, ultimate"
   },
   "最终": {
     "part_of_speech": "adjective",
@@ -65411,16 +64675,6 @@
     "pinyin": "zuìgāochù",
     "traditional": "最高處",
     "translation": "highest point"
-  },
-  "會": {
-    "part_of_speech": "verb",
-    "pinyin": "huì",
-    "translation": "can, to meet, meeting"
-  },
-  "會議": {
-    "part_of_speech": "noun",
-    "pinyin": "huìyì",
-    "translation": "meeting, conference"
   },
   "月": {
     "part_of_speech": "noun",
@@ -67794,11 +67048,6 @@
     "traditional": "果斷",
     "translation": "decisive"
   },
-  "果斷": {
-    "part_of_speech": "adjective",
-    "pinyin": "guǒduàn",
-    "translation": "decisive"
-  },
   "果树": {
     "part_of_speech": "noun",
     "pinyin": "guǒshù",
@@ -69145,11 +68394,6 @@
     "pinyin": "chǔ",
     "translation": "clear; neat; Chu (state)"
   },
-  "業": {
-    "part_of_speech": "noun",
-    "pinyin": "yè",
-    "translation": "business, industry, karma"
-  },
   "楷模": {
     "part_of_speech": "noun",
     "pinyin": "kǎimó",
@@ -69256,11 +68500,6 @@
     "part_of_speech": "noun",
     "pinyin": "cáo",
     "translation": "trough; groove; slot"
-  },
-  "樂觀": {
-    "part_of_speech": "adjective",
-    "pinyin": "lèguān",
-    "translation": "optimistic"
   },
   "模仿": {
     "part_of_speech": "verb",
@@ -69375,11 +68614,6 @@
     "pinyin": "yīnghuā",
     "traditional": "櫻花",
     "translation": "cherry blossom"
-  },
-  "樹": {
-    "part_of_speech": "noun",
-    "pinyin": "shù",
-    "translation": "tree"
   },
   "橄榄油": {
     "part_of_speech": "noun",
@@ -69659,11 +68893,6 @@
     "pinyin": "kuǎndài",
     "translation": "to entertain; hospitality"
   },
-  "款項": {
-    "part_of_speech": "noun",
-    "pinyin": "kuǎnxiàng",
-    "translation": "sum of money; funds"
-  },
   "款项": {
     "part_of_speech": "noun",
     "pinyin": "kuǎnxiàng",
@@ -69749,11 +68978,6 @@
     "pinyin": "gēsòng",
     "traditional": "歌頌",
     "translation": "to sing the praises of, to extol, to eulogize"
-  },
-  "歡呼": {
-    "part_of_speech": "verb",
-    "pinyin": "huānhū",
-    "translation": "to cheer; hail"
   },
   "止": {
     "part_of_speech": "verb",
@@ -70142,11 +69366,6 @@
     "part_of_speech": "adjective",
     "pinyin": "wāiwāiniǔniǔ",
     "translation": "crooked, zigzag"
-  },
-  "歲月": {
-    "part_of_speech": "noun",
-    "pinyin": "suìyuè",
-    "translation": "years; time"
   },
   "歹徒": {
     "part_of_speech": "noun",
@@ -70674,11 +69893,6 @@
     "traditional": "比試",
     "translation": "to have a competition, to measure with one's hand or arm, to make a gesture of measuring"
   },
-  "比賽": {
-    "part_of_speech": "noun",
-    "pinyin": "bǐsài",
-    "translation": "competition; match"
-  },
   "比赛": {
     "part_of_speech": "noun",
     "pinyin": "bǐsài",
@@ -71202,11 +70416,6 @@
     "traditional": "氫氣",
     "translation": "hydrogen gas"
   },
-  "氣候": {
-    "part_of_speech": "noun",
-    "pinyin": "qìhòu",
-    "translation": "climate"
-  },
   "氧": {
     "part_of_speech": "noun",
     "pinyin": "yǎng",
@@ -71224,20 +70433,10 @@
     "traditional": "氧氣瓶",
     "translation": "oxygen tank"
   },
-  "氧氣": {
-    "part_of_speech": "noun",
-    "pinyin": "yǎngqì",
-    "translation": "oxygen"
-  },
   "氧舱": {
     "part_of_speech": "noun",
     "pinyin": "yǎngcāng",
     "traditional": "氧艙",
-    "translation": "oxygen chamber"
-  },
-  "氧艙": {
-    "part_of_speech": "noun",
-    "pinyin": "yǎngcāng",
     "translation": "oxygen chamber"
   },
   "水": {
@@ -72002,11 +71201,6 @@
     "traditional": "洶湧",
     "translation": "surging, turbulent"
   },
-  "決定": {
-    "part_of_speech": "noun",
-    "pinyin": "juédìng",
-    "translation": "decision, decide"
-  },
   "汽": {
     "part_of_speech": "noun",
     "pinyin": "qì",
@@ -72150,11 +71344,6 @@
     "part_of_speech": "noun",
     "pinyin": "mùyùlù",
     "translation": "shower gel; body wash"
-  },
-  "沒有": {
-    "part_of_speech": "verb",
-    "pinyin": "méiyǒu",
-    "translation": "not have, there is not"
   },
   "沙": {
     "part_of_speech": "noun",
@@ -72671,11 +71860,6 @@
     "pinyin": "zhìbìng",
     "translation": "cure disease"
   },
-  "治療": {
-    "part_of_speech": "noun",
-    "pinyin": "zhìliáo",
-    "translation": "treatment"
-  },
   "沼泽": {
     "part_of_speech": "noun",
     "pinyin": "zhǎozé",
@@ -72944,11 +72128,6 @@
     "pinyin": "bōdòng",
     "traditional": "波動",
     "translation": "fluctuation; to fluctuate"
-  },
-  "波動": {
-    "part_of_speech": "noun",
-    "pinyin": "bōdòng",
-    "translation": "fluctuation"
   },
   "波及": {
     "part_of_speech": "verb",
@@ -74885,11 +74064,6 @@
     "traditional": "深藍色",
     "translation": "deep blue; dark blue"
   },
-  "深處": {
-    "part_of_speech": "noun",
-    "pinyin": "shēnchù",
-    "translation": "depths"
-  },
   "深表": {
     "part_of_speech": "verb",
     "pinyin": "shēnbiǎo",
@@ -74917,11 +74091,6 @@
     "part_of_speech": "verb",
     "pinyin": "shēnzào",
     "translation": "further study"
-  },
-  "深遠": {
-    "part_of_speech": "adjective",
-    "pinyin": "shēnyuǎn",
-    "translation": "far-reaching"
   },
   "深邃": {
     "part_of_speech": "adjective",
@@ -75308,11 +74477,6 @@
     "pinyin": "shèntòu",
     "traditional": "滲透",
     "translation": "permeate"
-  },
-  "減少": {
-    "part_of_speech": "verb",
-    "pinyin": "jiǎnshǎo",
-    "translation": "reduce"
   },
   "渠道": {
     "part_of_speech": "noun",
@@ -76103,16 +75267,6 @@
     "pinyin": "dīguǎn",
     "translation": "dropper; pipette"
   },
-  "滿意": {
-    "part_of_speech": "adjective",
-    "pinyin": "mǎnyì",
-    "translation": "satisfied"
-  },
-  "滿足": {
-    "part_of_speech": "verb",
-    "pinyin": "mǎnzú",
-    "translation": "satisfy"
-  },
   "漂": {
     "part_of_speech": "verb",
     "pinyin": "piāo",
@@ -76228,11 +75382,6 @@
     "pinyin": "yǎnyuánmen",
     "traditional": "演員們",
     "translation": "actors"
-  },
-  "演員": {
-    "part_of_speech": "noun",
-    "pinyin": "yǎnyuán",
-    "translation": "actor; actress"
   },
   "演唱": {
     "part_of_speech": "verb",
@@ -76404,11 +75553,6 @@
     "traditional": "瀟灑",
     "translation": "confident and at ease, free and easy"
   },
-  "潛意識": {
-    "part_of_speech": "noun",
-    "pinyin": "qiányìshí",
-    "translation": "subconscious"
-  },
   "潜": {
     "part_of_speech": "adjective",
     "pinyin": "qián",
@@ -76431,6 +75575,12 @@
     "pinyin": "qiánzài",
     "traditional": "潛在",
     "translation": "latent; potential"
+  },
+  "潜意识": {
+    "part_of_speech": "noun",
+    "pinyin": "qiányìshí",
+    "traditional": "潛意識",
+    "translation": "subconscious"
   },
   "潜水": {
     "part_of_speech": "verb",
@@ -76592,11 +75742,6 @@
     "traditional": "激進",
     "translation": "radical"
   },
-  "濃度": {
-    "part_of_speech": "noun",
-    "pinyin": "nóngdù",
-    "translation": "concentration; density"
-  },
   "濒临": {
     "part_of_speech": "verb",
     "pinyin": "bīnlín",
@@ -76608,11 +75753,6 @@
     "pinyin": "bīnwēi",
     "traditional": "瀕危",
     "translation": "endangered; in peril"
-  },
-  "濟": {
-    "part_of_speech": "verb",
-    "pinyin": "jì",
-    "translation": "aid; relieve; cross a river"
   },
   "瀑布": {
     "part_of_speech": "noun",
@@ -76997,11 +76137,6 @@
     "traditional": "灼熱",
     "translation": "burning hot; scorching"
   },
-  "災區": {
-    "part_of_speech": "noun",
-    "pinyin": "zāiqū",
-    "translation": "disaster area"
-  },
   "灾": {
     "part_of_speech": "noun",
     "pinyin": "zāi",
@@ -77314,16 +76449,6 @@
     "pinyin": "diǎnqián",
     "traditional": "點錢",
     "translation": "to count money"
-  },
-  "為": {
-    "part_of_speech": "preposition",
-    "pinyin": "wèi",
-    "translation": "for; for the sake of"
-  },
-  "為瞭": {
-    "part_of_speech": "preposition",
-    "pinyin": "wèile",
-    "translation": "in order to"
   },
   "炼": {
     "part_of_speech": "verb",
@@ -77863,11 +76988,6 @@
     "traditional": "焚燒",
     "translation": "to burn, to set on fire"
   },
-  "無法": {
-    "part_of_speech": "verb",
-    "pinyin": "wúfǎ",
-    "translation": "unable; cannot"
-  },
   "焦": {
     "part_of_speech": "adjective",
     "pinyin": "jiāo",
@@ -78173,11 +77293,6 @@
       "晚睡"
     ],
     "translation": "to stay up late; to burn the midnight oil"
-  },
-  "熱情": {
-    "part_of_speech": "noun",
-    "pinyin": "rèqíng",
-    "translation": "enthusiasm; passion"
   },
   "燃": {
     "part_of_speech": "verb",
@@ -78871,11 +77986,6 @@
     "traditional": "物種",
     "translation": "species"
   },
-  "物種": {
-    "part_of_speech": "noun",
-    "pinyin": "wùzhǒng",
-    "translation": "species"
-  },
   "物证": {
     "part_of_speech": "noun",
     "pinyin": "wùzhèng",
@@ -79239,11 +78349,6 @@
     "pinyin": "yóuyùbùjué",
     "traditional": "猶豫不決",
     "translation": "hesitancy, indecision, to waver"
-  },
-  "狀況": {
-    "part_of_speech": "noun",
-    "pinyin": "zhuàngkuàng",
-    "translation": "condition, situation"
   },
   "狂": {
     "part_of_speech": "adjective",
@@ -80229,11 +79334,6 @@
     "traditional": "班長",
     "translation": "class monitor; squad leader"
   },
-  "現代": {
-    "part_of_speech": "adjective",
-    "pinyin": "xiàndài",
-    "translation": "modern, contemporary"
-  },
   "球": {
     "part_of_speech": "noun",
     "pinyin": "qiú",
@@ -80512,16 +79612,6 @@
     "pinyin": "guībǎo",
     "traditional": "瑰寶",
     "translation": "gem, treasure"
-  },
-  "環保": {
-    "part_of_speech": "noun",
-    "pinyin": "huánbǎo",
-    "translation": "environmental protection"
-  },
-  "環境": {
-    "part_of_speech": "noun",
-    "pinyin": "huánjìng",
-    "translation": "environment, surroundings"
   },
   "瓜": {
     "part_of_speech": "noun",
@@ -80830,11 +79920,6 @@
     ],
     "translation": "business; trade"
   },
-  "生態": {
-    "part_of_speech": "noun",
-    "pinyin": "shēngtài",
-    "translation": "ecology"
-  },
   "生成": {
     "part_of_speech": "verb",
     "pinyin": "shēngchéng",
@@ -80973,11 +80058,6 @@
     "pinyin": "shēnglǐ",
     "translation": "physiology"
   },
-  "生産": {
-    "part_of_speech": "verb",
-    "pinyin": "shēngchǎn",
-    "translation": "produce; manufacture"
-  },
   "生病": {
     "part_of_speech": "verb",
     "pinyin": "shēngbìng",
@@ -81042,21 +80122,6 @@
     "pinyin": "shēngmènqì",
     "traditional": "生悶氣",
     "translation": "to sulk; to be silently angry"
-  },
-  "産品": {
-    "part_of_speech": "noun",
-    "pinyin": "chǎnpǐn",
-    "translation": "product"
-  },
-  "産生": {
-    "part_of_speech": "verb",
-    "pinyin": "chǎnshēng",
-    "translation": "produce; generate"
-  },
-  "産量": {
-    "part_of_speech": "noun",
-    "pinyin": "chǎnliàng",
-    "translation": "output; yield"
   },
   "用": {
     "part_of_speech": "verb",
@@ -81168,11 +80233,6 @@
     "part_of_speech": "noun",
     "pinyin": "yòngyì",
     "translation": "intention; purpose"
-  },
-  "用戶": {
-    "part_of_speech": "noun",
-    "pinyin": "yònghù",
-    "translation": "user"
   },
   "用户": {
     "part_of_speech": "noun",
@@ -81361,11 +80421,6 @@
     ],
     "traditional": "由於",
     "translation": "because of; due to; owing to"
-  },
-  "由於": {
-    "part_of_speech": "preposition",
-    "pinyin": "yóuyú",
-    "translation": "due to, because of"
   },
   "由来": {
     "part_of_speech": "noun",
@@ -82203,21 +81258,6 @@
     "pinyin": "fānqié chǎo dàn",
     "translation": "scrambled eggs with tomatoes"
   },
-  "當": {
-    "part_of_speech": "preposition",
-    "pinyin": "dāng",
-    "translation": "when, as, at the time"
-  },
-  "當今": {
-    "part_of_speech": "noun",
-    "pinyin": "dāngjīn",
-    "translation": "nowadays, present"
-  },
-  "當地": {
-    "part_of_speech": "noun",
-    "pinyin": "dāngdì",
-    "translation": "local, at the place"
-  },
   "畸形": {
     "part_of_speech": "noun",
     "pinyin": "jīxíng",
@@ -82555,11 +81595,6 @@
     "traditional": "癢",
     "translation": "itchy"
   },
-  "痕跡": {
-    "part_of_speech": "noun",
-    "pinyin": "hénjì",
-    "translation": "trace, mark"
-  },
   "痕迹": {
     "part_of_speech": "noun",
     "pinyin": "hénjì",
@@ -82732,36 +81767,6 @@
     "pinyin": "dēngdǐng",
     "traditional": "登頂",
     "translation": "to reach the summit"
-  },
-  "發": {
-    "part_of_speech": "verb",
-    "pinyin": "fā",
-    "translation": "to send out, issue"
-  },
-  "發展": {
-    "part_of_speech": "noun",
-    "pinyin": "fāzhǎn",
-    "translation": "development, to develop"
-  },
-  "發現": {
-    "part_of_speech": "verb",
-    "pinyin": "fāxiàn",
-    "translation": "to discover, discovery"
-  },
-  "發生": {
-    "part_of_speech": "verb",
-    "pinyin": "fāshēng",
-    "translation": "to happen, occur"
-  },
-  "發達": {
-    "part_of_speech": "adjective",
-    "pinyin": "fādá",
-    "translation": "developed, prosperous"
-  },
-  "發齣": {
-    "part_of_speech": "verb",
-    "pinyin": "fāchū",
-    "translation": "to send out; to issue"
   },
   "白": {
     "part_of_speech": "adjective",
@@ -83456,21 +82461,6 @@
     "pinyin": "méngguó",
     "traditional": "盟國",
     "translation": "ally"
-  },
-  "盡管": {
-    "part_of_speech": "conjunction",
-    "pinyin": "jǐnguǎn",
-    "translation": "although; despite"
-  },
-  "監管": {
-    "part_of_speech": "verb",
-    "pinyin": "jiānguǎn",
-    "translation": "to supervise; to regulate"
-  },
-  "監考": {
-    "part_of_speech": "verb",
-    "pinyin": "jiānkǎo",
-    "translation": "to invigilate; proctor"
   },
   "目": {
     "part_of_speech": "noun",
@@ -85105,11 +84095,6 @@
     "pinyin": "liào",
     "translation": "to watch from a distance"
   },
-  "瞭解": {
-    "part_of_speech": "verb",
-    "pinyin": "liǎojiě",
-    "translation": "to understand; to comprehend"
-  },
   "瞳孔": {
     "part_of_speech": "noun",
     "pinyin": "tóngkǒng",
@@ -85653,6 +84638,12 @@
     "pinyin": "zá",
     "translation": "to smash; to pound"
   },
+  "础": {
+    "part_of_speech": "noun",
+    "pinyin": "chǔ",
+    "traditional": "礎",
+    "translation": "foundation; plinth"
+  },
   "硕士": {
     "part_of_speech": "noun",
     "pinyin": "shuòshì",
@@ -85979,11 +84970,6 @@
     "pinyin": "jiāoshí",
     "translation": "reef"
   },
-  "礎": {
-    "part_of_speech": "noun",
-    "pinyin": "chǔ",
-    "translation": "foundation; plinth"
-  },
   "示": {
     "part_of_speech": "verb",
     "pinyin": "shì",
@@ -86125,11 +85111,6 @@
     "pinyin": "shètuán",
     "traditional": "社團",
     "translation": "association; club"
-  },
-  "社會": {
-    "part_of_speech": "noun",
-    "pinyin": "shèhuì",
-    "translation": "society"
   },
   "社群": {
     "part_of_speech": "noun",
@@ -86816,11 +85797,6 @@
     "traditional": "科學研究",
     "translation": "scientific research"
   },
-  "科學傢": {
-    "part_of_speech": "noun",
-    "pinyin": "kēxuéjiā",
-    "translation": "scientist"
-  },
   "科幻": {
     "part_of_speech": "noun",
     "pinyin": "kēhuàn",
@@ -87274,16 +86250,6 @@
     "pinyin": "chóumì",
     "translation": "dense; thick"
   },
-  "種": {
-    "part_of_speech": "noun",
-    "pinyin": "zhǒng",
-    "translation": "kind; type; seed"
-  },
-  "稱呼": {
-    "part_of_speech": "verb",
-    "pinyin": "chēnghū",
-    "translation": "call; address; title"
-  },
   "稳": {
     "part_of_speech": "adjective",
     "pinyin": "wěn",
@@ -87388,16 +86354,6 @@
     "part_of_speech": "noun",
     "pinyin": "Mùsīlín",
     "translation": "Muslim"
-  },
-  "積極": {
-    "part_of_speech": "adjective",
-    "pinyin": "jījí",
-    "translation": "active, positive"
-  },
-  "穩定": {
-    "part_of_speech": "adjective",
-    "pinyin": "wěndìng",
-    "translation": "stable, steady"
   },
   "穴位": {
     "part_of_speech": "noun",
@@ -87507,11 +86463,6 @@
       "大气"
     ],
     "traditional": "空氣",
-    "translation": "air"
-  },
-  "空氣": {
-    "part_of_speech": "noun",
-    "pinyin": "kōngqì",
     "translation": "air"
   },
   "空白": {
@@ -88194,11 +87145,6 @@
     "traditional": "端詳",
     "translation": "scrutinize; details"
   },
-  "競爭": {
-    "part_of_speech": "noun",
-    "pinyin": "jìngzhēng",
-    "translation": "competition"
-  },
   "竹": {
     "part_of_speech": "noun",
     "pinyin": "zhú",
@@ -88571,11 +87517,6 @@
     "pinyin": "lǒngzhào",
     "traditional": "籠罩",
     "translation": "envelop; shroud"
-  },
-  "筆": {
-    "part_of_speech": "noun",
-    "pinyin": "bǐ",
-    "translation": "pen; writing brush"
   },
   "等": {
     "part_of_speech": "verb",
@@ -89216,11 +88157,6 @@
     "pinyin": "xiāngzi",
     "translation": "box; suitcase"
   },
-  "節約": {
-    "part_of_speech": "verb",
-    "pinyin": "jiéyuē",
-    "translation": "economize, save"
-  },
   "篇": {
     "part_of_speech": "measure word",
     "pinyin": "piān",
@@ -89305,21 +88241,6 @@
     "pinyin": "cùyōng",
     "traditional": "簇擁",
     "translation": "to crowd around, to escort"
-  },
-  "簡單": {
-    "part_of_speech": "adjective",
-    "pinyin": "jiǎndān",
-    "translation": "simple, easy"
-  },
-  "籃球": {
-    "part_of_speech": "noun",
-    "pinyin": "lánqiú",
-    "translation": "basketball"
-  },
-  "籃筐": {
-    "part_of_speech": "noun",
-    "pinyin": "lánkuāng",
-    "translation": "basket (hoop)"
   },
   "米": {
     "part_of_speech": "measure word",
@@ -89633,11 +88554,6 @@
     "traditional": "精確性",
     "translation": "accuracy, precision"
   },
-  "精確": {
-    "part_of_speech": "adjective",
-    "pinyin": "jīngquè",
-    "translation": "accurate, precise"
-  },
   "精神": {
     "part_of_speech": "noun",
     "pinyin": "jīngshén",
@@ -89788,11 +88704,6 @@
     "pinyin": "zāogāo",
     "translation": "terrible, awful"
   },
-  "糧食": {
-    "part_of_speech": "noun",
-    "pinyin": "liángshi",
-    "translation": "grain; food"
-  },
   "糯米": {
     "part_of_speech": "noun",
     "pinyin": "nuòmǐ",
@@ -89851,11 +88762,6 @@
     "pinyin": "wěnluàn",
     "traditional": "紊亂",
     "translation": "disorder; chaos"
-  },
-  "純粹": {
-    "part_of_speech": "adjective",
-    "pinyin": "chúncuì",
-    "translation": "pure; sheer"
   },
   "素": {
     "part_of_speech": "noun",
@@ -90078,70 +88984,10 @@
     "traditional": "累計",
     "translation": "to calculate the running total, cumulative, total"
   },
-  "細節": {
-    "part_of_speech": "noun",
-    "pinyin": "xìjié",
-    "translation": "detail"
-  },
-  "組織": {
-    "part_of_speech": "verb",
-    "pinyin": "zǔzhī",
-    "translation": "organize; organization"
-  },
   "絮叨": {
     "part_of_speech": "verb",
     "pinyin": "xùdao",
     "translation": "long-winded, garrulous, to talk endlessly without getting to the point"
-  },
-  "絲毫": {
-    "part_of_speech": "noun",
-    "pinyin": "sīháo",
-    "translation": "the slightest bit"
-  },
-  "經": {
-    "part_of_speech": "verb",
-    "pinyin": "jīng",
-    "translation": "pass through; classic; scripture"
-  },
-  "經典": {
-    "part_of_speech": "noun",
-    "pinyin": "jīngdiǎn",
-    "translation": "classic"
-  },
-  "經濟": {
-    "part_of_speech": "noun",
-    "pinyin": "jīngjì",
-    "translation": "economy"
-  },
-  "經過": {
-    "part_of_speech": "verb",
-    "pinyin": "jīngguò",
-    "translation": "to pass by; to go through"
-  },
-  "維護": {
-    "part_of_speech": "verb",
-    "pinyin": "wéihù",
-    "translation": "to maintain; to safeguard"
-  },
-  "緊張": {
-    "part_of_speech": "adjective",
-    "pinyin": "jǐnzhāng",
-    "translation": "nervous; tense"
-  },
-  "緩解": {
-    "part_of_speech": "verb",
-    "pinyin": "huǎnjiě",
-    "translation": "to alleviate; to relieve"
-  },
-  "總值": {
-    "part_of_speech": "noun",
-    "pinyin": "zǒngzhí",
-    "translation": "total value"
-  },
-  "總裁": {
-    "part_of_speech": "noun",
-    "pinyin": "zǒngcái",
-    "translation": "president; CEO"
   },
   "繁": {
     "part_of_speech": "adjective",
@@ -90196,17 +89042,6 @@
     "part_of_speech": "adjective",
     "pinyin": "fánzhòng",
     "translation": "heavy; onerous"
-  },
-  "繼續": {
-    "part_of_speech": "verb",
-    "pinyin": "jìxù",
-    "translation": "to continue"
-  },
-  "纔": {
-    "part_of_speech": "adverb",
-    "pinyin": "cái",
-    "traditional": "才",
-    "translation": "only then; just"
   },
   "纠正": {
     "part_of_speech": "verb",
@@ -92967,11 +91802,6 @@
     "pinyin": "qúnshān",
     "translation": "mountains, mountain range"
   },
-  "群眾": {
-    "part_of_speech": "noun",
-    "pinyin": "qúnzhòng",
-    "translation": "the masses, public"
-  },
   "羽毛": {
     "part_of_speech": "noun",
     "pinyin": "yǔmáo",
@@ -93295,11 +92125,6 @@
     "pinyin": "lǎoshīfu",
     "traditional": "老師傅",
     "translation": "master craftsman"
-  },
-  "老師": {
-    "part_of_speech": "noun",
-    "pinyin": "lǎoshī",
-    "translation": "teacher"
   },
   "老年": {
     "part_of_speech": "noun",
@@ -94271,16 +93096,6 @@
     "traditional": "聰明",
     "translation": "intelligent; clever"
   },
-  "職": {
-    "part_of_speech": "noun",
-    "pinyin": "zhí",
-    "translation": "duty; job (traditional)"
-  },
-  "職場": {
-    "part_of_speech": "noun",
-    "pinyin": "zhíchǎng",
-    "translation": "workplace"
-  },
   "肇事": {
     "part_of_speech": "verb",
     "pinyin": "zhàoshì",
@@ -94644,11 +93459,6 @@
     "part_of_speech": "noun",
     "pinyin": "bèiyǐng",
     "translation": "back view; figure seen from behind"
-  },
-  "背後": {
-    "part_of_speech": "noun",
-    "pinyin": "bèihòu",
-    "translation": "behind; behind the scenes"
   },
   "背心": {
     "part_of_speech": "noun",
@@ -95387,11 +94197,6 @@
     "pinyin": "xīngwèi",
     "translation": "fishy smell"
   },
-  "腦力": {
-    "part_of_speech": "noun",
-    "pinyin": "nǎolì",
-    "translation": "brainpower; mental capacity"
-  },
   "腮红": {
     "part_of_speech": "noun",
     "pinyin": "sāihóng",
@@ -95851,11 +94656,6 @@
     ],
     "translation": "by oneself; voluntarily; of oneself"
   },
-  "自行車": {
-    "part_of_speech": "noun",
-    "pinyin": "zìxíngchē",
-    "translation": "bicycle"
-  },
   "自行车": {
     "part_of_speech": "noun",
     "pinyin": "zìxíngchē",
@@ -96075,11 +94875,6 @@
     "pinyin": "yúlùn",
     "traditional": "輿論",
     "translation": "public opinion"
-  },
-  "與": {
-    "part_of_speech": "conjunction",
-    "pinyin": "yǔ",
-    "translation": "and, with"
   },
   "舌头": {
     "part_of_speech": "noun",
@@ -98238,11 +97033,6 @@
     "pinyin": "cángshēn",
     "translation": "to hide, to go into hiding, to take refuge"
   },
-  "藝術": {
-    "part_of_speech": "noun",
-    "pinyin": "yìshù",
-    "translation": "art"
-  },
   "藤": {
     "part_of_speech": "noun",
     "pinyin": "téng",
@@ -98367,11 +97157,6 @@
     "pinyin": "xūgòu",
     "traditional": "虛構",
     "translation": "fictitious"
-  },
-  "號召": {
-    "part_of_speech": "noun",
-    "pinyin": "hàozhào",
-    "translation": "call, appeal"
   },
   "虫": {
     "part_of_speech": "noun",
@@ -99524,12 +98309,6 @@
     "traditional": "裝飾品",
     "translation": "ornament, decoration"
   },
-  "裏": {
-    "part_of_speech": "noun",
-    "pinyin": "lǐ",
-    "traditional": "裡",
-    "translation": "inside, lining"
-  },
   "裙": {
     "part_of_speech": "noun",
     "pinyin": "qún",
@@ -99539,11 +98318,6 @@
     "part_of_speech": "noun",
     "pinyin": "qúnzi",
     "translation": "skirt"
-  },
-  "裡": {
-    "part_of_speech": "noun",
-    "pinyin": "lǐ",
-    "translation": "inside; within"
   },
   "裤": {
     "part_of_speech": "noun",
@@ -99582,11 +98356,6 @@
     "part_of_speech": "noun",
     "pinyin": "hèsè",
     "translation": "brown"
-  },
-  "褒貶不一": {
-    "part_of_speech": "adjective",
-    "pinyin": "bāobiǎn bù yī",
-    "translation": "mixed reviews"
   },
   "褒贬不一": {
     "part_of_speech": "adjective",
@@ -99909,31 +98678,6 @@
     "pinyin": "fùzhé",
     "traditional": "覆轍",
     "translation": "same mistake, rut"
-  },
-  "見麵": {
-    "part_of_speech": "verb",
-    "pinyin": "jiànmiàn",
-    "translation": "meet, see each other"
-  },
-  "視為": {
-    "part_of_speech": "verb",
-    "pinyin": "shìwéi",
-    "translation": "regard as, consider"
-  },
-  "覺得": {
-    "part_of_speech": "verb",
-    "pinyin": "juéde",
-    "translation": "to feel; to think"
-  },
-  "觀": {
-    "part_of_speech": "verb",
-    "pinyin": "guān",
-    "translation": "to observe; to watch"
-  },
-  "觀眾": {
-    "part_of_speech": "noun",
-    "pinyin": "guānzhòng",
-    "translation": "audience; spectators"
   },
   "见": {
     "part_of_speech": "verb",
@@ -100529,11 +99273,6 @@
     "traditional": "解釋了",
     "translation": "explained"
   },
-  "解釋": {
-    "part_of_speech": "verb",
-    "pinyin": "jiěshì",
-    "translation": "to explain; explanation"
-  },
   "解除": {
     "part_of_speech": "verb",
     "pinyin": "jiěchú",
@@ -100625,41 +99364,6 @@
     "traditional": "言辭",
     "translation": "words; wording"
   },
-  "計劃": {
-    "part_of_speech": "noun",
-    "pinyin": "jìhuà",
-    "translation": "plan"
-  },
-  "設": {
-    "part_of_speech": "verb",
-    "pinyin": "shè",
-    "translation": "set up"
-  },
-  "設施": {
-    "part_of_speech": "noun",
-    "pinyin": "shèshī",
-    "translation": "facilities"
-  },
-  "許": {
-    "part_of_speech": "verb",
-    "pinyin": "xǔ",
-    "translation": "allow"
-  },
-  "評價": {
-    "part_of_speech": "verb",
-    "pinyin": "píngjià",
-    "translation": "evaluate"
-  },
-  "試圖": {
-    "part_of_speech": "verb",
-    "pinyin": "shìtú",
-    "translation": "attempt"
-  },
-  "該": {
-    "part_of_speech": "verb",
-    "pinyin": "gāi",
-    "translation": "should"
-  },
   "誉": {
     "part_of_speech": "noun",
     "pinyin": "yù",
@@ -100671,11 +99375,6 @@
     "pinyin": "yùwéi",
     "traditional": "譽為",
     "translation": "be known as"
-  },
-  "認可": {
-    "part_of_speech": "verb",
-    "pinyin": "rènkě",
-    "translation": "approve"
   },
   "誓": {
     "part_of_speech": "noun",
@@ -100691,31 +99390,6 @@
     "part_of_speech": "noun",
     "pinyin": "shìyán",
     "translation": "vow"
-  },
-  "語氣": {
-    "part_of_speech": "noun",
-    "pinyin": "yǔqì",
-    "translation": "tone"
-  },
-  "說": {
-    "part_of_speech": "verb",
-    "pinyin": "shuō",
-    "translation": "speak"
-  },
-  "調整": {
-    "part_of_speech": "verb",
-    "pinyin": "tiáozhěng",
-    "translation": "adjust"
-  },
-  "請": {
-    "part_of_speech": "verb",
-    "pinyin": "qǐng",
-    "translation": "please"
-  },
-  "諸": {
-    "part_of_speech": "adjective",
-    "pinyin": "zhū",
-    "translation": "various"
   },
   "警": {
     "part_of_speech": "noun",
@@ -100785,26 +99459,6 @@
     "pinyin": "pìrúshuō",
     "traditional": "譬如說",
     "translation": "for example"
-  },
-  "讀": {
-    "part_of_speech": "verb",
-    "pinyin": "dú",
-    "translation": "read"
-  },
-  "變化": {
-    "part_of_speech": "noun",
-    "pinyin": "biànhuà",
-    "translation": "change"
-  },
-  "變得": {
-    "part_of_speech": "verb",
-    "pinyin": "biànde",
-    "translation": "to become"
-  },
-  "讓": {
-    "part_of_speech": "verb",
-    "pinyin": "ràng",
-    "translation": "to let, allow"
   },
   "计": {
     "part_of_speech": "noun",
@@ -103515,41 +102169,6 @@
     "pinyin": "màoxiàng",
     "translation": "judge by appearance"
   },
-  "貧富": {
-    "part_of_speech": "noun",
-    "pinyin": "pínfù",
-    "translation": "rich and poor"
-  },
-  "責任": {
-    "part_of_speech": "noun",
-    "pinyin": "zérèn",
-    "translation": "responsibility, duty"
-  },
-  "貿易": {
-    "part_of_speech": "noun",
-    "pinyin": "màoyì",
-    "translation": "trade, commerce"
-  },
-  "資源": {
-    "part_of_speech": "noun",
-    "pinyin": "zīyuán",
-    "translation": "resources"
-  },
-  "資金": {
-    "part_of_speech": "noun",
-    "pinyin": "zījīn",
-    "translation": "funds, capital"
-  },
-  "質量": {
-    "part_of_speech": "noun",
-    "pinyin": "zhìliàng",
-    "translation": "quality"
-  },
-  "贏": {
-    "part_of_speech": "verb",
-    "pinyin": "yíng",
-    "translation": "win, beat"
-  },
   "贝壳": {
     "part_of_speech": "noun",
     "pinyin": "bèiké",
@@ -105040,11 +103659,6 @@
     "pinyin": "qǐfú",
     "translation": "undulation"
   },
-  "起來": {
-    "part_of_speech": "verb",
-    "pinyin": "qǐlái",
-    "translation": "to get up; to rise"
-  },
   "起初": {
     "part_of_speech": "adverb",
     "pinyin": "qǐchū",
@@ -105359,11 +103973,6 @@
     ],
     "translation": "to cross over; to exceed; more (in 越来越)"
   },
-  "越來越": {
-    "part_of_speech": "adverb",
-    "pinyin": "yuèláiyuè",
-    "translation": "more and more"
-  },
   "越剧": {
     "part_of_speech": "noun",
     "pinyin": "yuèjù",
@@ -105660,11 +104269,6 @@
     "pinyin": "jùlí",
     "traditional": "距離",
     "translation": "to be away from, to be at a distance from; distance, gap"
-  },
-  "距離": {
-    "part_of_speech": "noun",
-    "pinyin": "jùlí",
-    "translation": "distance"
   },
   "跟": {
     "part_of_speech": "preposition",
@@ -106098,11 +104702,6 @@
     "pinyin": "duóbù",
     "translation": "to pace; to stroll"
   },
-  "踴躍": {
-    "part_of_speech": "adjective",
-    "pinyin": "yǒngyuè",
-    "translation": "eagerly; enthusiastically"
-  },
   "踹": {
     "part_of_speech": "verb",
     "pinyin": "chuài",
@@ -106262,11 +104861,6 @@
     "traditional": "身邊",
     "translation": "at one's side; around"
   },
-  "身體": {
-    "part_of_speech": "noun",
-    "pinyin": "shēntǐ",
-    "translation": "body"
-  },
   "身高": {
     "part_of_speech": "noun",
     "pinyin": "shēngāo",
@@ -106322,21 +104916,6 @@
     "part_of_speech": "verb",
     "pinyin": "tǎngxià",
     "translation": "to lie down"
-  },
-  "輕": {
-    "part_of_speech": "adjective",
-    "pinyin": "qīng",
-    "translation": "light; gentle"
-  },
-  "輪廓": {
-    "part_of_speech": "noun",
-    "pinyin": "lúnkuò",
-    "translation": "outline; contour"
-  },
-  "輸齣": {
-    "part_of_speech": "noun",
-    "pinyin": "shūchū",
-    "translation": "output"
   },
   "车": {
     "part_of_speech": "noun",
@@ -107373,16 +105952,6 @@
     "traditional": "辮子",
     "translation": "plait, braid, pigtail"
   },
-  "農村": {
-    "part_of_speech": "noun",
-    "pinyin": "nóngcūn",
-    "translation": "rural area; countryside"
-  },
-  "農業": {
-    "part_of_speech": "noun",
-    "pinyin": "nóngyè",
-    "translation": "agriculture"
-  },
   "边": {
     "part_of_speech": "noun",
     "pinyin": "biān",
@@ -108136,11 +106705,6 @@
       "往年"
     ],
     "translation": "recent years"
-  },
-  "近年來": {
-    "part_of_speech": "adverb",
-    "pinyin": "jìnniánlái",
-    "translation": "in recent years"
   },
   "近年来": {
     "part_of_speech": "adverb",
@@ -109572,11 +108136,6 @@
     "pinyin": "shù",
     "translation": "narrate; state"
   },
-  "迴憶": {
-    "part_of_speech": "noun",
-    "pinyin": "huíyì",
-    "translation": "recall; memory"
-  },
   "迷": {
     "part_of_speech": "verb",
     "pinyin": "mí",
@@ -110411,36 +108970,6 @@
     "pinyin": "dòude",
     "translation": "amused; made (someone) laugh"
   },
-  "這": {
-    "part_of_speech": "pronoun",
-    "pinyin": "zhè",
-    "translation": "this"
-  },
-  "這些": {
-    "part_of_speech": "pronoun",
-    "pinyin": "zhèxiē",
-    "translation": "these"
-  },
-  "這件": {
-    "part_of_speech": "pronoun",
-    "pinyin": "zhèjiàn",
-    "translation": "this item; this piece"
-  },
-  "這個": {
-    "part_of_speech": "pronoun",
-    "pinyin": "zhège",
-    "translation": "this one"
-  },
-  "這是": {
-    "part_of_speech": "verb",
-    "pinyin": "zhèshì",
-    "translation": "this is"
-  },
-  "這麼": {
-    "part_of_speech": "adverb",
-    "pinyin": "zhème",
-    "translation": "so; this much"
-  },
   "通": {
     "part_of_speech": "verb",
     "pinyin": "tōng",
@@ -110615,11 +109144,6 @@
     "pinyin": "tōngtōng",
     "translation": "all, entire, complete"
   },
-  "通過": {
-    "part_of_speech": "verb",
-    "pinyin": "tōngguò",
-    "translation": "pass through; by means of"
-  },
   "通道": {
     "part_of_speech": "noun",
     "pinyin": "tōngdào",
@@ -110740,11 +109264,6 @@
     "traditional": "造紙術",
     "translation": "papermaking technology"
   },
-  "造詣": {
-    "part_of_speech": "noun",
-    "pinyin": "zàoyì",
-    "translation": "accomplishment; attainments"
-  },
   "造诣": {
     "part_of_speech": "noun",
     "pinyin": "zàoyì",
@@ -110771,16 +109290,6 @@
     "part_of_speech": "verb",
     "pinyin": "dàibǔ",
     "translation": "to arrest"
-  },
-  "進步": {
-    "part_of_speech": "noun",
-    "pinyin": "jìnbù",
-    "translation": "progress; improvement"
-  },
-  "進行": {
-    "part_of_speech": "verb",
-    "pinyin": "jìnxíng",
-    "translation": "proceed; carry out"
   },
   "逻辑": {
     "part_of_speech": "noun",
@@ -110914,11 +109423,6 @@
     "traditional": "遍佈",
     "translation": "spread all over"
   },
-  "過": {
-    "part_of_speech": "verb",
-    "pinyin": "guò",
-    "translation": "pass; cross; over"
-  },
   "遏制": {
     "part_of_speech": "verb",
     "pinyin": "èzhì",
@@ -111012,11 +109516,6 @@
     "pinyin": "dàotí",
     "traditional": "道題",
     "translation": "a problem; a question"
-  },
-  "達到": {
-    "part_of_speech": "verb",
-    "pinyin": "dádào",
-    "translation": "reach; achieve"
   },
   "遗": {
     "part_of_speech": "verb",
@@ -111305,16 +109804,6 @@
     ],
     "traditional": "邀請",
     "translation": "to invite"
-  },
-  "還": {
-    "part_of_speech": "adverb",
-    "pinyin": "hái",
-    "translation": "still; yet; also"
-  },
-  "還是": {
-    "part_of_speech": "conjunction",
-    "pinyin": "háishì",
-    "translation": "or; still; had better"
   },
   "那": {
     "part_of_speech": "pronoun",
@@ -112174,11 +110663,6 @@
     "pinyin": "xǐngmù",
     "translation": "eye-grabbing (headline), striking (illustration)"
   },
-  "醫療": {
-    "part_of_speech": "noun",
-    "pinyin": "yīliáo",
-    "translation": "medical treatment"
-  },
   "采": {
     "part_of_speech": "verb",
     "pinyin": "cǎi",
@@ -112826,26 +111310,6 @@
     "pinyin": "jiànshǎnglì",
     "traditional": "鑑賞力",
     "translation": "discernment; appreciation"
-  },
-  "錶情": {
-    "part_of_speech": "noun",
-    "pinyin": "biǎoqíng",
-    "translation": "expression; look"
-  },
-  "錶示": {
-    "part_of_speech": "verb",
-    "pinyin": "biǎoshì",
-    "translation": "to express; indicate"
-  },
-  "錶達": {
-    "part_of_speech": "verb",
-    "pinyin": "biǎodá",
-    "translation": "to express"
-  },
-  "鑒於": {
-    "part_of_speech": "preposition",
-    "pinyin": "jiànyú",
-    "translation": "in view of"
   },
   "针": {
     "part_of_speech": "noun",
@@ -113647,16 +112111,6 @@
     "traditional": "鑲嵌",
     "translation": "to inlay, to embed, to set (e.g. a jewel in a ring)"
   },
-  "長大": {
-    "part_of_speech": "verb",
-    "pinyin": "zhǎngdà",
-    "translation": "to grow up"
-  },
-  "長輩": {
-    "part_of_speech": "noun",
-    "pinyin": "zhǎngbèi",
-    "translation": "elder"
-  },
   "长": {
     "part_of_speech": "adjective",
     "pinyin": "cháng",
@@ -113966,26 +112420,6 @@
     "pinyin": "chángjǐnglù",
     "traditional": "長頸鹿",
     "translation": "giraffe"
-  },
-  "開": {
-    "part_of_speech": "verb",
-    "pinyin": "kāi",
-    "translation": "open"
-  },
-  "開放": {
-    "part_of_speech": "verb",
-    "pinyin": "kāifàng",
-    "translation": "open up"
-  },
-  "開發": {
-    "part_of_speech": "verb",
-    "pinyin": "kāifā",
-    "translation": "develop"
-  },
-  "關注": {
-    "part_of_speech": "verb",
-    "pinyin": "guānzhù",
-    "translation": "pay attention to"
   },
   "门": {
     "part_of_speech": "noun",
@@ -115667,16 +114101,6 @@
     "pinyin": "suìdào",
     "translation": "tunnel"
   },
-  "隨": {
-    "part_of_speech": "verb",
-    "pinyin": "suí",
-    "translation": "to follow; to comply with"
-  },
-  "隨著": {
-    "part_of_speech": "preposition",
-    "pinyin": "suízhe",
-    "translation": "along with; following"
-  },
   "难": {
     "part_of_speech": "adjective",
     "pinyin": "nán",
@@ -116076,16 +114500,6 @@
     "pinyin": "diāosùjiā",
     "translation": "sculptor"
   },
-  "雖然": {
-    "part_of_speech": "conjunction",
-    "pinyin": "suīrán",
-    "translation": "although"
-  },
-  "難以": {
-    "part_of_speech": "adverb",
-    "pinyin": "nányǐ",
-    "translation": "hard to, difficult to"
-  },
   "雨": {
     "part_of_speech": "noun",
     "pinyin": "yǔ",
@@ -116351,11 +114765,6 @@
     "pinyin": "léiyǔ",
     "translation": "thunderstorm"
   },
-  "電影": {
-    "part_of_speech": "noun",
-    "pinyin": "diànyǐng",
-    "translation": "movie, film"
-  },
   "雾": {
     "part_of_speech": "noun",
     "pinyin": "wù",
@@ -116470,11 +114879,6 @@
     "pinyin": "shuāngdòng",
     "traditional": "霜凍",
     "translation": "frost, freeze"
-  },
-  "霧": {
-    "part_of_speech": "noun",
-    "pinyin": "wù",
-    "translation": "fog, mist"
   },
   "露": {
     "part_of_speech": "verb",
@@ -116902,11 +115306,6 @@
     "traditional": "面對面",
     "translation": "face-to-face"
   },
-  "面對": {
-    "part_of_speech": "verb",
-    "pinyin": "miànduì",
-    "translation": "to face; confront"
-  },
   "面料": {
     "part_of_speech": "noun",
     "pinyin": "miànliào",
@@ -117234,36 +115633,6 @@
     "pinyin": "yùnlǜ",
     "traditional": "韻律",
     "translation": "rhythm; meter"
-  },
-  "項": {
-    "part_of_speech": "noun",
-    "pinyin": "xiàng",
-    "translation": "item; term"
-  },
-  "項目": {
-    "part_of_speech": "noun",
-    "pinyin": "xiàngmù",
-    "translation": "project; item"
-  },
-  "順利": {
-    "part_of_speech": "adjective",
-    "pinyin": "shùnlì",
-    "translation": "smooth; successful"
-  },
-  "願望": {
-    "part_of_speech": "noun",
-    "pinyin": "yuànwàng",
-    "translation": "wish; desire"
-  },
-  "顯": {
-    "part_of_speech": "adjective",
-    "pinyin": "xiǎn",
-    "translation": "obvious; to show"
-  },
-  "顯著": {
-    "part_of_speech": "adjective",
-    "pinyin": "xiǎnzhù",
-    "translation": "notable; significant"
   },
   "页": {
     "part_of_speech": "measure word",
@@ -118130,16 +116499,6 @@
     "traditional": "顫抖",
     "translation": "tremble, shiver"
   },
-  "風險": {
-    "part_of_speech": "noun",
-    "pinyin": "fēngxiǎn",
-    "translation": "risk"
-  },
-  "颳": {
-    "part_of_speech": "verb",
-    "pinyin": "guā",
-    "translation": "to blow (wind)"
-  },
   "风": {
     "part_of_speech": "noun",
     "pinyin": "fēng",
@@ -118704,11 +117063,6 @@
     "pinyin": "shípǔ",
     "traditional": "食譜",
     "translation": "recipe; cookbook"
-  },
-  "養傢": {
-    "part_of_speech": "verb",
-    "pinyin": "yǎngjiā",
-    "translation": "to support a family"
   },
   "餐": {
     "part_of_speech": "noun",
@@ -119710,11 +118064,6 @@
     "pinyin": "gǔgé",
     "translation": "skeleton"
   },
-  "體力": {
-    "part_of_speech": "noun",
-    "pinyin": "tǐlì",
-    "translation": "physical strength"
-  },
   "高": {
     "part_of_speech": "adjective",
     "pinyin": "gāo",
@@ -119801,11 +118150,6 @@
     "pinyin": "gāoyuánfǎnyìng",
     "traditional": "高原反應",
     "translation": "altitude sickness"
-  },
-  "高壓": {
-    "part_of_speech": "noun",
-    "pinyin": "gāoyā",
-    "translation": "high pressure"
   },
   "高处": {
     "part_of_speech": "noun",
@@ -120504,11 +118848,6 @@
     "traditional": "麥子",
     "translation": "wheat"
   },
-  "麵臨": {
-    "part_of_speech": "verb",
-    "pinyin": "miànlín",
-    "translation": "to face, to confront"
-  },
   "麻": {
     "part_of_speech": "noun",
     "pinyin": "má",
@@ -120793,11 +119132,6 @@
     "pinyin": "gǔqǐ",
     "translation": "to bulge; to pluck up (courage)"
   },
-  "鼕天": {
-    "part_of_speech": "noun",
-    "pinyin": "dōngtiān",
-    "translation": "winter"
-  },
   "鼠": {
     "part_of_speech": "noun",
     "pinyin": "shǔ",
@@ -120858,16 +119192,6 @@
     "pinyin": "qíqí",
     "traditional": "齊齊",
     "translation": "uniformly; all together"
-  },
-  "齣": {
-    "part_of_speech": "verb",
-    "pinyin": "chū",
-    "translation": "to go out, to come out"
-  },
-  "齣去": {
-    "part_of_speech": "verb",
-    "pinyin": "chūqù",
-    "translation": "to go out"
   },
   "齿": {
     "part_of_speech": "noun",
