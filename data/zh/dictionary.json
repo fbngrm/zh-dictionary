@@ -142,7 +142,10 @@
       "一会儿",
       "一次"
     ],
-    "translation": "once; a bit; (used after a verb to indicate a brief action)"
+    "translation": "once; a bit; (used after a verb to indicate a brief action)",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "一下儿": {
     "part_of_speech": "adverb",
@@ -2388,7 +2391,10 @@
     "part_of_speech": "noun",
     "pinyin": "wànwù",
     "traditional": "萬物",
-    "translation": "all things, everything"
+    "translation": "all things, everything",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "万物复苏": {
     "part_of_speech": "verb",
@@ -2719,7 +2725,10 @@
     "part_of_speech": "verb",
     "pinyin": "shàngchuán",
     "traditional": "上傳",
-    "translation": "to upload"
+    "translation": "to upload",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "上前": {
     "part_of_speech": "verb",
@@ -2754,7 +2763,10 @@
     "part_of_speech": "noun",
     "pinyin": "shàngbànchǎng",
     "traditional": "上半場",
-    "translation": "first half (of a game)"
+    "translation": "first half (of a game)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "上半身": {
     "part_of_speech": "noun",
@@ -3224,7 +3236,10 @@
     "part_of_speech": "verb",
     "pinyin": "shàngjìn",
     "traditional": "上進",
-    "translation": "to make progress"
+    "translation": "to make progress",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "上述": {
     "part_of_speech": "adjective",
@@ -3388,13 +3403,19 @@
     "part_of_speech": "noun",
     "pinyin": "xiàbànchǎng",
     "traditional": "下半場",
-    "translation": "second half (of a game)"
+    "translation": "second half (of a game)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "下单": {
     "part_of_speech": "verb",
     "pinyin": "xiàdān",
     "traditional": "下單",
-    "translation": "to place an order"
+    "translation": "to place an order",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "下去": {
     "part_of_speech": "verb",
@@ -3624,7 +3645,10 @@
   "下滑": {
     "part_of_speech": "verb",
     "pinyin": "xiàhuá",
-    "translation": "decline, slide down"
+    "translation": "decline, slide down",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "下潜": {
     "part_of_speech": "verb",
@@ -3672,7 +3696,10 @@
     "part_of_speech": "verb",
     "pinyin": "xiàxiàn",
     "traditional": "下線",
-    "translation": "to go offline"
+    "translation": "to go offline",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "下结论": {
     "part_of_speech": "verb",
@@ -3702,7 +3729,10 @@
   "下行": {
     "part_of_speech": "adjective",
     "pinyin": "xiàxíng",
-    "translation": "downlink, downward"
+    "translation": "downlink, downward",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "下课": {
     "part_of_speech": "verb",
@@ -3912,7 +3942,10 @@
   "不下": {
     "part_of_speech": "verb",
     "pinyin": "bùxià",
-    "translation": "not less than; not go down"
+    "translation": "not less than; not go down",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不下雨": {
     "part_of_speech": "verb",
@@ -3951,7 +3984,10 @@
   "不乏": {
     "part_of_speech": "verb",
     "pinyin": "bùfá",
-    "translation": "not lack, there is no shortage of"
+    "translation": "not lack, there is no shortage of",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不了": {
     "part_of_speech": "verb",
@@ -4218,7 +4254,10 @@
   "不力": {
     "part_of_speech": "adjective",
     "pinyin": "bùlì",
-    "translation": "ineffective, not doing one's best"
+    "translation": "ineffective, not doing one's best",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不加": {
     "part_of_speech": "verb",
@@ -4261,7 +4300,10 @@
   "不及": {
     "part_of_speech": "verb",
     "pinyin": "bùjí",
-    "translation": "not as good as"
+    "translation": "not as good as",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不及格": {
     "part_of_speech": "verb",
@@ -4314,7 +4356,10 @@
   "不可或缺": {
     "part_of_speech": "adjective",
     "pinyin": "bùkěhuòquē",
-    "translation": "indispensable"
+    "translation": "indispensable",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不可抗力": {
     "part_of_speech": "noun",
@@ -4586,7 +4631,10 @@
   "不妙": {
     "part_of_speech": "adjective",
     "pinyin": "bùmiào",
-    "translation": "not good; ominous"
+    "translation": "not good; ominous",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不妥": {
     "part_of_speech": "adjective",
@@ -4791,7 +4839,10 @@
     "part_of_speech": "adjective",
     "pinyin": "bùdàng",
     "traditional": "不當",
-    "translation": "improper; inappropriate"
+    "translation": "improper; inappropriate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "不待": {
     "part_of_speech": "verb",
@@ -4806,7 +4857,10 @@
   "不得": {
     "part_of_speech": "verb",
     "pinyin": "bùdé",
-    "translation": "must not, cannot"
+    "translation": "must not, cannot",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "不得不": {
     "part_of_speech": "adverb",
@@ -5383,7 +5437,10 @@
   "不符": {
     "part_of_speech": "verb",
     "pinyin": "bùfú",
-    "translation": "not in accordance with"
+    "translation": "not in accordance with",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "不算": {
     "part_of_speech": "verb",
@@ -6254,7 +6311,10 @@
   "世人": {
     "part_of_speech": "noun",
     "pinyin": "shìrén",
-    "translation": "people of the world"
+    "translation": "people of the world",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "世代": {
     "part_of_speech": "noun",
@@ -6366,7 +6426,10 @@
     "part_of_speech": "noun",
     "pinyin": "shìjiān",
     "traditional": "世間",
-    "translation": "world; society"
+    "translation": "world; society",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "丘陵": {
     "part_of_speech": "noun",
@@ -6762,7 +6825,10 @@
     "part_of_speech": "noun",
     "pinyin": "liǎngxiàzi",
     "traditional": "兩下子",
-    "translation": "a few tricks; some skill"
+    "translation": "a few tricks; some skill",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "两个": {
     "part_of_speech": "number",
@@ -6950,7 +7016,10 @@
     "part_of_speech": "noun",
     "pinyin": "liǎngjí",
     "traditional": "兩極",
-    "translation": "two poles"
+    "translation": "two poles",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "两栖": {
     "part_of_speech": "adjective",
@@ -7723,7 +7792,10 @@
   "中暑": {
     "part_of_speech": "noun",
     "pinyin": "zhòngshǔ",
-    "translation": "heatstroke; to suffer heatstroke"
+    "translation": "heatstroke; to suffer heatstroke",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "中期": {
     "part_of_speech": "noun",
@@ -8458,7 +8530,10 @@
   "主播": {
     "part_of_speech": "verb",
     "pinyin": "zhǔbō",
-    "translation": "to host a live stream; live streamer"
+    "translation": "to host a live stream; live streamer",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "主权": {
     "part_of_speech": "noun",
@@ -8597,7 +8672,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhǔtíqǔ",
     "traditional": "主題曲",
-    "translation": "theme song"
+    "translation": "theme song",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "主题歌": {
     "part_of_speech": "noun",
@@ -8843,7 +8921,10 @@
     "part_of_speech": "adjective",
     "pinyin": "jiǔyuǎn",
     "traditional": "久遠",
-    "translation": "long, remote, far-reaching"
+    "translation": "long, remote, far-reaching",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "久违": {
     "part_of_speech": "verb",
@@ -9171,7 +9252,10 @@
     "part_of_speech": "noun",
     "pinyin": "wūguī",
     "traditional": "烏龜",
-    "translation": "tortoise"
+    "translation": "tortoise",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "乎": {
     "part_of_speech": "particle",
@@ -9196,7 +9280,10 @@
     "part_of_speech": "verb",
     "pinyin": "lèyú",
     "traditional": "樂於",
-    "translation": "to be happy to, to be willing to"
+    "translation": "to be happy to, to be willing to",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "乐于助人": {
     "part_of_speech": "adjective",
@@ -9925,7 +10012,10 @@
     "part_of_speech": "noun",
     "pinyin": "shūhuà",
     "traditional": "書畫",
-    "translation": "calligraphy and painting"
+    "translation": "calligraphy and painting",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "书稿": {
     "part_of_speech": "noun",
@@ -10346,7 +10436,10 @@
     "part_of_speech": "adverb",
     "pinyin": "zhēngxiāng",
     "traditional": "爭相",
-    "translation": "to vie with each other"
+    "translation": "to vie with each other",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "争端": {
     "part_of_speech": "noun",
@@ -11422,7 +11515,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiāozhī",
     "traditional": "交織",
-    "translation": "to interweave; to intertwine"
+    "translation": "to interweave; to intertwine",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "交给": {
     "part_of_speech": "verb",
@@ -11591,7 +11687,10 @@
     "part_of_speech": "noun",
     "pinyin": "chǎnyèliàn",
     "traditional": "產業鏈",
-    "translation": "industrial chain"
+    "translation": "industrial chain",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "产值": {
     "part_of_speech": "noun",
@@ -11607,7 +11706,10 @@
     "part_of_speech": "verb",
     "pinyin": "chǎnchū",
     "traditional": "產出",
-    "translation": "to produce, to yield"
+    "translation": "to produce, to yield",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "产品": {
     "part_of_speech": "noun",
@@ -11728,7 +11830,10 @@
   "享用": {
     "part_of_speech": "verb",
     "pinyin": "xiǎngyòng",
-    "translation": "enjoy, use"
+    "translation": "enjoy, use",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "京": {
     "part_of_speech": "proper noun",
@@ -12236,7 +12341,10 @@
   "人山人海": {
     "part_of_speech": "adjective",
     "pinyin": "rénshānrénhǎi",
-    "translation": "huge crowds"
+    "translation": "huge crowds",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "人工": {
     "part_of_speech": "adjective",
@@ -12586,7 +12694,10 @@
       "关系"
     ],
     "traditional": "人際",
-    "translation": "interpersonal"
+    "translation": "interpersonal",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "人静": {
     "part_of_speech": "adjective",
@@ -13868,7 +13979,10 @@
   "仰望": {
     "part_of_speech": "verb",
     "pinyin": "yǎngwàng",
-    "translation": "look up at"
+    "translation": "look up at",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "仲裁": {
     "part_of_speech": "verb",
@@ -15734,7 +15848,10 @@
       "沮丧",
       "高昂"
     ],
-    "translation": "low, downcast"
+    "translation": "low, downcast",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "低调": {
     "part_of_speech": "adjective",
@@ -16155,12 +16272,18 @@
     "part_of_speech": "noun",
     "pinyin": "tǐpò",
     "traditional": "體魄",
-    "translation": "physique, body"
+    "translation": "physique, body",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "何": {
     "part_of_speech": "pronoun",
     "pinyin": "hé",
-    "translation": "what, which"
+    "translation": "what, which",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "何况": {
     "part_of_speech": "conjunction",
@@ -16558,7 +16681,10 @@
   "你好": {
     "part_of_speech": "interjection",
     "pinyin": "nǐhǎo",
-    "translation": "hello"
+    "translation": "hello",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "你家": {
     "part_of_speech": "other",
@@ -16604,7 +16730,10 @@
   "佩戴": {
     "part_of_speech": "verb",
     "pinyin": "pèidài",
-    "translation": "to wear (accessories)"
+    "translation": "to wear (accessories)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "佩服": {
     "part_of_speech": "verb",
@@ -16738,7 +16867,10 @@
     "part_of_speech": "noun",
     "pinyin": "shǐguǎn",
     "traditional": "使館",
-    "translation": "embassy"
+    "translation": "embassy",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "侃大山": {
     "part_of_speech": "verb",
@@ -16751,7 +16883,10 @@
   "侄子": {
     "part_of_speech": "noun",
     "pinyin": "zhízi",
-    "translation": "nephew"
+    "translation": "nephew",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "例": {
     "part_of_speech": "noun",
@@ -16850,7 +16985,10 @@
     "part_of_speech": "noun",
     "pinyin": "gōngyìngliàn",
     "traditional": "供應鏈",
-    "translation": "supply chain"
+    "translation": "supply chain",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "供暖": {
     "part_of_speech": "noun",
@@ -18209,7 +18347,10 @@
   "倍增": {
     "part_of_speech": "verb",
     "pinyin": "bèizēng",
-    "translation": "to double"
+    "translation": "to double",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "倒": {
     "part_of_speech": "verb",
@@ -18959,13 +19100,19 @@
     "part_of_speech": "verb",
     "pinyin": "piān'ài",
     "traditional": "偏愛",
-    "translation": "favor; prefer"
+    "translation": "favor; prefer",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "偏离": {
     "part_of_speech": "verb",
     "pinyin": "piānlí",
     "traditional": "偏離",
-    "translation": "to deviate; to diverge"
+    "translation": "to deviate; to diverge",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "偏见": {
     "part_of_speech": "noun",
@@ -19925,7 +20072,10 @@
   "元宵": {
     "part_of_speech": "noun",
     "pinyin": "yuánxiāo",
-    "translation": "sweet dumplings, Yuanxiao"
+    "translation": "sweet dumplings, Yuanxiao",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "元宵节": {
     "part_of_speech": "proper noun",
@@ -20014,7 +20164,10 @@
   "充值": {
     "part_of_speech": "verb",
     "pinyin": "chōngzhí",
-    "translation": "to recharge, to top up"
+    "translation": "to recharge, to top up",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "充分": {
     "part_of_speech": "adjective",
@@ -20581,7 +20734,10 @@
     "part_of_speech": "verb",
     "pinyin": "miǎnshuì",
     "traditional": "免稅",
-    "translation": "tax-free, duty-free"
+    "translation": "tax-free, duty-free",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "免税店": {
     "part_of_speech": "noun",
@@ -20742,7 +20898,10 @@
   "入住": {
     "part_of_speech": "verb",
     "pinyin": "rùzhù",
-    "translation": "to check in, to move in"
+    "translation": "to check in, to move in",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "入侵": {
     "part_of_speech": "verb",
@@ -21192,7 +21351,10 @@
   "全身心": {
     "part_of_speech": "adverb",
     "pinyin": "quánshēnxīn",
-    "translation": "wholeheartedly; with all one's heart"
+    "translation": "wholeheartedly; with all one's heart",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "全部": {
     "part_of_speech": "noun",
@@ -21976,7 +22138,10 @@
     "part_of_speech": "noun",
     "pinyin": "lánhuā",
     "traditional": "蘭花",
-    "translation": "orchid"
+    "translation": "orchid",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "共": {
     "part_of_speech": "adverb",
@@ -22882,7 +23047,10 @@
     "part_of_speech": "verb",
     "pinyin": "yǎngyù",
     "traditional": "養育",
-    "translation": "bring up; nurture"
+    "translation": "bring up; nurture",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "养胃": {
     "part_of_speech": "verb",
@@ -23804,7 +23972,10 @@
     "part_of_speech": "noun",
     "pinyin": "nóngtián",
     "traditional": "農田",
-    "translation": "farmland"
+    "translation": "farmland",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "农耕": {
     "part_of_speech": "noun",
@@ -23941,7 +24112,10 @@
   "冰山一角": {
     "part_of_speech": "noun",
     "pinyin": "bīngshānyījiǎo",
-    "translation": "tip of the iceberg"
+    "translation": "tip of the iceberg",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "冰川": {
     "part_of_speech": "noun",
@@ -23977,7 +24151,10 @@
   "冰激凌": {
     "part_of_speech": "noun",
     "pinyin": "bīngjīlíng",
-    "translation": "ice cream"
+    "translation": "ice cream",
+    "hsk": {
+      "hsk3_2025": 3
+    }
   },
   "冰盖": {
     "part_of_speech": "noun",
@@ -24730,7 +24907,10 @@
     "part_of_speech": "verb",
     "pinyin": "diāoxiè",
     "traditional": "凋謝",
-    "translation": "wither; fade"
+    "translation": "wither; fade",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "凌晨": {
     "part_of_speech": "noun",
@@ -24874,7 +25054,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiǎntuì",
     "traditional": "減退",
-    "translation": "to decrease; to subside"
+    "translation": "to decrease; to subside",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "减速": {
     "part_of_speech": "verb",
@@ -24930,7 +25113,10 @@
     "part_of_speech": "verb",
     "pinyin": "níngjié",
     "traditional": "凝結",
-    "translation": "condense; coagulate"
+    "translation": "condense; coagulate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "凝聚": {
     "part_of_speech": "verb",
@@ -25613,7 +25799,10 @@
   "出力": {
     "part_of_speech": "verb",
     "pinyin": "chūlì",
-    "translation": "to exert effort, to contribute"
+    "translation": "to exert effort, to contribute",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "出动": {
     "part_of_speech": "verb",
@@ -26235,12 +26424,18 @@
     "part_of_speech": "verb",
     "pinyin": "jībài",
     "traditional": "擊敗",
-    "translation": "to defeat"
+    "translation": "to defeat",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "函": {
     "part_of_speech": "noun",
     "pinyin": "hán",
-    "translation": "letter; correspondence"
+    "translation": "letter; correspondence",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "函授": {
     "part_of_speech": "verb",
@@ -26418,7 +26613,10 @@
     "part_of_speech": "verb",
     "pinyin": "fēnfā",
     "traditional": "分發",
-    "translation": "distribute; hand out"
+    "translation": "distribute; hand out",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "分外": {
     "part_of_speech": "adverb",
@@ -26581,7 +26779,10 @@
   "分期": {
     "part_of_speech": "verb",
     "pinyin": "fēnqī",
-    "translation": "to pay in installments"
+    "translation": "to pay in installments",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "分析": {
     "part_of_speech": "verb",
@@ -26674,7 +26875,10 @@
     "part_of_speech": "verb",
     "pinyin": "fēnjí",
     "traditional": "分級",
-    "translation": "to classify, to grade"
+    "translation": "to classify, to grade",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "分组": {
     "part_of_speech": "verb",
@@ -26830,7 +27034,10 @@
   "切忌": {
     "part_of_speech": "verb",
     "pinyin": "qièjì",
-    "translation": "must avoid, be sure not to"
+    "translation": "must avoid, be sure not to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "切成": {
     "part_of_speech": "verb",
@@ -26846,7 +27053,10 @@
     "part_of_speech": "verb",
     "pinyin": "qiēhuàn",
     "traditional": "切換",
-    "translation": "to switch; to change over"
+    "translation": "to switch; to change over",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "切掉": {
     "part_of_speech": "verb",
@@ -27613,7 +27823,10 @@
   "利弊": {
     "part_of_speech": "noun",
     "pinyin": "lìbì",
-    "translation": "advantages and disadvantages"
+    "translation": "advantages and disadvantages",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "利息": {
     "part_of_speech": "noun",
@@ -27905,7 +28118,10 @@
   "刮目相看": {
     "part_of_speech": "verb",
     "pinyin": "guāmùxiāngkàn",
-    "translation": "to regard with new eyes"
+    "translation": "to regard with new eyes",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "刮风": {
     "part_of_speech": "verb",
@@ -28356,7 +28572,10 @@
   "刺眼": {
     "part_of_speech": "adjective",
     "pinyin": "cìyǎn",
-    "translation": "dazzling; glaring"
+    "translation": "dazzling; glaring",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "刺绣": {
     "part_of_speech": "noun",
@@ -28424,7 +28643,10 @@
     "part_of_speech": "verb",
     "pinyin": "kèhuà",
     "traditional": "刻畫",
-    "translation": "to portray; depict"
+    "translation": "to portray; depict",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "刻着": {
     "part_of_speech": "verb",
@@ -28466,7 +28688,10 @@
     "part_of_speech": "noun",
     "pinyin": "jìliàng",
     "traditional": "劑量",
-    "translation": "dosage"
+    "translation": "dosage",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "剃": {
     "part_of_speech": "verb",
@@ -28490,7 +28715,10 @@
     "part_of_speech": "verb",
     "pinyin": "xuējiǎn",
     "traditional": "削減",
-    "translation": "to cut down; reduce"
+    "translation": "to cut down; reduce",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "削弱": {
     "part_of_speech": "verb",
@@ -28899,7 +29127,10 @@
     "part_of_speech": "noun",
     "pinyin": "jùbiàn",
     "traditional": "劇變",
-    "translation": "drastic change; upheaval"
+    "translation": "drastic change; upheaval",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "剧团": {
     "part_of_speech": "noun",
@@ -29084,7 +29315,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiǎnjí",
     "traditional": "剪輯",
-    "translation": "to edit (film, video)"
+    "translation": "to edit (film, video)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "副": {
     "part_of_speech": "adjective",
@@ -29567,7 +29801,10 @@
   "加倍": {
     "part_of_speech": "verb",
     "pinyin": "jiābèi",
-    "translation": "to double; double"
+    "translation": "to double; double",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "加入": {
     "part_of_speech": "verb",
@@ -29842,7 +30079,10 @@
     "part_of_speech": "verb",
     "pinyin": "wùgōng",
     "traditional": "務工",
-    "translation": "work (as a laborer)"
+    "translation": "work (as a laborer)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "务必": {
     "part_of_speech": "adverb",
@@ -30084,7 +30324,10 @@
     "part_of_speech": "noun",
     "pinyin": "dòngmàn",
     "traditional": "動漫",
-    "translation": "animation, anime"
+    "translation": "animation, anime",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "动物": {
     "part_of_speech": "noun",
@@ -30179,7 +30422,10 @@
     "part_of_speech": "noun",
     "pinyin": "dòngchē",
     "traditional": "動車",
-    "translation": "high-speed train (D-series)"
+    "translation": "high-speed train (D-series)",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "动静": {
     "part_of_speech": "noun",
@@ -30294,7 +30540,10 @@
     "part_of_speech": "noun",
     "pinyin": "jìn",
     "traditional": "勁",
-    "translation": "strength; energy"
+    "translation": "strength; energy",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "劲头": {
     "part_of_speech": "noun",
@@ -30778,7 +31027,10 @@
     "part_of_speech": "adjective",
     "pinyin": "bāoluówànxiàng",
     "traditional": "包羅萬象",
-    "translation": "all-encompassing; comprehensive"
+    "translation": "all-encompassing; comprehensive",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "包袱": {
     "part_of_speech": "noun",
@@ -31071,7 +31323,10 @@
   "北美洲": {
     "part_of_speech": "noun",
     "pinyin": "Běiměizhōu",
-    "translation": "North America"
+    "translation": "North America",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "北边": {
     "part_of_speech": "noun",
@@ -31662,7 +31917,10 @@
     "part_of_speech": "verb",
     "pinyin": "shēnghuá",
     "traditional": "昇華",
-    "translation": "sublimate, elevate"
+    "translation": "sublimate, elevate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "升学": {
     "part_of_speech": "verb",
@@ -32425,7 +32683,10 @@
     "part_of_speech": "noun",
     "pinyin": "Nánjízhōu",
     "traditional": "南極洲",
-    "translation": "Antarctica"
+    "translation": "Antarctica",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "南瓜": {
     "part_of_speech": "noun",
@@ -32439,7 +32700,10 @@
   "南美洲": {
     "part_of_speech": "noun",
     "pinyin": "Nánměizhōu",
-    "translation": "South America"
+    "translation": "South America",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "南边": {
     "part_of_speech": "noun",
@@ -32574,7 +32838,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhànbǐ",
     "traditional": "佔比",
-    "translation": "proportion, percentage"
+    "translation": "proportion, percentage",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "占用": {
     "part_of_speech": "verb",
@@ -33084,7 +33351,10 @@
     "part_of_speech": "verb",
     "pinyin": "xièzài",
     "traditional": "卸載",
-    "translation": "uninstall"
+    "translation": "uninstall",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "厂": {
     "part_of_speech": "noun",
@@ -33216,7 +33486,10 @@
     "part_of_speech": "noun",
     "pinyin": "lìnián",
     "traditional": "歷年",
-    "translation": "over the years"
+    "translation": "over the years",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "历时": {
     "part_of_speech": "verb",
@@ -33375,7 +33648,10 @@
     "part_of_speech": "noun",
     "pinyin": "yāzhòu",
     "traditional": "壓軸",
-    "translation": "finale; climactic last item"
+    "translation": "finale; climactic last item",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "压迫": {
     "part_of_speech": "verb",
@@ -35310,7 +35586,10 @@
     "part_of_speech": "verb",
     "pinyin": "fāyá",
     "traditional": "發芽",
-    "translation": "sprout, germinate"
+    "translation": "sprout, germinate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "发行": {
     "part_of_speech": "verb",
@@ -35487,7 +35766,10 @@
       "声调"
     ],
     "traditional": "發音",
-    "translation": "pronunciation; to pronounce"
+    "translation": "pronunciation; to pronounce",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "发高": {
     "part_of_speech": "verb",
@@ -35826,7 +36108,10 @@
     "part_of_speech": "verb",
     "pinyin": "shòuyìfěiqiǎn",
     "traditional": "受益匪淺",
-    "translation": "to benefit greatly"
+    "translation": "to benefit greatly",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "受罚": {
     "part_of_speech": "verb",
@@ -36609,7 +36894,10 @@
   "古籍": {
     "part_of_speech": "noun",
     "pinyin": "gǔjí",
-    "translation": "ancient books"
+    "translation": "ancient books",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "古老": {
     "part_of_speech": "adjective",
@@ -38085,7 +38373,10 @@
     "part_of_speech": "noun",
     "pinyin": "gèhánggèyè",
     "traditional": "各行各業",
-    "translation": "all walks of life; various trades"
+    "translation": "all walks of life; various trades",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "各部门": {
     "part_of_speech": "noun",
@@ -38948,7 +39239,10 @@
     "part_of_speech": "noun",
     "pinyin": "hòushì",
     "traditional": "後世",
-    "translation": "later generations"
+    "translation": "later generations",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "后人": {
     "part_of_speech": "noun",
@@ -39765,7 +40059,10 @@
     "part_of_speech": "noun",
     "pinyin": "tīngjué",
     "traditional": "聽覺",
-    "translation": "sense of hearing"
+    "translation": "sense of hearing",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "听讲": {
     "part_of_speech": "verb",
@@ -40221,7 +40518,10 @@
   "呈": {
     "part_of_speech": "verb",
     "pinyin": "chéng",
-    "translation": "present; assume (a form)"
+    "translation": "present; assume (a form)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "呈现": {
     "part_of_speech": "verb",
@@ -40567,7 +40867,10 @@
   "味": {
     "part_of_speech": "noun",
     "pinyin": "wèi",
-    "translation": "taste, flavor"
+    "translation": "taste, flavor",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "味儿": {
     "part_of_speech": "noun",
@@ -40596,7 +40899,10 @@
       "味蕾"
     ],
     "traditional": "味覺",
-    "translation": "sense of taste"
+    "translation": "sense of taste",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "味道": {
     "part_of_speech": "noun",
@@ -40636,7 +40942,10 @@
   "呼": {
     "part_of_speech": "verb",
     "pinyin": "hū",
-    "translation": "to exhale, call"
+    "translation": "to exhale, call",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "呼吁": {
     "part_of_speech": "verb",
@@ -40804,7 +41113,10 @@
   "和好": {
     "part_of_speech": "verb",
     "pinyin": "héhǎo",
-    "translation": "to reconcile, make up"
+    "translation": "to reconcile, make up",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "和尚": {
     "part_of_speech": "noun",
@@ -41130,7 +41442,10 @@
   "品味": {
     "part_of_speech": "verb",
     "pinyin": "pǐnwèi",
-    "translation": "to savor, appreciate; taste"
+    "translation": "to savor, appreciate; taste",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "品尝": {
     "part_of_speech": "verb",
@@ -41507,7 +41822,10 @@
       "谁"
     ],
     "traditional": "哪個",
-    "translation": "which one"
+    "translation": "which one",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "哪些": {
     "part_of_speech": "pronoun",
@@ -41674,7 +41992,10 @@
   "哲理": {
     "part_of_speech": "noun",
     "pinyin": "zhélǐ",
-    "translation": "philosophical principle"
+    "translation": "philosophical principle",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "哺乳": {
     "part_of_speech": "verb",
@@ -41807,7 +42128,10 @@
     "part_of_speech": "noun",
     "pinyin": "shòupiàoyuán",
     "traditional": "售票員",
-    "translation": "ticket seller, conductor"
+    "translation": "ticket seller, conductor",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "售罄": {
     "part_of_speech": "verb",
@@ -41851,7 +42175,10 @@
   "唯有": {
     "part_of_speech": "adverb",
     "pinyin": "wéiyǒu",
-    "translation": "only; alone"
+    "translation": "only; alone",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "唯独": {
     "part_of_speech": "adverb",
@@ -42014,7 +42341,10 @@
   "商家": {
     "part_of_speech": "noun",
     "pinyin": "shāngjiā",
-    "translation": "business, merchant"
+    "translation": "business, merchant",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "商店": {
     "part_of_speech": "noun",
@@ -42035,7 +42365,10 @@
     "part_of_speech": "noun",
     "pinyin": "shāngjī",
     "traditional": "商機",
-    "translation": "business opportunity"
+    "translation": "business opportunity",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "商标": {
     "part_of_speech": "noun",
@@ -42610,7 +42943,10 @@
   "嗓音": {
     "part_of_speech": "noun",
     "pinyin": "sǎngyīn",
-    "translation": "voice; vocal sound"
+    "translation": "voice; vocal sound",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "嗜好": {
     "part_of_speech": "noun",
@@ -43590,7 +43926,10 @@
     "part_of_speech": "noun",
     "pinyin": "yuánqū",
     "traditional": "園區",
-    "translation": "park; industrial zone"
+    "translation": "park; industrial zone",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "园地": {
     "part_of_speech": "noun",
@@ -43735,7 +44074,10 @@
     "part_of_speech": "noun",
     "pinyin": "wéiqí",
     "traditional": "圍棋",
-    "translation": "Go"
+    "translation": "Go",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "围绕": {
     "part_of_speech": "verb",
@@ -43752,7 +44094,10 @@
     "part_of_speech": "verb",
     "pinyin": "wéiguān",
     "traditional": "圍觀",
-    "translation": "to watch (as bystanders)"
+    "translation": "to watch (as bystanders)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "固": {
     "part_of_speech": "adjective",
@@ -44529,7 +44874,10 @@
     "part_of_speech": "adjective",
     "pinyin": "zàisuǒnánmiǎn",
     "traditional": "在所難免",
-    "translation": "unavoidable; hard to avoid"
+    "translation": "unavoidable; hard to avoid",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "在手": {
     "part_of_speech": "verb",
@@ -45023,7 +45371,10 @@
     "part_of_speech": "noun",
     "pinyin": "chǎngcì",
     "traditional": "場次",
-    "translation": "number of performances, sessions"
+    "translation": "number of performances, sessions",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "场边": {
     "part_of_speech": "noun",
@@ -45060,7 +45411,10 @@
   "均": {
     "part_of_speech": "adjective",
     "pinyin": "jūn",
-    "translation": "equal, all, average"
+    "translation": "equal, all, average",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "均匀": {
     "part_of_speech": "adjective",
@@ -45090,7 +45444,10 @@
   "坎坷": {
     "part_of_speech": "adjective",
     "pinyin": "kǎnkě",
-    "translation": "bumpy, rough, full of frustrations"
+    "translation": "bumpy, rough, full of frustrations",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "坏": {
     "part_of_speech": "adjective",
@@ -45477,7 +45834,10 @@
     "part_of_speech": "noun",
     "pinyin": "jiānguǒ",
     "traditional": "堅果",
-    "translation": "nut"
+    "translation": "nut",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "坚毅": {
     "part_of_speech": "adjective",
@@ -46153,7 +46513,10 @@
     "part_of_speech": "noun",
     "pinyin": "jījīnhuì",
     "traditional": "基金會",
-    "translation": "foundation (organization)"
+    "translation": "foundation (organization)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "堂": {
     "part_of_speech": "noun",
@@ -47151,7 +47514,10 @@
     "part_of_speech": "verb",
     "pinyin": "bèi",
     "traditional": "備",
-    "translation": "prepare, provide"
+    "translation": "prepare, provide",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "备份": {
     "part_of_speech": "noun",
@@ -47707,7 +48073,10 @@
   "外甥": {
     "part_of_speech": "noun",
     "pinyin": "wàisheng",
-    "translation": "nephew"
+    "translation": "nephew",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "外界": {
     "part_of_speech": "noun",
@@ -48114,7 +48483,10 @@
     "part_of_speech": "adjective",
     "pinyin": "duōcáiduōyì",
     "traditional": "多才多藝",
-    "translation": "versatile"
+    "translation": "versatile",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "多数": {
     "part_of_speech": "noun",
@@ -49069,7 +49441,10 @@
       "显著",
       "小幅"
     ],
-    "translation": "substantially; by a large margin"
+    "translation": "substantially; by a large margin",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "大幅度": {
     "part_of_speech": "adverb",
@@ -49283,7 +49658,10 @@
   "大洋洲": {
     "part_of_speech": "noun",
     "pinyin": "Dàyángzhōu",
-    "translation": "Oceania"
+    "translation": "Oceania",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "大浪": {
     "part_of_speech": "noun",
@@ -50045,7 +50423,10 @@
   "天花板": {
     "part_of_speech": "noun",
     "pinyin": "tiānhuābǎn",
-    "translation": "ceiling"
+    "translation": "ceiling",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "天衣无缝": {
     "part_of_speech": "adjective",
@@ -50438,7 +50819,10 @@
   "失事": {
     "part_of_speech": "verb",
     "pinyin": "shīshì",
-    "translation": "to have an accident; crash"
+    "translation": "to have an accident; crash",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "失传": {
     "part_of_speech": "verb",
@@ -50716,7 +51100,10 @@
     "part_of_speech": "adjective",
     "pinyin": "tóutòng",
     "traditional": "頭痛",
-    "translation": "headache"
+    "translation": "headache",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "头目": {
     "part_of_speech": "noun",
@@ -51546,7 +51933,10 @@
   "奶酪": {
     "part_of_speech": "noun",
     "pinyin": "nǎilào",
-    "translation": "cheese"
+    "translation": "cheese",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "奸诈": {
     "part_of_speech": "adjective",
@@ -51617,7 +52007,10 @@
   "好不": {
     "part_of_speech": "adverb",
     "pinyin": "hǎobù",
-    "translation": "very, really"
+    "translation": "very, really",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "好不好": {
     "part_of_speech": "other",
@@ -51744,7 +52137,10 @@
   "好受": {
     "part_of_speech": "adjective",
     "pinyin": "hǎoshòu",
-    "translation": "feel comfortable"
+    "translation": "feel comfortable",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "好吃": {
     "part_of_speech": "adjective",
@@ -52315,7 +52711,10 @@
   "如期": {
     "part_of_speech": "adverb",
     "pinyin": "rúqī",
-    "translation": "on time; as scheduled"
+    "translation": "on time; as scheduled",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "如果": {
     "part_of_speech": "conjunction",
@@ -53428,7 +53827,10 @@
     "part_of_speech": "verb",
     "pinyin": "cúnchǔ",
     "traditional": "存儲",
-    "translation": "to store"
+    "translation": "to store",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "存在": {
     "part_of_speech": "verb",
@@ -53497,7 +53899,10 @@
   "存活": {
     "part_of_speech": "verb",
     "pinyin": "cúnhuó",
-    "translation": "to survive; to live"
+    "translation": "to survive; to live",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "存续": {
     "part_of_speech": "verb",
@@ -54266,7 +54671,10 @@
   "守信": {
     "part_of_speech": "verb",
     "pinyin": "shǒuxìn",
-    "translation": "keep promises"
+    "translation": "keep promises",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "守候": {
     "part_of_speech": "verb",
@@ -54390,7 +54798,10 @@
     "part_of_speech": "noun",
     "pinyin": "ānquándài",
     "traditional": "安全帶",
-    "translation": "seatbelt"
+    "translation": "seatbelt",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "安全性": {
     "part_of_speech": "noun",
@@ -54972,7 +55383,10 @@
     "part_of_speech": "verb",
     "pinyin": "dìngzhì",
     "traditional": "定製",
-    "translation": "to customize"
+    "translation": "to customize",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "定向": {
     "part_of_speech": "adverb",
@@ -55058,12 +55472,18 @@
   "宜人": {
     "part_of_speech": "adjective",
     "pinyin": "yírén",
-    "translation": "pleasant, agreeable"
+    "translation": "pleasant, agreeable",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "宜居": {
     "part_of_speech": "adjective",
     "pinyin": "yíjū",
-    "translation": "livable, suitable for living"
+    "translation": "livable, suitable for living",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "宝": {
     "part_of_speech": "noun",
@@ -55298,7 +55718,10 @@
     "part_of_speech": "adverb",
     "pinyin": "shíshí",
     "traditional": "實時",
-    "translation": "real-time, in real time"
+    "translation": "real-time, in real time",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "实权": {
     "part_of_speech": "noun",
@@ -55611,7 +56034,10 @@
     "part_of_speech": "verb",
     "pinyin": "shěnjì",
     "traditional": "審計",
-    "translation": "to audit"
+    "translation": "to audit",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "审议": {
     "part_of_speech": "verb",
@@ -55684,7 +56110,10 @@
   "客服": {
     "part_of_speech": "adjective",
     "pinyin": "kèfú",
-    "translation": "customer service"
+    "translation": "customer service",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "客机": {
     "part_of_speech": "noun",
@@ -56184,7 +56613,10 @@
   "家居": {
     "part_of_speech": "noun",
     "pinyin": "jiājū",
-    "translation": "household, home"
+    "translation": "household, home",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "家居服": {
     "part_of_speech": "noun",
@@ -56710,7 +57142,10 @@
     "part_of_speech": "verb",
     "pinyin": "mìbù",
     "traditional": "密佈",
-    "translation": "densely covered"
+    "translation": "densely covered",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "密度": {
     "part_of_speech": "noun",
@@ -56853,7 +57288,10 @@
   "寒冬": {
     "part_of_speech": "noun",
     "pinyin": "hándōng",
-    "translation": "cold winter"
+    "translation": "cold winter",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "寒冷": {
     "part_of_speech": "adjective",
@@ -57052,7 +57490,10 @@
     "part_of_speech": "noun",
     "pinyin": "duì'àn",
     "traditional": "對岸",
-    "translation": "opposite bank"
+    "translation": "opposite bank",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "对峙": {
     "part_of_speech": "verb",
@@ -57148,7 +57589,10 @@
     "part_of_speech": "verb",
     "pinyin": "duìjiē",
     "traditional": "對接",
-    "translation": "to dock, to link up"
+    "translation": "to dock, to link up",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "对方": {
     "part_of_speech": "noun",
@@ -57678,7 +58122,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiāngjiu",
     "traditional": "將就",
-    "translation": "make do; tolerate"
+    "translation": "make do; tolerate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "将来": {
     "part_of_speech": "noun",
@@ -58955,7 +59402,10 @@
     "part_of_speech": "adjective",
     "pinyin": "jiùxù",
     "traditional": "就緒",
-    "translation": "ready"
+    "translation": "ready",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "就职": {
     "part_of_speech": "verb",
@@ -59578,7 +60028,10 @@
     "part_of_speech": "noun",
     "pinyin": "wūyán",
     "traditional": "屋簷",
-    "translation": "eaves"
+    "translation": "eaves",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "屋里": {
     "part_of_speech": "noun",
@@ -59793,7 +60246,10 @@
     "part_of_speech": "adverb",
     "pinyin": "lǚlǚ",
     "traditional": "屢屢",
-    "translation": "repeatedly"
+    "translation": "repeatedly",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "屡次": {
     "part_of_speech": "adverb",
@@ -60276,7 +60732,10 @@
     "part_of_speech": "adjective",
     "pinyin": "qíqū",
     "traditional": "崎嶇",
-    "translation": "rugged"
+    "translation": "rugged",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "崛起": {
     "part_of_speech": "verb",
@@ -60353,7 +60812,10 @@
     "part_of_speech": "verb",
     "pinyin": "xúnshì",
     "traditional": "巡視",
-    "translation": "inspect, patrol"
+    "translation": "inspect, patrol",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "巡逻": {
     "part_of_speech": "verb",
@@ -60511,7 +60973,10 @@
   "工匠": {
     "part_of_speech": "noun",
     "pinyin": "gōngjiàng",
-    "translation": "craftsman"
+    "translation": "craftsman",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "工厂": {
     "part_of_speech": "noun",
@@ -62189,7 +62654,10 @@
     "part_of_speech": "adjective",
     "pinyin": "gānkū",
     "traditional": "乾枯",
-    "translation": "dried up"
+    "translation": "dried up",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "干活": {
     "part_of_speech": "verb",
@@ -62894,7 +63362,10 @@
     "part_of_speech": "adverb",
     "pinyin": "bìngjiān",
     "traditional": "並肩",
-    "translation": "side by side, shoulder to shoulder"
+    "translation": "side by side, shoulder to shoulder",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "并行": {
     "part_of_speech": "verb",
@@ -63395,7 +63866,10 @@
   "序列": {
     "part_of_speech": "noun",
     "pinyin": "xùliè",
-    "translation": "sequence"
+    "translation": "sequence",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "序幕": {
     "part_of_speech": "noun",
@@ -63420,7 +63894,10 @@
     "part_of_speech": "noun",
     "pinyin": "kùcún",
     "traditional": "庫存",
-    "translation": "inventory, stock"
+    "translation": "inventory, stock",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "应": {
     "part_of_speech": "verb",
@@ -63699,7 +64176,10 @@
     "part_of_speech": "noun",
     "pinyin": "diànpù",
     "traditional": "店鋪",
-    "translation": "shop; store"
+    "translation": "shop; store",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "庙": {
     "part_of_speech": "noun",
@@ -63782,7 +64262,10 @@
     "part_of_speech": "verb",
     "pinyin": "fèiqì",
     "traditional": "廢棄",
-    "translation": "abandon, discard"
+    "translation": "abandon, discard",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "废料": {
     "part_of_speech": "noun",
@@ -64530,7 +65013,10 @@
     "part_of_speech": "verb",
     "pinyin": "kāitíng",
     "traditional": "開庭",
-    "translation": "hold a court session"
+    "translation": "hold a court session",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "开张": {
     "part_of_speech": "verb",
@@ -65487,7 +65973,10 @@
     "part_of_speech": "noun",
     "pinyin": "ruòxiàng",
     "traditional": "弱項",
-    "translation": "weak point; weakness"
+    "translation": "weak point; weakness",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "弹": {
     "part_of_speech": "verb",
@@ -65789,7 +66278,10 @@
     "part_of_speech": "verb",
     "pinyin": "guīyú",
     "traditional": "歸於",
-    "translation": "belong to; be attributed to"
+    "translation": "belong to; be attributed to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "归功": {
     "part_of_speech": "verb",
@@ -66313,7 +66805,10 @@
     "part_of_speech": "verb",
     "pinyin": "lùyòng",
     "traditional": "錄用",
-    "translation": "to hire, to recruit"
+    "translation": "to hire, to recruit",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "录音": {
     "part_of_speech": "verb",
@@ -67508,7 +68003,10 @@
   "得益": {
     "part_of_speech": "verb",
     "pinyin": "déyì",
-    "translation": "to benefit; to profit"
+    "translation": "to benefit; to profit",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "得益于": {
     "part_of_speech": "verb",
@@ -67600,7 +68098,10 @@
   "微": {
     "part_of_speech": "adjective",
     "pinyin": "wēi",
-    "translation": "tiny"
+    "translation": "tiny",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "微不足道": {
     "part_of_speech": "adjective",
@@ -67659,7 +68160,10 @@
   "微小": {
     "part_of_speech": "adjective",
     "pinyin": "wēixiǎo",
-    "translation": "tiny; negligible"
+    "translation": "tiny; negligible",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "微尘": {
     "part_of_speech": "noun",
@@ -67679,7 +68183,10 @@
   "微微": {
     "part_of_speech": "adverb",
     "pinyin": "wēiwēi",
-    "translation": "slightly, a little"
+    "translation": "slightly, a little",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "微波炉": {
     "part_of_speech": "noun",
@@ -67828,7 +68335,10 @@
   "心底": {
     "part_of_speech": "noun",
     "pinyin": "xīndǐ",
-    "translation": "bottom of the heart"
+    "translation": "bottom of the heart",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "心得": {
     "part_of_speech": "noun",
@@ -68704,7 +69214,10 @@
   "忠告": {
     "part_of_speech": "noun",
     "pinyin": "zhōnggào",
-    "translation": "advice; counsel"
+    "translation": "advice; counsel",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "忠实": {
     "part_of_speech": "adjective",
@@ -69123,7 +69636,10 @@
       "怀念"
     ],
     "traditional": "懷",
-    "translation": "to cherish; to harbor; bosom"
+    "translation": "to cherish; to harbor; bosom",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "怀孕": {
     "part_of_speech": "verb",
@@ -69228,7 +69744,10 @@
     "part_of_speech": "noun",
     "pinyin": "tàishì",
     "traditional": "態勢",
-    "translation": "situation; trend"
+    "translation": "situation; trend",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "态度": {
     "part_of_speech": "noun",
@@ -69520,7 +70039,10 @@
   "急促": {
     "part_of_speech": "adjective",
     "pinyin": "jícù",
-    "translation": "hurried; rapid"
+    "translation": "hurried; rapid",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "急切": {
     "part_of_speech": "adjective",
@@ -71047,7 +71569,10 @@
     "part_of_speech": "verb",
     "pinyin": "jīngxià",
     "traditional": "驚嚇",
-    "translation": "to frighten; scare"
+    "translation": "to frighten; scare",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "惊呆": {
     "part_of_speech": "verb",
@@ -71284,7 +71809,10 @@
     "part_of_speech": "adjective",
     "pinyin": "qièyì",
     "traditional": "愜意",
-    "translation": "pleasant, comfortable"
+    "translation": "pleasant, comfortable",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "惭": {
     "part_of_speech": "adjective",
@@ -71614,7 +72142,10 @@
   "愈加": {
     "part_of_speech": "adverb",
     "pinyin": "yùjiā",
-    "translation": "even more; increasingly"
+    "translation": "even more; increasingly",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "愈加深厚": {
     "part_of_speech": "adjective",
@@ -71668,7 +72199,10 @@
     "part_of_speech": "adjective",
     "pinyin": "yúyuè",
     "traditional": "愉悅",
-    "translation": "joyful, delighted"
+    "translation": "joyful, delighted",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "意": {
     "part_of_speech": "noun",
@@ -71704,7 +72238,10 @@
   "意味": {
     "part_of_speech": "verb",
     "pinyin": "yìwèi",
-    "translation": "imply, signify"
+    "translation": "imply, signify",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "意味着": {
     "part_of_speech": "verb",
@@ -72042,7 +72579,10 @@
   "感悟": {
     "part_of_speech": "noun",
     "pinyin": "gǎnwù",
-    "translation": "realization, insight"
+    "translation": "realization, insight",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "感情": {
     "part_of_speech": "noun",
@@ -74428,7 +74968,10 @@
     "part_of_speech": "verb",
     "pinyin": "pūmiè",
     "traditional": "撲滅",
-    "translation": "to extinguish"
+    "translation": "to extinguish",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "扑面而来": {
     "part_of_speech": "verb",
@@ -74603,7 +75146,10 @@
   "打卡": {
     "part_of_speech": "verb",
     "pinyin": "dǎkǎ",
-    "translation": "to punch in"
+    "translation": "to punch in",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "打印": {
     "part_of_speech": "verb",
@@ -75381,7 +75927,10 @@
     "part_of_speech": "noun",
     "pinyin": "sàozhou",
     "traditional": "掃帚",
-    "translation": "broom"
+    "translation": "broom",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "扫描": {
     "part_of_speech": "verb",
@@ -75403,7 +75952,10 @@
     "part_of_speech": "verb",
     "pinyin": "sǎomǎ",
     "traditional": "掃碼",
-    "translation": "to scan a code"
+    "translation": "to scan a code",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "扫除": {
     "part_of_speech": "verb",
@@ -75977,7 +76529,10 @@
     "part_of_speech": "noun",
     "pinyin": "juézé",
     "traditional": "抉擇",
-    "translation": "choice; to choose"
+    "translation": "choice; to choose",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "把": {
     "part_of_speech": "measure word",
@@ -76193,7 +76748,10 @@
   "投放": {
     "part_of_speech": "verb",
     "pinyin": "tóufàng",
-    "translation": "to put in; to launch"
+    "translation": "to put in; to launch",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "投机": {
     "part_of_speech": "adjective",
@@ -76883,7 +77441,10 @@
     "part_of_speech": "verb",
     "pinyin": "bào'àn",
     "traditional": "報案",
-    "translation": "to report a case to police"
+    "translation": "to report a case to police",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "报社": {
     "part_of_speech": "noun",
@@ -77119,7 +77680,10 @@
   "抵": {
     "part_of_speech": "verb",
     "pinyin": "dǐ",
-    "translation": "resist"
+    "translation": "resist",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "抵制": {
     "part_of_speech": "verb",
@@ -77491,7 +78055,10 @@
   "拇指": {
     "part_of_speech": "noun",
     "pinyin": "mǔzhǐ",
-    "translation": "thumb"
+    "translation": "thumb",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "拉": {
     "part_of_speech": "verb",
@@ -77574,7 +78141,10 @@
     "part_of_speech": "noun",
     "pinyin": "lāliàn",
     "traditional": "拉鏈",
-    "translation": "zipper"
+    "translation": "zipper",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "拉锁": {
     "part_of_speech": "noun",
@@ -77933,7 +78503,10 @@
   "招商": {
     "part_of_speech": "verb",
     "pinyin": "zhāoshāng",
-    "translation": "to attract investment/business"
+    "translation": "to attract investment/business",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "招待": {
     "part_of_speech": "verb",
@@ -78419,7 +78992,10 @@
       "注音",
       "拼写"
     ],
-    "translation": "pinyin, romanization of Chinese characters"
+    "translation": "pinyin, romanization of Chinese characters",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "拽": {
     "part_of_speech": "verb",
@@ -78587,7 +79163,10 @@
   "持平": {
     "part_of_speech": "verb",
     "pinyin": "chípíng",
-    "translation": "remain level"
+    "translation": "remain level",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "持有": {
     "part_of_speech": "verb",
@@ -78845,7 +79424,10 @@
   "指控": {
     "part_of_speech": "verb",
     "pinyin": "zhǐkòng",
-    "translation": "to accuse; accusation"
+    "translation": "to accuse; accusation",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "指教": {
     "part_of_speech": "verb",
@@ -78930,7 +79512,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhǐwén",
     "traditional": "指紋",
-    "translation": "fingerprint"
+    "translation": "fingerprint",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "指责": {
     "part_of_speech": "verb",
@@ -79054,7 +79639,10 @@
     "part_of_speech": "noun",
     "pinyin": "ànniǔ",
     "traditional": "按鈕",
-    "translation": "button"
+    "translation": "button",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "按键": {
     "part_of_speech": "noun",
@@ -79339,7 +79927,10 @@
     "part_of_speech": "verb",
     "pinyin": "huīwǔ",
     "traditional": "揮舞",
-    "translation": "to wave; to brandish"
+    "translation": "to wave; to brandish",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "挨": {
     "part_of_speech": "verb",
@@ -79874,7 +80465,10 @@
       "换车"
     ],
     "traditional": "換乘",
-    "translation": "transfer (to another vehicle)"
+    "translation": "transfer (to another vehicle)",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "换了": {
     "part_of_speech": "verb",
@@ -80076,7 +80670,10 @@
     "part_of_speech": "noun",
     "pinyin": "jiéjìng",
     "traditional": "捷徑",
-    "translation": "shortcut"
+    "translation": "shortcut",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "捺": {
     "part_of_speech": "verb",
@@ -80303,7 +80900,10 @@
   "排查": {
     "part_of_speech": "verb",
     "pinyin": "páichá",
-    "translation": "investigate, screen"
+    "translation": "investigate, screen",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "排球": {
     "part_of_speech": "noun",
@@ -80890,7 +81490,10 @@
   "推崇": {
     "part_of_speech": "verb",
     "pinyin": "tuīchóng",
-    "translation": "esteem, praise"
+    "translation": "esteem, praise",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "推广": {
     "part_of_speech": "verb",
@@ -81355,12 +81958,18 @@
   "提及": {
     "part_of_speech": "verb",
     "pinyin": "tíjí",
-    "translation": "mention; refer to"
+    "translation": "mention; refer to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "提取": {
     "part_of_speech": "verb",
     "pinyin": "tíqǔ",
-    "translation": "to extract"
+    "translation": "to extract",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "提名": {
     "part_of_speech": "verb",
@@ -81567,7 +82176,10 @@
   "插座": {
     "part_of_speech": "noun",
     "pinyin": "chāzuò",
-    "translation": "socket, outlet"
+    "translation": "socket, outlet",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "插手": {
     "part_of_speech": "verb",
@@ -82130,7 +82742,10 @@
     "part_of_speech": "noun",
     "pinyin": "shèxiàngtóu",
     "traditional": "攝像頭",
-    "translation": "camera"
+    "translation": "camera",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "摄像机": {
     "part_of_speech": "noun",
@@ -82662,7 +83277,10 @@
   "撤回": {
     "part_of_speech": "verb",
     "pinyin": "chèhuí",
-    "translation": "to withdraw, to recall"
+    "translation": "to withdraw, to recall",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "撤换": {
     "part_of_speech": "verb",
@@ -83191,7 +83809,10 @@
   "收割": {
     "part_of_speech": "verb",
     "pinyin": "shōugē",
-    "translation": "harvest"
+    "translation": "harvest",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "收取": {
     "part_of_speech": "verb",
@@ -83561,7 +84182,10 @@
       "下次",
       "将来"
     ],
-    "translation": "another day; some other time"
+    "translation": "another day; some other time",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "改建": {
     "part_of_speech": "verb",
@@ -84052,7 +84676,10 @@
     "part_of_speech": "verb",
     "pinyin": "fàngfēi",
     "traditional": "放飛",
-    "translation": "to fly freely"
+    "translation": "to fly freely",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "政": {
     "part_of_speech": "noun",
@@ -84446,7 +85073,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiùsǐfúshāng",
     "traditional": "救死扶傷",
-    "translation": "to heal the wounded and rescue the dying"
+    "translation": "to heal the wounded and rescue the dying",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "救治": {
     "part_of_speech": "verb",
@@ -84886,7 +85516,10 @@
   "敬畏": {
     "part_of_speech": "verb",
     "pinyin": "jìngwèi",
-    "translation": "to revere, to stand in awe"
+    "translation": "to revere, to stand in awe",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "敬礼": {
     "part_of_speech": "verb",
@@ -84990,7 +85623,10 @@
     "part_of_speech": "verb",
     "pinyin": "shùzìhuà",
     "traditional": "數字化",
-    "translation": "to digitize"
+    "translation": "to digitize",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "数字四": {
     "part_of_speech": "noun",
@@ -85514,7 +86150,10 @@
     "part_of_speech": "noun",
     "pinyin": "wéndàng",
     "traditional": "文檔",
-    "translation": "document"
+    "translation": "document",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "文物": {
     "part_of_speech": "noun",
@@ -85945,7 +86584,10 @@
     "part_of_speech": "noun",
     "pinyin": "xīnméitǐ",
     "traditional": "新媒體",
-    "translation": "new media"
+    "translation": "new media",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "新家": {
     "part_of_speech": "noun",
@@ -86121,7 +86763,10 @@
   "新能源": {
     "part_of_speech": "noun",
     "pinyin": "xīnnéngyuán",
-    "translation": "new energy"
+    "translation": "new energy",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "新菜": {
     "part_of_speech": "noun",
@@ -86298,7 +86943,10 @@
     "part_of_speech": "noun",
     "pinyin": "fāngyuán",
     "traditional": "方圓",
-    "translation": "surrounding area; circumference"
+    "translation": "surrounding area; circumference",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "方式": {
     "part_of_speech": "noun",
@@ -87998,7 +88646,10 @@
   "旬": {
     "part_of_speech": "noun",
     "pinyin": "xún",
-    "translation": "ten-day period"
+    "translation": "ten-day period",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "旭日": {
     "part_of_speech": "noun",
@@ -88691,7 +89342,10 @@
     "part_of_speech": "verb",
     "pinyin": "yìyú",
     "traditional": "易於",
-    "translation": "to be easy to"
+    "translation": "to be easy to",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "易懂": {
     "part_of_speech": "adjective",
@@ -88833,7 +89487,10 @@
   "星球": {
     "part_of_speech": "noun",
     "pinyin": "xīngqiú",
-    "translation": "planet"
+    "translation": "planet",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "星空": {
     "part_of_speech": "noun",
@@ -89097,7 +89754,10 @@
     "part_of_speech": "noun",
     "pinyin": "xiǎnwēijìng",
     "traditional": "顯微鏡",
-    "translation": "microscope"
+    "translation": "microscope",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "显然": {
     "part_of_speech": "adjective",
@@ -89196,7 +89856,10 @@
     "part_of_speech": "verb",
     "pinyin": "xiǎnlù",
     "traditional": "顯露",
-    "translation": "to reveal"
+    "translation": "to reveal",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "晃": {
     "part_of_speech": "verb",
@@ -89455,7 +90118,10 @@
   "晚霞": {
     "part_of_speech": "noun",
     "pinyin": "wǎnxiá",
-    "translation": "sunset glow"
+    "translation": "sunset glow",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "晚餐": {
     "part_of_speech": "noun",
@@ -90671,7 +91337,10 @@
   "月光": {
     "part_of_speech": "noun",
     "pinyin": "yuèguāng",
-    "translation": "moonlight"
+    "translation": "moonlight",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "月初": {
     "part_of_speech": "noun",
@@ -90907,7 +91576,10 @@
     "part_of_speech": "verb",
     "pinyin": "yǒujìn",
     "traditional": "有勁",
-    "translation": "energetic, vigorous; to be strong"
+    "translation": "energetic, vigorous; to be strong",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "有劲儿": {
     "part_of_speech": "adjective",
@@ -92981,7 +93653,10 @@
     "part_of_speech": "noun",
     "pinyin": "cáizhì",
     "traditional": "材質",
-    "translation": "material, texture"
+    "translation": "material, texture",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "村": {
     "part_of_speech": "noun",
@@ -93221,7 +93896,10 @@
     "part_of_speech": "adjective",
     "pinyin": "láizhībúyì",
     "traditional": "來之不易",
-    "translation": "hard-won"
+    "translation": "hard-won",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "来了": {
     "part_of_speech": "verb",
@@ -94060,7 +94738,10 @@
   "枯萎": {
     "part_of_speech": "verb",
     "pinyin": "kūwěi",
-    "translation": "to wither"
+    "translation": "to wither",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "架": {
     "part_of_speech": "noun",
@@ -94864,7 +95545,10 @@
   "核查": {
     "part_of_speech": "verb",
     "pinyin": "héchá",
-    "translation": "to examine; to verify"
+    "translation": "to examine; to verify",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "核桃": {
     "part_of_speech": "noun",
@@ -95535,7 +96219,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiǎnpiào",
     "traditional": "檢票",
-    "translation": "ticket checking"
+    "translation": "ticket checking",
+    "hsk": {
+      "hsk3_2025": 3
+    }
   },
   "检票口": {
     "part_of_speech": "noun",
@@ -95904,7 +96591,10 @@
   "概": {
     "part_of_speech": "adjective",
     "pinyin": "gài",
-    "translation": "general, approximate"
+    "translation": "general, approximate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "概况": {
     "part_of_speech": "noun",
@@ -96180,7 +96870,10 @@
   "橙子": {
     "part_of_speech": "noun",
     "pinyin": "chéngzi",
-    "translation": "orange"
+    "translation": "orange",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "橙汁": {
     "part_of_speech": "noun",
@@ -96225,7 +96918,10 @@
     "part_of_speech": "noun",
     "pinyin": "chúchuāng",
     "traditional": "櫥窗",
-    "translation": "display window; shop window"
+    "translation": "display window; shop window",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "欠": {
     "part_of_speech": "verb",
@@ -96537,7 +97233,10 @@
   "款": {
     "part_of_speech": "noun",
     "pinyin": "kuǎn",
-    "translation": "style; sum of money"
+    "translation": "style; sum of money",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "款式": {
     "part_of_speech": "noun",
@@ -98116,7 +98815,10 @@
     "part_of_speech": "adjective",
     "pinyin": "bìshēng",
     "traditional": "畢生",
-    "translation": "lifelong; all one's life"
+    "translation": "lifelong; all one's life",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "毕竟": {
     "part_of_speech": "adverb",
@@ -98318,7 +99020,10 @@
   "民事": {
     "part_of_speech": "adjective",
     "pinyin": "mínshì",
-    "translation": "civil (law)"
+    "translation": "civil (law)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "民众": {
     "part_of_speech": "noun",
@@ -98357,7 +99062,10 @@
   "民宿": {
     "part_of_speech": "noun",
     "pinyin": "mínsù",
-    "translation": "homestay"
+    "translation": "homestay",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "民工": {
     "part_of_speech": "noun",
@@ -98403,7 +99111,10 @@
   "民生": {
     "part_of_speech": "noun",
     "pinyin": "mínshēng",
-    "translation": "people's livelihood"
+    "translation": "people's livelihood",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "民用": {
     "part_of_speech": "adjective",
@@ -98591,7 +99302,10 @@
     "part_of_speech": "noun",
     "pinyin": "qìliú",
     "traditional": "氣流",
-    "translation": "airflow"
+    "translation": "airflow",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "气温": {
     "part_of_speech": "noun",
@@ -98795,7 +99509,10 @@
     "part_of_speech": "noun",
     "pinyin": "shuǐchǎn",
     "traditional": "水產",
-    "translation": "aquatic products"
+    "translation": "aquatic products",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "水产品": {
     "part_of_speech": "noun",
@@ -98854,7 +99571,10 @@
   "水土": {
     "part_of_speech": "noun",
     "pinyin": "shuǐtǔ",
-    "translation": "water and soil"
+    "translation": "water and soil",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "水坑": {
     "part_of_speech": "noun",
@@ -99001,7 +99721,10 @@
   "水汽": {
     "part_of_speech": "noun",
     "pinyin": "shuǐqì",
-    "translation": "water vapor; moisture"
+    "translation": "water vapor; moisture",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "水泡": {
     "part_of_speech": "noun",
@@ -99021,7 +99744,10 @@
   "水流": {
     "part_of_speech": "noun",
     "pinyin": "shuǐliú",
-    "translation": "flow of water"
+    "translation": "flow of water",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "水涨船高": {
     "part_of_speech": "idiom",
@@ -99342,7 +100068,10 @@
     "part_of_speech": "idiom",
     "pinyin": "qiútóngcúnyì",
     "traditional": "求同存異",
-    "translation": "seek common ground"
+    "translation": "seek common ground",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "求婚": {
     "part_of_speech": "verb",
@@ -99528,7 +100257,10 @@
     "part_of_speech": "noun",
     "pinyin": "hànfú",
     "traditional": "漢服",
-    "translation": "Hanfu"
+    "translation": "Hanfu",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "汉语": {
     "part_of_speech": "noun",
@@ -99603,7 +100335,10 @@
   "池": {
     "part_of_speech": "noun",
     "pinyin": "chí",
-    "translation": "pool, pond"
+    "translation": "pool, pond",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "池塘": {
     "part_of_speech": "noun",
@@ -99744,7 +100479,10 @@
   "汲取": {
     "part_of_speech": "verb",
     "pinyin": "jíqǔ",
-    "translation": "draw, derive"
+    "translation": "draw, derive",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "汹汹": {
     "part_of_speech": "adjective",
@@ -100103,7 +100841,10 @@
       "没问题"
     ],
     "traditional": "沒事",
-    "translation": "it's nothing; no problem; it doesn't matter"
+    "translation": "it's nothing; no problem; it doesn't matter",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "没事儿": {
     "part_of_speech": "verb",
@@ -100510,7 +101251,10 @@
     "part_of_speech": "noun",
     "pinyin": "yóutiáo",
     "traditional": "油條",
-    "translation": "fried dough stick"
+    "translation": "fried dough stick",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "油污": {
     "part_of_speech": "noun",
@@ -100860,7 +101604,10 @@
     "part_of_speech": "noun",
     "pinyin": "fǎzé",
     "traditional": "法則",
-    "translation": "rule; law"
+    "translation": "rule; law",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "法制": {
     "part_of_speech": "noun",
@@ -100895,7 +101642,10 @@
   "法定": {
     "part_of_speech": "adjective",
     "pinyin": "fǎdìng",
-    "translation": "legal, statutory"
+    "translation": "legal, statutory",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "法庭": {
     "part_of_speech": "noun",
@@ -101174,7 +101924,10 @@
     "part_of_speech": "adjective",
     "pinyin": "nínìng",
     "traditional": "泥濘",
-    "translation": "muddy; miry"
+    "translation": "muddy; miry",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "泥潭": {
     "part_of_speech": "noun",
@@ -101419,7 +102172,10 @@
     "part_of_speech": "adjective",
     "pinyin": "jiébái",
     "traditional": "潔白",
-    "translation": "spotlessly white; pure white"
+    "translation": "spotlessly white; pure white",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "洋": {
     "part_of_speech": "noun",
@@ -101541,7 +102297,10 @@
   "洗漱": {
     "part_of_speech": "verb",
     "pinyin": "xǐshù",
-    "translation": "to wash"
+    "translation": "to wash",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "洗澡": {
     "part_of_speech": "verb",
@@ -101889,7 +102648,10 @@
   "派出所": {
     "part_of_speech": "noun",
     "pinyin": "pàichūsuǒ",
-    "translation": "police substation"
+    "translation": "police substation",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "派别": {
     "part_of_speech": "noun",
@@ -102177,7 +102939,10 @@
   "流逝": {
     "part_of_speech": "verb",
     "pinyin": "liúshì",
-    "translation": "pass; elapse"
+    "translation": "pass; elapse",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "流量": {
     "part_of_speech": "noun",
@@ -102536,7 +103301,10 @@
     "part_of_speech": "verb",
     "pinyin": "fúdòng",
     "traditional": "浮動",
-    "translation": "float; fluctuate"
+    "translation": "float; fluctuate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "浮现": {
     "part_of_speech": "verb",
@@ -103797,12 +104565,18 @@
   "深造": {
     "part_of_speech": "verb",
     "pinyin": "shēnzào",
-    "translation": "further study"
+    "translation": "further study",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "深邃": {
     "part_of_speech": "adjective",
     "pinyin": "shēnsuì",
-    "translation": "deep; profound"
+    "translation": "deep; profound",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "混": {
     "part_of_speech": "verb",
@@ -103926,7 +104700,10 @@
     "part_of_speech": "noun",
     "pinyin": "tiānjiājì",
     "traditional": "添加劑",
-    "translation": "additive"
+    "translation": "additive",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "添加物": {
     "part_of_speech": "noun",
@@ -103976,7 +104753,10 @@
     "part_of_speech": "verb",
     "pinyin": "qīngsǎo",
     "traditional": "清掃",
-    "translation": "to sweep"
+    "translation": "to sweep",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "清新": {
     "part_of_speech": "adjective",
@@ -104435,7 +105215,10 @@
       "差别"
     ],
     "traditional": "溫差",
-    "translation": "temperature difference"
+    "translation": "temperature difference",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "温度": {
     "part_of_speech": "noun",
@@ -104990,7 +105773,10 @@
       "深远"
     ],
     "traditional": "源遠流長",
-    "translation": "long-standing and well-established"
+    "translation": "long-standing and well-established",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "溜": {
     "part_of_speech": "verb",
@@ -105097,7 +105883,10 @@
   "滋生": {
     "part_of_speech": "verb",
     "pinyin": "zīshēng",
-    "translation": "to breed; give rise to"
+    "translation": "to breed; give rise to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "滑": {
     "part_of_speech": "adjective",
@@ -105149,7 +105938,10 @@
   "滑行": {
     "part_of_speech": "verb",
     "pinyin": "huáxíng",
-    "translation": "to glide, to slide"
+    "translation": "to glide, to slide",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "滑雪": {
     "part_of_speech": "verb",
@@ -105433,7 +106225,10 @@
   "漂泊": {
     "part_of_speech": "verb",
     "pinyin": "piāobó",
-    "translation": "drift; wander"
+    "translation": "drift; wander",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "漂浮": {
     "part_of_speech": "verb",
@@ -105911,7 +106706,10 @@
   "潮水": {
     "part_of_speech": "noun",
     "pinyin": "cháoshuǐ",
-    "translation": "tidewater; tidal water"
+    "translation": "tidewater; tidal water",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "潮流": {
     "part_of_speech": "noun",
@@ -106108,7 +106906,10 @@
     "part_of_speech": "adjective",
     "pinyin": "bīnwēi",
     "traditional": "瀕危",
-    "translation": "endangered; in peril"
+    "translation": "endangered; in peril",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "瀑布": {
     "part_of_speech": "noun",
@@ -106302,7 +107103,10 @@
   "火爆": {
     "part_of_speech": "adjective",
     "pinyin": "huǒbào",
-    "translation": "flourishing; fiery; popular"
+    "translation": "flourishing; fiery; popular",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "火箭": {
     "part_of_speech": "noun",
@@ -106764,7 +107568,10 @@
     "part_of_speech": "noun",
     "pinyin": "chuīyān",
     "traditional": "炊煙",
-    "translation": "smoke from cooking"
+    "translation": "smoke from cooking",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "炎性": {
     "part_of_speech": "adjective",
@@ -106972,7 +107779,10 @@
     "part_of_speech": "verb",
     "pinyin": "diǎnjī",
     "traditional": "點擊",
-    "translation": "to click"
+    "translation": "to click",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "点击率": {
     "part_of_speech": "noun",
@@ -107104,7 +107914,10 @@
     "part_of_speech": "verb",
     "pinyin": "diǎnzàn",
     "traditional": "點贊",
-    "translation": "to like, to give a thumbs-up"
+    "translation": "to like, to give a thumbs-up",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "点钱": {
     "part_of_speech": "verb",
@@ -107516,7 +108329,10 @@
     "part_of_speech": "noun",
     "pinyin": "rèdù",
     "traditional": "熱度",
-    "translation": "heat"
+    "translation": "heat",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "热心": {
     "part_of_speech": "adjective",
@@ -107716,7 +108532,10 @@
     "part_of_speech": "verb",
     "pinyin": "rèyì",
     "traditional": "熱議",
-    "translation": "heated discussion"
+    "translation": "heated discussion",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "热身": {
     "part_of_speech": "verb",
@@ -107820,7 +108639,10 @@
     "part_of_speech": "adjective",
     "pinyin": "huànrányīxīn",
     "traditional": "煥然一新",
-    "translation": "take on an entirely new look"
+    "translation": "take on an entirely new look",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "焚烧": {
     "part_of_speech": "verb",
@@ -107951,7 +108773,10 @@
   "煎熬": {
     "part_of_speech": "noun",
     "pinyin": "jiān'áo",
-    "translation": "torment; suffering"
+    "translation": "torment; suffering",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "煎蛋": {
     "part_of_speech": "noun",
@@ -108931,7 +109756,10 @@
     "part_of_speech": "noun",
     "pinyin": "bǎnquán",
     "traditional": "版權",
-    "translation": "copyright"
+    "translation": "copyright",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "牌": {
     "part_of_speech": "noun",
@@ -109291,7 +110119,10 @@
     "part_of_speech": "noun",
     "pinyin": "wùzhǒng",
     "traditional": "物種",
-    "translation": "species"
+    "translation": "species",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "物证": {
     "part_of_speech": "noun",
@@ -109899,7 +110730,10 @@
   "狐狸": {
     "part_of_speech": "noun",
     "pinyin": "húli",
-    "translation": "fox"
+    "translation": "fox",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "狗": {
     "part_of_speech": "noun",
@@ -110103,7 +110937,10 @@
     "part_of_speech": "noun",
     "pinyin": "xiáyì",
     "traditional": "狹義",
-    "translation": "narrow sense"
+    "translation": "narrow sense",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "狭小": {
     "part_of_speech": "adjective",
@@ -110573,7 +111410,10 @@
   "王朝": {
     "part_of_speech": "noun",
     "pinyin": "wángcháo",
-    "translation": "dynasty"
+    "translation": "dynasty",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "王牌": {
     "part_of_speech": "noun",
@@ -110896,7 +111736,10 @@
     "part_of_speech": "verb",
     "pinyin": "xiàncún",
     "traditional": "現存",
-    "translation": "existing"
+    "translation": "existing",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "现实": {
     "part_of_speech": "noun",
@@ -110992,7 +111835,10 @@
     "part_of_speech": "noun",
     "pinyin": "xiànhuò",
     "traditional": "現貨",
-    "translation": "spot goods"
+    "translation": "spot goods",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "现金": {
     "part_of_speech": "noun",
@@ -111517,7 +112363,10 @@
     "part_of_speech": "adjective",
     "pinyin": "suǒsuì",
     "traditional": "瑣碎",
-    "translation": "trivial, petty"
+    "translation": "trivial, petty",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "琢磨": {
     "part_of_speech": "verb",
@@ -111795,7 +112644,10 @@
   "甜品": {
     "part_of_speech": "noun",
     "pinyin": "tiánpǐn",
-    "translation": "dessert, sweet snack"
+    "translation": "dessert, sweet snack",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "甜头": {
     "part_of_speech": "noun",
@@ -111927,7 +112779,10 @@
   "生命力": {
     "part_of_speech": "noun",
     "pinyin": "shēngmìnglì",
-    "translation": "vitality"
+    "translation": "vitality",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "生命线": {
     "part_of_speech": "noun",
@@ -112233,7 +113088,10 @@
   "生肖": {
     "part_of_speech": "noun",
     "pinyin": "shēngxiào",
-    "translation": "Chinese zodiac"
+    "translation": "Chinese zodiac",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "生育": {
     "part_of_speech": "verb",
@@ -112607,7 +113465,10 @@
     "part_of_speech": "noun",
     "pinyin": "tiányuán",
     "traditional": "田園",
-    "translation": "countryside; pastoral"
+    "translation": "countryside; pastoral",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "田地": {
     "part_of_speech": "noun",
@@ -112650,7 +113511,10 @@
     "part_of_speech": "noun",
     "pinyin": "tiánjiān",
     "traditional": "田間",
-    "translation": "in the fields"
+    "translation": "in the fields",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "由": {
     "part_of_speech": "preposition",
@@ -112785,7 +113649,10 @@
     "part_of_speech": "verb",
     "pinyin": "shēnsù",
     "traditional": "申訴",
-    "translation": "to appeal; to complain"
+    "translation": "to appeal; to complain",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "申请": {
     "part_of_speech": "verb",
@@ -112900,7 +113767,10 @@
       "电子商务"
     ],
     "traditional": "電商",
-    "translation": "e-commerce; online business"
+    "translation": "e-commerce; online business",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "电器": {
     "part_of_speech": "noun",
@@ -112925,7 +113795,10 @@
     "part_of_speech": "noun",
     "pinyin": "diànzǐshū",
     "traditional": "電子書",
-    "translation": "e-book"
+    "translation": "e-book",
+    "hsk": {
+      "hsk3_2025": 3
+    }
   },
   "电子产品": {
     "part_of_speech": "noun",
@@ -113900,7 +114773,10 @@
     "part_of_speech": "verb",
     "pinyin": "shūyuǎn",
     "traditional": "疏遠",
-    "translation": "to drift apart, become distant"
+    "translation": "to drift apart, become distant",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "疏通": {
     "part_of_speech": "verb",
@@ -114203,7 +115079,10 @@
     "part_of_speech": "noun",
     "pinyin": "bìnglì",
     "traditional": "病歷",
-    "translation": "medical record"
+    "translation": "medical record",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "病原体": {
     "part_of_speech": "noun",
@@ -114600,7 +115479,10 @@
     "part_of_speech": "verb",
     "pinyin": "dēngdǐng",
     "traditional": "登頂",
-    "translation": "to reach the summit"
+    "translation": "to reach the summit",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "白": {
     "part_of_speech": "adjective",
@@ -115501,7 +116383,10 @@
   "盛宴": {
     "part_of_speech": "noun",
     "pinyin": "shèngyàn",
-    "translation": "grand banquet"
+    "translation": "grand banquet",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "盛开": {
     "part_of_speech": "verb",
@@ -116005,7 +116890,10 @@
     "part_of_speech": "noun",
     "pinyin": "xiàngcè",
     "traditional": "相冊",
-    "translation": "photo album"
+    "translation": "photo album",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "相反": {
     "part_of_speech": "adjective",
@@ -116362,7 +117250,10 @@
   "省份": {
     "part_of_speech": "noun",
     "pinyin": "shěngfèn",
-    "translation": "province"
+    "translation": "province",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "省会": {
     "part_of_speech": "noun",
@@ -117033,7 +117924,10 @@
   "真是": {
     "part_of_speech": "adverb",
     "pinyin": "zhēnshì",
-    "translation": "really, indeed"
+    "translation": "really, indeed",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "真是的": {
     "part_of_speech": "interjection",
@@ -117188,7 +118082,10 @@
   "眺望": {
     "part_of_speech": "verb",
     "pinyin": "tiàowàng",
-    "translation": "gaze into the distance"
+    "translation": "gaze into the distance",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "眼": {
     "part_of_speech": "noun",
@@ -118198,7 +119095,10 @@
     "part_of_speech": "noun",
     "pinyin": "kuàngchǎn",
     "traditional": "礦產",
-    "translation": "mineral resources"
+    "translation": "mineral resources",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "矿泉水": {
     "part_of_speech": "noun",
@@ -118302,7 +119202,10 @@
   "砍伐": {
     "part_of_speech": "verb",
     "pinyin": "kǎnfá",
-    "translation": "cut down"
+    "translation": "cut down",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "研": {
     "part_of_speech": "verb",
@@ -118987,7 +119890,10 @@
     "part_of_speech": "noun",
     "pinyin": "cítiě",
     "traditional": "磁鐵",
-    "translation": "magnet"
+    "translation": "magnet",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "磅": {
     "part_of_speech": "measure word",
@@ -119057,7 +119963,10 @@
     "part_of_speech": "verb",
     "pinyin": "móliàn",
     "traditional": "磨鍊",
-    "translation": "to temper; to steel"
+    "translation": "to temper; to steel",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "磨练": {
     "part_of_speech": "verb",
@@ -120088,7 +120997,10 @@
   "秉持": {
     "part_of_speech": "verb",
     "pinyin": "bǐngchí",
-    "translation": "to uphold; adhere to"
+    "translation": "to uphold; adhere to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "秋": {
     "part_of_speech": "noun",
@@ -120157,7 +121069,10 @@
     "part_of_speech": "verb",
     "pinyin": "zhòngdì",
     "traditional": "種地",
-    "translation": "to farm, to cultivate land"
+    "translation": "to farm, to cultivate land",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "种子": {
     "part_of_speech": "noun",
@@ -120780,7 +121695,10 @@
   "稀有": {
     "part_of_speech": "adjective",
     "pinyin": "xīyǒu",
-    "translation": "rare; scarce"
+    "translation": "rare; scarce",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "稀缺": {
     "part_of_speech": "adjective",
@@ -121371,7 +122289,10 @@
     "part_of_speech": "noun",
     "pinyin": "kōngjiānzhàn",
     "traditional": "空間站",
-    "translation": "space station"
+    "translation": "space station",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "空隙": {
     "part_of_speech": "noun",
@@ -121437,7 +122358,10 @@
   "穿梭": {
     "part_of_speech": "verb",
     "pinyin": "chuānsuō",
-    "translation": "shuttle, move back and forth"
+    "translation": "shuttle, move back and forth",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "穿着": {
     "part_of_speech": "noun",
@@ -121637,7 +122561,10 @@
   "窗": {
     "part_of_speech": "noun",
     "pinyin": "chuāng",
-    "translation": "window"
+    "translation": "window",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "窗前": {
     "part_of_speech": "noun",
@@ -124075,7 +125002,10 @@
     "part_of_speech": "adjective",
     "pinyin": "jīngzhǔn",
     "traditional": "精準",
-    "translation": "precise; accurate"
+    "translation": "precise; accurate",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "精力": {
     "part_of_speech": "noun",
@@ -124128,7 +125058,10 @@
   "精度": {
     "part_of_speech": "noun",
     "pinyin": "jīngdù",
-    "translation": "precision, accuracy"
+    "translation": "precision, accuracy",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "精彩": {
     "part_of_speech": "adjective",
@@ -124188,7 +125121,10 @@
   "精湛": {
     "part_of_speech": "adjective",
     "pinyin": "jīngzhàn",
-    "translation": "exquisite, consummate"
+    "translation": "exquisite, consummate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "精灵": {
     "part_of_speech": "noun",
@@ -124908,7 +125844,10 @@
   "繁多": {
     "part_of_speech": "adjective",
     "pinyin": "fánduō",
-    "translation": "numerous; various"
+    "translation": "numerous; various",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "繁忙": {
     "part_of_speech": "adjective",
@@ -125160,7 +126099,10 @@
     "part_of_speech": "noun",
     "pinyin": "hóng-lǜdēng",
     "traditional": "紅綠燈",
-    "translation": "traffic light"
+    "translation": "traffic light",
+    "hsk": {
+      "hsk3_2025": 3
+    }
   },
   "红色": {
     "part_of_speech": "noun",
@@ -125715,7 +126657,10 @@
       "实践"
     ],
     "traditional": "紙上談兵",
-    "translation": "to be an armchair strategist; to engage in empty talk"
+    "translation": "to be an armchair strategist; to engage in empty talk",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "纸做": {
     "part_of_speech": "adjective",
@@ -125727,13 +126672,19 @@
     "part_of_speech": "noun",
     "pinyin": "zhǐjīn",
     "traditional": "紙巾",
-    "translation": "tissue; paper towel"
+    "translation": "tissue; paper towel",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "纸币": {
     "part_of_speech": "noun",
     "pinyin": "zhǐbì",
     "traditional": "紙幣",
-    "translation": "paper money; banknote"
+    "translation": "paper money; banknote",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "纸张": {
     "part_of_speech": "noun",
@@ -125851,7 +126802,10 @@
     "part_of_speech": "adjective",
     "pinyin": "xiànshàng",
     "traditional": "線上",
-    "translation": "online"
+    "translation": "online",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "线下": {
     "part_of_speech": "adjective",
@@ -125862,7 +126816,10 @@
       "实体"
     ],
     "traditional": "線下",
-    "translation": "offline"
+    "translation": "offline",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "线条": {
     "part_of_speech": "noun",
@@ -126849,7 +127806,10 @@
     "part_of_speech": "verb",
     "pinyin": "huìzhì",
     "traditional": "繪製",
-    "translation": "to draw; to draft"
+    "translation": "to draw; to draft",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "绘声绘色": {
     "part_of_speech": "adjective",
@@ -127222,7 +128182,10 @@
     "part_of_speech": "noun",
     "pinyin": "jìxiào",
     "traditional": "績效",
-    "translation": "performance"
+    "translation": "performance",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "绪": {
     "part_of_speech": "noun",
@@ -127244,7 +128207,10 @@
     "part_of_speech": "noun",
     "pinyin": "xùháng",
     "traditional": "續航",
-    "translation": "endurance, range (of vehicle)"
+    "translation": "endurance, range (of vehicle)",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "绯闻": {
     "part_of_speech": "noun",
@@ -127348,7 +128314,10 @@
     "part_of_speech": "verb",
     "pinyin": "wéiquán",
     "traditional": "維權",
-    "translation": "to protect rights"
+    "translation": "to protect rights",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "维生素": {
     "part_of_speech": "noun",
@@ -127486,7 +128455,10 @@
     "part_of_speech": "noun",
     "pinyin": "lǜzhōu",
     "traditional": "綠洲",
-    "translation": "oasis"
+    "translation": "oasis",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "绿灯": {
     "part_of_speech": "noun",
@@ -127706,7 +128678,10 @@
     "part_of_speech": "noun",
     "pinyin": "biānchéng",
     "traditional": "編程",
-    "translation": "programming"
+    "translation": "programming",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "编织": {
     "part_of_speech": "verb",
@@ -127854,7 +128829,10 @@
       "扩大"
     ],
     "traditional": "縮減",
-    "translation": "to reduce; to cut down; to shrink"
+    "translation": "to reduce; to cut down; to shrink",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "缩小": {
     "part_of_speech": "verb",
@@ -128239,7 +129217,10 @@
     "part_of_speech": "verb",
     "pinyin": "wǎnggòu",
     "traditional": "網購",
-    "translation": "to shop online"
+    "translation": "to shop online",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "网速": {
     "part_of_speech": "noun",
@@ -129868,7 +130849,10 @@
   "耕": {
     "part_of_speech": "verb",
     "pinyin": "gēng",
-    "translation": "plow; cultivate"
+    "translation": "plow; cultivate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "耕作": {
     "part_of_speech": "noun",
@@ -130266,7 +131250,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhíchǎng",
     "traditional": "職場",
-    "translation": "workplace; career world"
+    "translation": "workplace; career world",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "职工": {
     "part_of_speech": "noun",
@@ -130291,7 +131278,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhíchēng",
     "traditional": "職稱",
-    "translation": "professional title"
+    "translation": "professional title",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "职能": {
     "part_of_speech": "noun",
@@ -130553,7 +131543,10 @@
   "聚餐": {
     "part_of_speech": "verb",
     "pinyin": "jùcān",
-    "translation": "to have a dinner together, to dine together"
+    "translation": "to have a dinner together, to dine together",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "聪": {
     "part_of_speech": "adjective",
@@ -130924,7 +131917,10 @@
   "肺炎": {
     "part_of_speech": "noun",
     "pinyin": "fèiyán",
-    "translation": "pneumonia"
+    "translation": "pneumonia",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "肺病": {
     "part_of_speech": "noun",
@@ -131116,7 +132112,10 @@
   "背影": {
     "part_of_speech": "noun",
     "pinyin": "bèiyǐng",
-    "translation": "back view; figure seen from behind"
+    "translation": "back view; figure seen from behind",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "背心": {
     "part_of_speech": "noun",
@@ -131854,7 +132853,10 @@
     "part_of_speech": "adjective",
     "pinyin": "jiǎotàshídì",
     "traditional": "腳踏實地",
-    "translation": "down-to-earth; pragmatic"
+    "translation": "down-to-earth; pragmatic",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "脚踝": {
     "part_of_speech": "noun",
@@ -132363,7 +133365,10 @@
     "part_of_speech": "verb",
     "pinyin": "zìxí",
     "traditional": "自習",
-    "translation": "to study on one's own"
+    "translation": "to study on one's own",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "自从": {
     "part_of_speech": "preposition",
@@ -132596,7 +133601,10 @@
   "自律": {
     "part_of_speech": "verb",
     "pinyin": "zìlǜ",
-    "translation": "self-discipline"
+    "translation": "self-discipline",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "自怜": {
     "part_of_speech": "noun",
@@ -132685,7 +133693,10 @@
     "part_of_speech": "noun",
     "pinyin": "zìzhìqū",
     "traditional": "自治區",
-    "translation": "autonomous region"
+    "translation": "autonomous region",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "自满": {
     "part_of_speech": "adjective",
@@ -134137,7 +135148,10 @@
   "花朵": {
     "part_of_speech": "noun",
     "pinyin": "huāduǒ",
-    "translation": "flower"
+    "translation": "flower",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "花样": {
     "part_of_speech": "noun",
@@ -134404,7 +135418,10 @@
   "若是": {
     "part_of_speech": "conjunction",
     "pinyin": "ruòshì",
-    "translation": "if; supposing"
+    "translation": "if; supposing",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "若有所思": {
     "part_of_speech": "adjective",
@@ -134904,7 +135921,10 @@
     "part_of_speech": "noun",
     "pinyin": "cǎocóng",
     "traditional": "草叢",
-    "translation": "grass clump, thicket"
+    "translation": "grass clump, thicket",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "草原": {
     "part_of_speech": "noun",
@@ -134953,7 +135973,10 @@
     "part_of_speech": "noun",
     "pinyin": "cǎoyào",
     "traditional": "草藥",
-    "translation": "herbal medicine"
+    "translation": "herbal medicine",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "草莓": {
     "part_of_speech": "noun",
@@ -135054,7 +136077,10 @@
     "part_of_speech": "noun",
     "pinyin": "róngyào",
     "traditional": "榮耀",
-    "translation": "glory; honor"
+    "translation": "glory; honor",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "荣获": {
     "part_of_speech": "verb",
@@ -135426,7 +136452,10 @@
     "part_of_speech": "noun",
     "pinyin": "càiyáo",
     "traditional": "菜餚",
-    "translation": "dish; cuisine"
+    "translation": "dish; cuisine",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "菜能": {
     "part_of_speech": "noun",
@@ -135613,7 +136642,10 @@
     "part_of_speech": "noun",
     "pinyin": "yíngxiāo",
     "traditional": "營銷",
-    "translation": "marketing"
+    "translation": "marketing",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "萦绕": {
     "part_of_speech": "verb",
@@ -136019,7 +137051,10 @@
     "part_of_speech": "verb",
     "pinyin": "yùnhán",
     "traditional": "蘊含",
-    "translation": "contain, embody"
+    "translation": "contain, embody",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "蕴涵": {
     "part_of_speech": "verb",
@@ -136084,7 +137119,10 @@
   "薪酬": {
     "part_of_speech": "noun",
     "pinyin": "xīnchóu",
-    "translation": "salary; remuneration"
+    "translation": "salary; remuneration",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "薯条": {
     "part_of_speech": "noun",
@@ -136433,7 +137471,10 @@
     "part_of_speech": "noun",
     "pinyin": "mǎyǐ",
     "traditional": "螞蟻",
-    "translation": "ant"
+    "translation": "ant",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "蚊子": {
     "part_of_speech": "noun",
@@ -136463,7 +137504,10 @@
   "蛀牙": {
     "part_of_speech": "noun",
     "pinyin": "zhùyá",
-    "translation": "tooth decay"
+    "translation": "tooth decay",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "蛇": {
     "part_of_speech": "noun",
@@ -136625,7 +137669,10 @@
   "螃蟹": {
     "part_of_speech": "noun",
     "pinyin": "pángxiè",
-    "translation": "crab"
+    "translation": "crab",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "融": {
     "part_of_speech": "verb",
@@ -136689,7 +137736,10 @@
     "part_of_speech": "noun",
     "pinyin": "róngzī",
     "traditional": "融資",
-    "translation": "financing"
+    "translation": "financing",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "螺丝": {
     "part_of_speech": "noun",
@@ -136740,7 +137790,10 @@
   "血型": {
     "part_of_speech": "noun",
     "pinyin": "xuèxíng",
-    "translation": "blood type"
+    "translation": "blood type",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "血本无归": {
     "part_of_speech": "verb",
@@ -137650,12 +138703,18 @@
   "袋子": {
     "part_of_speech": "noun",
     "pinyin": "dàizi",
-    "translation": "bag, sack"
+    "translation": "bag, sack",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "袖子": {
     "part_of_speech": "noun",
     "pinyin": "xiùzi",
-    "translation": "sleeve"
+    "translation": "sleeve",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "袖手旁观": {
     "part_of_speech": "verb",
@@ -139341,7 +140400,10 @@
   "解渴": {
     "part_of_speech": "verb",
     "pinyin": "jiěkě",
-    "translation": "quench thirst"
+    "translation": "quench thirst",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "解答": {
     "part_of_speech": "verb",
@@ -139636,7 +140698,10 @@
     "part_of_speech": "noun",
     "pinyin": "jǐngbào",
     "traditional": "警報",
-    "translation": "alarm, warning"
+    "translation": "alarm, warning",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "警方": {
     "part_of_speech": "noun",
@@ -140421,7 +141486,10 @@
     "part_of_speech": "verb",
     "pinyin": "jiǎnglǐ",
     "traditional": "講理",
-    "translation": "to be reasonable; to argue"
+    "translation": "to be reasonable; to argue",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "讲究": {
     "part_of_speech": "verb",
@@ -141134,7 +142202,10 @@
     "part_of_speech": "verb",
     "pinyin": "sùzhū",
     "traditional": "訴諸",
-    "translation": "to resort to"
+    "translation": "to resort to",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "诊所": {
     "part_of_speech": "noun",
@@ -141444,7 +142515,10 @@
     "part_of_speech": "noun",
     "pinyin": "shīcí",
     "traditional": "詩詞",
-    "translation": "poetry"
+    "translation": "poetry",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "诗集": {
     "part_of_speech": "noun",
@@ -141619,7 +142693,10 @@
     "part_of_speech": "verb",
     "pinyin": "quánshì",
     "traditional": "詮釋",
-    "translation": "interpret; annotate"
+    "translation": "interpret; annotate",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "诡异": {
     "part_of_speech": "adjective",
@@ -141741,7 +142818,10 @@
       "文学"
     ],
     "traditional": "語文",
-    "translation": "Chinese (as a school subject); language and literature"
+    "translation": "Chinese (as a school subject); language and literature",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "语气": {
     "part_of_speech": "noun",
@@ -142518,7 +143598,10 @@
     "part_of_speech": "noun",
     "pinyin": "dúwù",
     "traditional": "讀物",
-    "translation": "reading material"
+    "translation": "reading material",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "读者": {
     "part_of_speech": "noun",
@@ -142985,7 +144068,10 @@
     "part_of_speech": "verb",
     "pinyin": "tánjí",
     "traditional": "談及",
-    "translation": "to speak of; to mention"
+    "translation": "to speak of; to mention",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "谈吐": {
     "part_of_speech": "noun",
@@ -143049,7 +144135,10 @@
     "part_of_speech": "verb",
     "pinyin": "móuqǔ",
     "traditional": "謀取",
-    "translation": "seek to obtain"
+    "translation": "seek to obtain",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "谋害": {
     "part_of_speech": "verb",
@@ -144326,7 +145415,10 @@
     "part_of_speech": "noun",
     "pinyin": "guìxìng",
     "traditional": "貴姓",
-    "translation": "your honor surname"
+    "translation": "your honor surname",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "贵宾": {
     "part_of_speech": "noun",
@@ -144647,7 +145739,10 @@
     "part_of_speech": "noun",
     "pinyin": "zīzhì",
     "traditional": "資質",
-    "translation": "qualifications; aptitude"
+    "translation": "qualifications; aptitude",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "资金": {
     "part_of_speech": "noun",
@@ -144727,7 +145822,10 @@
     "part_of_speech": "verb",
     "pinyin": "shǎngshí",
     "traditional": "賞識",
-    "translation": "appreciate, recognize talent"
+    "translation": "appreciate, recognize talent",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "赏赐": {
     "part_of_speech": "verb",
@@ -144863,7 +145961,10 @@
     "part_of_speech": "noun",
     "pinyin": "sàishì",
     "traditional": "賽事",
-    "translation": "competition event"
+    "translation": "competition event",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "赛场": {
     "part_of_speech": "noun",
@@ -145187,7 +146288,10 @@
     "part_of_speech": "noun",
     "pinyin": "zǒushì",
     "traditional": "走勢",
-    "translation": "trend; movement"
+    "translation": "trend; movement",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "走后门": {
     "part_of_speech": "verb",
@@ -145201,7 +146305,10 @@
   "走向": {
     "part_of_speech": "noun",
     "pinyin": "zǒuxiàng",
-    "translation": "trend; direction; move towards"
+    "translation": "trend; direction; move towards",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "走吧": {
     "part_of_speech": "other",
@@ -146666,7 +147773,10 @@
     "part_of_speech": "noun",
     "pinyin": "lùjìng",
     "traditional": "路徑",
-    "translation": "path; route"
+    "translation": "path; route",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "路旁": {
     "part_of_speech": "noun",
@@ -147074,7 +148184,10 @@
       "自身",
       "全身"
     ],
-    "translation": "body; life; oneself"
+    "translation": "body; life; oneself",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "身上": {
     "part_of_speech": "noun",
@@ -147663,7 +148776,10 @@
     "part_of_speech": "verb",
     "pinyin": "zhuǎnfā",
     "traditional": "轉發",
-    "translation": "to forward (a message), to retweet"
+    "translation": "to forward (a message), to retweet",
+    "hsk": {
+      "hsk3_2025": 4
+    }
   },
   "转变": {
     "part_of_speech": "verb",
@@ -148255,7 +149371,10 @@
     "part_of_speech": "noun",
     "pinyin": "qīngzhòng",
     "traditional": "輕重",
-    "translation": "importance, degree of seriousness"
+    "translation": "importance, degree of seriousness",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "轻音乐": {
     "part_of_speech": "noun",
@@ -148303,7 +149422,10 @@
     "part_of_speech": "adverb",
     "pinyin": "jiàowéi",
     "traditional": "較為",
-    "translation": "relatively"
+    "translation": "relatively",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "较劲": {
     "part_of_speech": "verb",
@@ -149483,7 +150605,10 @@
     "part_of_speech": "adjective",
     "pinyin": "guòliàng",
     "traditional": "過量",
-    "translation": "excessive; overdose"
+    "translation": "excessive; overdose",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "过错": {
     "part_of_speech": "noun",
@@ -149773,7 +150898,10 @@
     "part_of_speech": "noun",
     "pinyin": "yùnfèi",
     "traditional": "運費",
-    "translation": "freight, shipping cost"
+    "translation": "freight, shipping cost",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "运转": {
     "part_of_speech": "verb",
@@ -150208,7 +151336,10 @@
       "那个"
     ],
     "traditional": "這個",
-    "translation": "this; this one"
+    "translation": "this; this one",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "这个又红": {
     "part_of_speech": "adjective",
@@ -151435,7 +152566,10 @@
     "part_of_speech": "adverb",
     "pinyin": "liánlián",
     "traditional": "連連",
-    "translation": "repeatedly"
+    "translation": "repeatedly",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "连锁": {
     "part_of_speech": "verb",
@@ -151789,7 +152923,10 @@
   "追捧": {
     "part_of_speech": "verb",
     "pinyin": "zhuīpěng",
-    "translation": "pursue and praise; chase after"
+    "translation": "pursue and praise; chase after",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "追梦": {
     "part_of_speech": "verb",
@@ -152002,7 +153139,10 @@
     "part_of_speech": "verb",
     "pinyin": "tuìshuì",
     "traditional": "退稅",
-    "translation": "tax refund"
+    "translation": "tax refund",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "退缩": {
     "part_of_speech": "verb",
@@ -152045,7 +153185,10 @@
     "part_of_speech": "verb",
     "pinyin": "tuìhuán",
     "traditional": "退還",
-    "translation": "to refund"
+    "translation": "to refund",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "送": {
     "part_of_speech": "verb",
@@ -152372,7 +153515,10 @@
   "逆境": {
     "part_of_speech": "noun",
     "pinyin": "nìjìng",
-    "translation": "adversity, difficult situation"
+    "translation": "adversity, difficult situation",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "逆流": {
     "part_of_speech": "noun",
@@ -152657,7 +153803,10 @@
   "逐一": {
     "part_of_speech": "adverb",
     "pinyin": "zhúyī",
-    "translation": "one by one"
+    "translation": "one by one",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "逐年": {
     "part_of_speech": "adverb",
@@ -152988,7 +154137,10 @@
     "part_of_speech": "noun",
     "pinyin": "tōnghuòpéngzhàng",
     "traditional": "通貨膨脹",
-    "translation": "inflation"
+    "translation": "inflation",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "通货膨胀率": {
     "part_of_speech": "noun",
@@ -153510,7 +154662,10 @@
     "part_of_speech": "verb",
     "pinyin": "dàobié",
     "traditional": "道別",
-    "translation": "to say goodbye; to bid farewell"
+    "translation": "to say goodbye; to bid farewell",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "道士": {
     "part_of_speech": "noun",
@@ -153714,7 +154869,10 @@
     "part_of_speech": "verb",
     "pinyin": "yílòu",
     "traditional": "遺漏",
-    "translation": "to omit; to leave out"
+    "translation": "to omit; to leave out",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "遗物": {
     "part_of_speech": "noun",
@@ -154050,7 +155208,10 @@
       "哪个"
     ],
     "traditional": "那個",
-    "translation": "that (one); that (thing)"
+    "translation": "that (one); that (thing)",
+    "hsk": {
+      "hsk3_2025": 1
+    }
   },
   "那么": {
     "part_of_speech": "adverb",
@@ -154408,7 +155569,10 @@
     "part_of_speech": "verb",
     "pinyin": "yóujì",
     "traditional": "郵寄",
-    "translation": "to send by mail"
+    "translation": "to send by mail",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "邮局": {
     "part_of_speech": "noun",
@@ -154818,7 +155982,10 @@
   "配方": {
     "part_of_speech": "noun",
     "pinyin": "pèifāng",
-    "translation": "formula; recipe"
+    "translation": "formula; recipe",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "配置": {
     "part_of_speech": "verb",
@@ -154832,7 +155999,10 @@
   "配角": {
     "part_of_speech": "noun",
     "pinyin": "pèijué",
-    "translation": "supporting role; minor role"
+    "translation": "supporting role; minor role",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "配送": {
     "part_of_speech": "verb",
@@ -155214,7 +156384,10 @@
     "part_of_speech": "verb",
     "pinyin": "cǎizhāi",
     "traditional": "採摘",
-    "translation": "pick, pluck"
+    "translation": "pick, pluck",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "采用": {
     "part_of_speech": "verb",
@@ -155695,7 +156868,10 @@
   "重重": {
     "part_of_speech": "adjective",
     "pinyin": "chóngchóng",
-    "translation": "layer upon layer; numerous"
+    "translation": "layer upon layer; numerous",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "重量": {
     "part_of_speech": "noun",
@@ -156749,7 +157925,10 @@
     "part_of_speech": "verb",
     "pinyin": "liànjiē",
     "traditional": "鏈接",
-    "translation": "to link"
+    "translation": "to link",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "销": {
     "part_of_speech": "verb",
@@ -158747,7 +159926,10 @@
     "part_of_speech": "noun",
     "pinyin": "zhènyǔ",
     "traditional": "陣雨",
-    "translation": "shower rain"
+    "translation": "shower rain",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "阶层": {
     "part_of_speech": "noun",
@@ -159147,7 +160329,10 @@
   "降水": {
     "part_of_speech": "verb",
     "pinyin": "jiàngshuǐ",
-    "translation": "to have precipitation, to precipitate"
+    "translation": "to have precipitation, to precipitate",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "降温": {
     "part_of_speech": "verb",
@@ -160458,13 +161643,19 @@
   "集市": {
     "part_of_speech": "noun",
     "pinyin": "jíshì",
-    "translation": "market"
+    "translation": "market",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "集思广益": {
     "part_of_speech": "verb",
     "pinyin": "jísīguǎngyì",
     "traditional": "集思廣益",
-    "translation": "pool wisdom, benefit from collective views"
+    "translation": "pool wisdom, benefit from collective views",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "集结": {
     "part_of_speech": "verb",
@@ -160569,7 +161760,10 @@
   "雕像": {
     "part_of_speech": "noun",
     "pinyin": "diāoxiàng",
-    "translation": "statue"
+    "translation": "statue",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "雕刻": {
     "part_of_speech": "verb",
@@ -160774,7 +161968,10 @@
   "雪糕": {
     "part_of_speech": "noun",
     "pinyin": "xuěgāo",
-    "translation": "ice cream"
+    "translation": "ice cream",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "雪花": {
     "part_of_speech": "noun",
@@ -161128,7 +162325,10 @@
     "part_of_speech": "noun",
     "pinyin": "lùyíng",
     "traditional": "露營",
-    "translation": "camping"
+    "translation": "camping",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "露营者": {
     "part_of_speech": "noun",
@@ -161227,7 +162427,10 @@
     "part_of_speech": "noun",
     "pinyin": "qīnglài",
     "traditional": "青睞",
-    "translation": "favor; preference"
+    "translation": "favor; preference",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "青筋": {
     "part_of_speech": "noun",
@@ -161266,7 +162469,10 @@
     "part_of_speech": "noun",
     "pinyin": "qīngtóngqì",
     "traditional": "青銅器",
-    "translation": "bronze ware"
+    "translation": "bronze ware",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "静": {
     "part_of_speech": "adjective",
@@ -161417,7 +162623,10 @@
   "非洲": {
     "part_of_speech": "noun",
     "pinyin": "Fēizhōu",
-    "translation": "Africa"
+    "translation": "Africa",
+    "hsk": {
+      "hsk3_2025": 5
+    }
   },
   "非要": {
     "part_of_speech": "adverb",
@@ -161608,7 +162817,10 @@
   "面孔": {
     "part_of_speech": "noun",
     "pinyin": "miànkǒng",
-    "translation": "face; appearance"
+    "translation": "face; appearance",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "面对": {
     "part_of_speech": "verb",
@@ -163306,7 +164518,10 @@
     "part_of_speech": "noun",
     "pinyin": "édù",
     "traditional": "額度",
-    "translation": "quota; limit"
+    "translation": "quota; limit",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "颠倒": {
     "part_of_speech": "verb",
@@ -163560,7 +164775,10 @@
     "part_of_speech": "noun",
     "pinyin": "fēngjǐngxiàn",
     "traditional": "風景線",
-    "translation": "scenic line; attraction"
+    "translation": "scenic line; attraction",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "风暴": {
     "part_of_speech": "noun",
@@ -163749,7 +164967,10 @@
     "part_of_speech": "adjective",
     "pinyin": "fēngyǔwúzǔ",
     "traditional": "風雨無阻",
-    "translation": "regardless of weather"
+    "translation": "regardless of weather",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "风雪": {
     "part_of_speech": "noun",
@@ -164542,7 +165763,10 @@
     "part_of_speech": "noun",
     "pinyin": "xiàn",
     "traditional": "餡",
-    "translation": "filling; stuffing"
+    "translation": "filling; stuffing",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "馅儿": {
     "part_of_speech": "noun",
@@ -165139,7 +166363,10 @@
     "part_of_speech": "verb",
     "pinyin": "zhùzú",
     "traditional": "駐足",
-    "translation": "stop; pause"
+    "translation": "stop; pause",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "驾": {
     "part_of_speech": "verb",
@@ -165500,7 +166727,10 @@
   "骨骼": {
     "part_of_speech": "noun",
     "pinyin": "gǔgé",
-    "translation": "skeleton"
+    "translation": "skeleton",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "高": {
     "part_of_speech": "adjective",
@@ -165897,7 +167127,10 @@
   "高端": {
     "part_of_speech": "adjective",
     "pinyin": "gāoduān",
-    "translation": "high-end"
+    "translation": "high-end",
+    "hsk": {
+      "hsk3_2025": 6
+    }
   },
   "高等": {
     "part_of_speech": "adjective",
@@ -166166,7 +167399,10 @@
   "魔法": {
     "part_of_speech": "noun",
     "pinyin": "mófǎ",
-    "translation": "magic"
+    "translation": "magic",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "魔鬼": {
     "part_of_speech": "noun",
@@ -166248,7 +167484,10 @@
     "part_of_speech": "adjective",
     "pinyin": "xiǎnwéirénzhī",
     "traditional": "鮮為人知",
-    "translation": "little-known"
+    "translation": "little-known",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "鲜品": {
     "part_of_speech": "noun",
@@ -166479,7 +167718,10 @@
     "part_of_speech": "verb",
     "pinyin": "míng",
     "traditional": "鳴",
-    "translation": "to chirp, to ring"
+    "translation": "to chirp, to ring",
+    "hsk": {
+      "hsk3_2025": 7
+    }
   },
   "鸦雀无声": {
     "part_of_speech": "verb",
@@ -167194,6 +168436,22 @@
     "translation": "tortoise, turtle",
     "hsk": {
       "hsk3": 7,
+      "hsk3_2025": 7
+    }
+  },
+  "精彩纷呈": {
+    "pinyin": "jīngcǎi-fēnchéng",
+    "translation": "",
+    "source": "HSK 2025 syllabus",
+    "hsk": {
+      "hsk3_2025": 7
+    }
+  },
+  "口哨儿": {
+    "pinyin": "kǒushàor",
+    "translation": "",
+    "source": "HSK 2025 syllabus",
+    "hsk": {
       "hsk3_2025": 7
     }
   }

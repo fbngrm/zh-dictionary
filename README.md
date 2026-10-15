@@ -352,7 +352,7 @@ exported from `@fbngrm/zh-dictionary`. The raw files are exported as
 | [`data/cedict`](data/cedict) | [CC BY-SA 4.0](data/cedict/LICENSE) | credit CC-CEDICT; modified or merged CEDICT data stays CC BY-SA |
 | [`data/etymology`](data/etymology) | [LGPL 3.0 or later](data/etymology/LICENSE) | credit Make Me a Hanzi; changes to this file stay LGPL |
 | [`data/strokes`](data/strokes) | [Arphic Public License](data/strokes/LICENSE) | include the license; changes to the stroke data stay under it |
-| [`data/hsk`](data/hsk) | [MIT](data/hsk/LICENSE) | keep the license notice |
+| [`data/hsk`](data/hsk) | MIT for legacy mappings; original syllabus rights for 2025 | retain [source notices](data/hsk/README.md) |
 | [`data/frequency`](data/frequency) | [CC BY-SA 4.0](data/frequency/LICENSE) | credit wordfreq and the SUBTLEX-CH authors (see its README); changes stay CC BY-SA |
 | [`data/sentences`](data/sentences) | CC BY 2.0 FR (Tatoeba), Apache 2.0 (AISHELL) | credit Tatoeba and its contributors, and AISHELL |
 
@@ -436,7 +436,7 @@ for manual review instead of being sent to DeepSeek.
 ### Versioned sentence audio and grades
 
 Word entries include optional `hsk` fields: `hsk2`, `hsk3` (2021), and
-`hsk3_2025` (2025 syllabus). The 2025 source mapping is incomplete; see
+`hsk3_2025` (2025 syllabus). The 2025 source covers all 11,000 entries; see
 [data/hsk](data/hsk/README.md). `describe()` preserves these fields.
 
 Examples carry both vocabulary grades and, for AISHELL-3, original pinyin
@@ -444,4 +444,4 @@ and a relative MP3 path. `sentenceAudioUrl(id)` resolves a recording against
 the pinned public corpus. `sentenceMetadataUrl(source, id)` identifies the
 JSON shard containing its transcript, full token breakdown, and grades.
 See [sentence data](data/sentences/README.md) and the
-[public corpus](https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.0.0).
+[public corpus](https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.1.0).

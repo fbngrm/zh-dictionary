@@ -29,7 +29,8 @@
     ],
     "method": "Highest listed token level, null when any Chinese token is unlisted; Intl.Segmenter zh, OpenCC tw to cn",
     "hskSource": "../hsk/meta.json",
-    "corpus": "https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.0.0",
-    "coverageNote": "HSK 2025 mapping is incomplete; null does not mean beyond HSK."
+    "corpus": "https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.1.0",
+    "coverageNote": "Full 2025 syllabus: 11,000 entries / 10,896 spellings. Lowest level across readings and senses.",
+    "implementation": "https://github.com/fbngrm/zh-grader/tree/v0.1.0"
   }
 }

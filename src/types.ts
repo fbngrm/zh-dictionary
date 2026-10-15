@@ -93,7 +93,7 @@ export interface StrokeData {
 export interface HskLevels {
   // HSK 2.0 level 1–6.
   hsk2?: number;
-  // HSK 3.0 (2025 syllabus) mapping; source coverage is incomplete.
+  // HSK 3.0 (2025 syllabus) mapping; lowest level across readings/senses.
   hsk3_2025?: number;
   // HSK 3.0 (2021) level 1–6, or 7 for the 7–9 band.
   hsk3?: number;

@@ -12,8 +12,9 @@ added by `scripts/build-traditional.mjs` using the simplified → traditional
 
 **License:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 (full text in [LICENSE](LICENSE)). Use it for anything; no attribution
-needed for those generated fields. The added `hsk` field comes from
-complete-hsk-vocabulary (MIT); retain [its copyright and license](../hsk/LICENSE).
+needed for those generated fields. The added `hsk` fields and the two syllabus-only entries
+retain the separate source notices in [data/hsk](../hsk/README.md). Those fields
+are not relicensed by the CC0 notice for generated definitions.
 
 Entries are machine-generated and only spot-checked. Corrections are
 welcome.

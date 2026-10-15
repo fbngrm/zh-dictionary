@@ -27,5 +27,6 @@ under data/ is licensed separately; see data/zh/LICENSE (CC0 1.0),
 data/cedict/LICENSE (CC BY-SA 4.0) and data/hanzi/LICENSE (Unicode License v3).
 
 HSK fields, including those embedded in word and sentence data, use the source
-credited in data/hsk/meta.json; retain data/hsk/LICENSE (MIT). See each data
+credited in data/hsk/meta.json; retain data/hsk/LICENSE for legacy mappings and
+data/hsk/SOURCE-RIGHTS-2025.md for the 2025 syllabus. See each data
 folder README for its other licenses and attribution requirements.

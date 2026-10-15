@@ -41,5 +41,5 @@ npm run build:cedict   # downloads the latest release from MDBG
 npm test
 ```
 
-The added `hsk` fields use complete-hsk-vocabulary (MIT); retain
-[its copyright and license](../hsk/LICENSE), in addition to the CC-CEDICT terms.
+The added `hsk` fields retain the [separate source notices](../hsk/README.md),
+in addition to the CC-CEDICT terms.

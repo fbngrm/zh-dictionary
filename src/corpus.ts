@@ -1,5 +1,5 @@
 // Pinned corpus version: recordings, transcripts and grades remain in sync.
-export const SENTENCE_CORPUS_BASE = 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.0.0/';
+export const SENTENCE_CORPUS_BASE = 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.1.0/';
 export function sentenceAudioUrl(id: string, base = SENTENCE_CORPUS_BASE): string {
   if (!/^SSB\d{8}$/.test(id)) throw new Error('Invalid AISHELL-3 recording ID');
   return new URL(`audio/aishell3/${id.slice(0, 7)}/${id}.mp3`, base).href;

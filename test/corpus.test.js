@@ -11,8 +11,8 @@ test('word lookup and description preserve distinct syllabus levels', () => {
 });
 
 test('recording and metadata helpers address the same versioned corpus', () => {
-  assert.equal(sentenceAudioUrl('SSB00050001'), 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.0.0/audio/aishell3/SSB0005/SSB00050001.mp3');
-  assert.equal(sentenceMetadataUrl('aishell3', 'SSB00050001'), 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.0.0/data/aishell3/SSB0005.json');
+  assert.equal(sentenceAudioUrl('SSB00050001'), 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.1.0/audio/aishell3/SSB0005/SSB00050001.mp3');
+  assert.equal(sentenceMetadataUrl('aishell3', 'SSB00050001'), 'https://raw.githubusercontent.com/fbngrm/mandarin-sentence-audio/v1.1.0/data/aishell3/SSB0005.json');
   assert.ok(sentenceMetadataUrl('tatoeba', 257).endsWith('/data/tatoeba/1.json'));
   assert.throws(() => sentenceAudioUrl('../secret'));
   assert.throws(() => sentenceMetadataUrl('tatoeba', -1));
