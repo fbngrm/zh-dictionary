@@ -37,3 +37,19 @@ Credit line: `attribution` in [meta.json](meta.json).
 
 Rebuild with `scripts/build-sentences.mjs` (needs local copies of the
 corpora, see the script).
+
+## Grades and native audio
+
+Examples include `grades.hsk3_2025` and `grades.hsk2`, with `level`,
+`highestKnownLevel`, `coverage` (0–1), and `unlisted`. These estimate vocabulary
+using simplified-text Intl.Segmenter tokens. Any unlisted Chinese token leaves
+`level` null. The 2025 mapping is incomplete; this is not an official assessment.
+
+AISHELL-3 examples also contain the original numeric-tone `pinyin` and a relative
+`audio` path. Use `sentenceAudioUrl(id)` and `sentenceMetadataUrl(source, id)`
+from the library for the pinned public corpus:
+https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.0.0
+
+The corpus contains every AISHELL-3 recording with transcripts and grades, plus
+all Mandarin Tatoeba sentences from its source snapshot. Only AISHELL-3 audio
+is hosted; Tatoeba text licenses do not cover its recordings.

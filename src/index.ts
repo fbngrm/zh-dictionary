@@ -5,7 +5,7 @@ import { splitPinyin, toneless } from './pinyin.js';
 
 export type {
   CharacterData, CharacterIndex, DecompositionNode, Dictionary, DictionaryData, DictionaryEntry, Etymology,
-  EtymologyData, FrequencyData, HanziData, HskData, HskLevels, Sentence, SentenceData, StrokeData, UnihanData,
+  EtymologyData, FrequencyData, HanziData, HskData, HskLevels, Sentence, SentenceGrade, SentenceData, StrokeData, UnihanData,
   UnihanReadings, WordCharacter, WordDetails,
 } from './types';
 export { splitPinyin, toneless } from './pinyin.js';
@@ -99,6 +99,7 @@ export function createDictionary(
       });
 
       return {
+        ...(entry.hsk && { hsk: entry.hsk }),
         word: simplified,
         traditional: traditionalForm,
         pinyin: entry.pinyin,
@@ -122,3 +123,5 @@ export function createDictionary(
 function toArray(value: DictionaryEntry | DictionaryEntry[]): DictionaryEntry[] {
   return Array.isArray(value) ? value : [value];
 }
+
+export { sentenceAudioUrl, sentenceMetadataUrl, SENTENCE_CORPUS_BASE } from './corpus.js';

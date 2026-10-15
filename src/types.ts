@@ -1,4 +1,5 @@
 export interface DictionaryEntry {
+  hsk?: HskLevels;
   // Tone-marked pinyin, e.g. "kǒu zhào".
   pinyin: string;
   translation: string;
@@ -92,7 +93,9 @@ export interface StrokeData {
 export interface HskLevels {
   // HSK 2.0 level 1–6.
   hsk2?: number;
-  // HSK 3.0 level 1–6, or 7 for the 7–9 band.
+  // HSK 3.0 (2025 syllabus) mapping; source coverage is incomplete.
+  hsk3_2025?: number;
+  // HSK 3.0 (2021) level 1–6, or 7 for the 7–9 band.
   hsk3?: number;
 }
 
@@ -106,7 +109,18 @@ export interface FrequencyData {
 }
 
 // One example sentence from data/sentences.
+export interface SentenceGrade {
+  level: number | null;
+  highestKnownLevel: number | null;
+  coverage: number;
+  unlisted: string[];
+}
+
 export interface Sentence {
+  grades?: { hsk3_2025: SentenceGrade; hsk2: SentenceGrade };
+  pinyin?: string;
+  // Relative to the versioned public sentence corpus.
+  audio?: string;
   text: string;
   // English translation (Tatoeba sentences only).
   en?: string;
@@ -167,6 +181,7 @@ export interface WordCharacter {
 }
 
 export interface WordDetails {
+  hsk?: HskLevels;
   word: string;
   traditional: string;
   pinyin: string;

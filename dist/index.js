@@ -81,6 +81,7 @@ export function createDictionary(sources, options = {}) {
                 };
             });
             return {
+                ...(entry.hsk && { hsk: entry.hsk }),
                 word: simplified,
                 traditional: traditionalForm,
                 pinyin: entry.pinyin,
@@ -102,3 +103,4 @@ export function createDictionary(sources, options = {}) {
 function toArray(value) {
     return Array.isArray(value) ? value : [value];
 }
+export { sentenceAudioUrl, sentenceMetadataUrl, SENTENCE_CORPUS_BASE } from './corpus.js';

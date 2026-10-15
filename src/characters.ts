@@ -147,7 +147,7 @@ export function createCharacterIndex(options: {
       for (const [word, levels] of Object.entries(hsk ?? {})) {
         for (const c of new Set(word)) {
           const best = charLevels.get(c) ?? {};
-          for (const key of ['hsk2', 'hsk3'] as const) {
+          for (const key of ['hsk2', 'hsk3', 'hsk3_2025'] as const) {
             const level = levels[key];
             if (level && (!best[key] || level < best[key]!)) best[key] = level;
           }

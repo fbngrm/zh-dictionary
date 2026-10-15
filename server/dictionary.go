@@ -22,6 +22,7 @@ type WordCharacter struct {
 }
 
 type WordDetails struct {
+	Hsk          map[string]int  `json:"hsk,omitempty"`
 	Word         string          `json:"word"`
 	Traditional  string          `json:"traditional"`
 	Pinyin       string          `json:"pinyin"`
@@ -154,6 +155,7 @@ func (d *Dictionary) Describe(word string) *WordDetails {
 	}
 
 	return &WordDetails{
+		Hsk:          entry.Hsk,
 		Word:         simplified,
 		Traditional:  traditionalForm,
 		Pinyin:       entry.Pinyin,

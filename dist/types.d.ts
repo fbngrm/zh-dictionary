@@ -1,4 +1,5 @@
 export interface DictionaryEntry {
+    hsk?: HskLevels;
     pinyin: string;
     translation: string;
     part_of_speech?: string;
@@ -48,6 +49,7 @@ export interface StrokeData {
 }
 export interface HskLevels {
     hsk2?: number;
+    hsk3_2025?: number;
     hsk3?: number;
 }
 export type HskData = Record<string, HskLevels>;
@@ -55,7 +57,19 @@ export interface FrequencyData {
     characters: Record<string, number>;
     words: Record<string, number>;
 }
+export interface SentenceGrade {
+    level: number | null;
+    highestKnownLevel: number | null;
+    coverage: number;
+    unlisted: string[];
+}
 export interface Sentence {
+    grades?: {
+        hsk3_2025: SentenceGrade;
+        hsk2: SentenceGrade;
+    };
+    pinyin?: string;
+    audio?: string;
     text: string;
     en?: string;
     source: 'tatoeba' | 'aishell1' | 'aishell3';
@@ -95,6 +109,7 @@ export interface WordCharacter {
     components: string[];
 }
 export interface WordDetails {
+    hsk?: HskLevels;
     word: string;
     traditional: string;
     pinyin: string;

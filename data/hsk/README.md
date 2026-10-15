@@ -1,16 +1,20 @@
-# HSK levels
+# HSK vocabulary versions
 
-`hsk.json` maps each of the 11,470 words on the HSK 2.0 and HSK 3.0 lists to
-its level, from
-[complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary)
-by Yanis Zafirópulos:
+Each word maps to optional `hsk2` (HSK 2.0), `hsk3` (2021 proficiency standard),
+and `hsk3_2025` (November 2025 exam syllabus, printed effective date July 2026).
+Level 7 represents the combined 7–9 band. Versions are not interchangeable.
 
-```json
-"爱好": {"hsk2":3,"hsk3":1}
-```
+Example: `"爱好": {"hsk2":3,"hsk3":1,"hsk3_2025":2}`.
 
-`hsk2` is the HSK 2.0 level (1–6), `hsk3` the HSK 3.0 level (1–6, or 7 for
-the 7–9 band). `createCharacterIndex().characterHsk()` derives a
-character's level from the words that contain it.
+Source: [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary)
+by Yanis Zafirópulos, pinned to the commit in `meta.json`, [MIT](LICENSE).
+The `o`, `n`, and `t` prefixes correspond to those three versions.
 
-**License:** [MIT](LICENSE). Rebuild with `npm run build:hsk`.
+The 2025 mapping contains 10,057 spellings and is incomplete: upstream added
+levels to existing dictionary entries. Missing labels mean **unlisted in this
+source**, not necessarily beyond HSK. For example, this snapshot lacks 你好.
+Character levels are inferred from constituent words, not an official character syllabus.
+
+Word entries in both dictionary datasets also carry these levels under `hsk`.
+Rebuild the lookup with `npm run build:hsk`; enrich words and examples with the
+website's `scripts/enrich-dictionary.mjs` against the pinned corpus.

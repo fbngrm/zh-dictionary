@@ -25,6 +25,7 @@ for (const { s: word, l: levels } of words) {
   const entry = {
     ...(Number.isFinite(level('o')) && { hsk2: level('o') }),
     ...(Number.isFinite(level('n')) && { hsk3: level('n') }),
+    ...(Number.isFinite(level('t')) && { hsk3_2025: level('t') }),
   };
   if (Object.keys(entry).length) hsk[word] = entry;
 }
@@ -36,6 +37,8 @@ writeFileSync(`${DATA_DIR}hsk/meta.json`, JSON.stringify({
   source: { url: 'https://github.com/drkameleon/complete-hsk-vocabulary', commit: COMMIT },
   words: Object.keys(hsk).length,
   license: 'MIT',
+  versions: { hsk2: 'HSK 2.0', hsk3: 'HSK 3.0 (2021)', hsk3_2025: 'HSK 3.0 (2025 syllabus, effective 2026)' },
+  coverageNote: 'The t-level source annotates existing entries; it is not a complete transcription of the 2025 syllabus. Missing entries are unlisted, not necessarily beyond HSK.',
   attribution: 'HSK levels from complete-hsk-vocabulary by Yanis Zafirópulos '
     + '(https://github.com/drkameleon/complete-hsk-vocabulary), MIT License.',
 }, null, 2) + '\n');

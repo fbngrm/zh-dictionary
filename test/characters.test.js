@@ -73,7 +73,7 @@ test('frequency, coverage and HSK levels', () => {
   assert.equal(index.characterRank('的'), 1);
   assert.ok(index.characterRank('好') < index.characterRank('酱'));
   assert.ok(index.coverage('的') > 0 && index.coverage('的') < index.coverage('好'));
-  assert.deepEqual(index.hsk('爱好'), { hsk2: 3, hsk3: 1 });
+  assert.deepEqual(index.hsk('爱好'), { hsk2: 3, hsk3: 1, hsk3_2025: 2 });
   assert.equal(index.characterHsk('好').hsk3, 1);
   assert.equal(index.characterRank('不存在'), null);
   // From wordfreq, not the example sentences' corpora, which overuse 汤姆
