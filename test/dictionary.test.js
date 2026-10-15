@@ -116,6 +116,12 @@ test('tags', () => {
   const dict = createDictionary({ 躺平: { pinyin: 'tǎngpíng', translation: 'to lie flat', tags: ['internet', 'slang'] } });
   assert.deepEqual(dict.describe('躺平').tags, ['internet', 'slang']);
   assert.equal('tags' in createDictionary(data).describe('好'), false);
+  // Bundled zh data: place names, and slang senses added next to the standard one.
+  assert.deepEqual(zh.lookup('北京').tags, ['place']);
+  assert.ok(zh.lookupAll('汉堡').some((e) => e.tags?.includes('place')));
+  assert.equal(zh.lookup('汉堡').tags, undefined); // hamburger stays first
+  assert.ok(zh.lookupAll('凉凉').some((e) => e.tags?.includes('slang')));
+  assert.ok(zh.lookup('躺平').tags.includes('slang'));
 });
 
 test('describe with bundled data, both modes', () => {

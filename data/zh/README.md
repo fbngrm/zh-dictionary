@@ -1,9 +1,15 @@
 # zh data
 
 `dictionary.json` is a learner-oriented word list
-(`word → {pinyin, translation, part_of_speech, traditional}`) generated with
-DeepSeek by `scripts/generate-dictionary.py` for words that
+(`word → {pinyin, translation, part_of_speech, traditional, tags}`) generated
+with DeepSeek by `scripts/generate-dictionary.py` for words that
 Mandarin-learning apps needed covered.
+
+It also covers place names, with candidates from
+[Wikidata](https://www.wikidata.org) (CC0), plus slang, internet slang, youth
+jargon and swear words, with candidates proposed and verified by DeepSeek.
+Those entries carry `tags` (`place`, `slang`, `internet`, `vulgar`). See
+"Slang, swear words and place names" in the main README.
 
 `traditional` (only present when it differs from the simplified word) is
 added by `scripts/build-traditional.mjs` using the simplified → traditional
