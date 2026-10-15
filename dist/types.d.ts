@@ -3,8 +3,10 @@ export interface DictionaryEntry {
     translation: string;
     part_of_speech?: string;
     traditional?: string;
+    tags?: Tag[];
     related?: string[];
 }
+export type Tag = 'vulgar' | 'slang' | 'internet' | 'place';
 export type DictionaryData = Record<string, DictionaryEntry | DictionaryEntry[]>;
 export interface CharacterData {
     pinyin?: string[];
@@ -33,6 +35,7 @@ export interface WordDetails {
     pinyin: string;
     translation: string;
     part_of_speech?: string;
+    tags?: Tag[];
     characters: WordCharacter[];
 }
 export interface Dictionary {

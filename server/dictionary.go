@@ -27,6 +27,7 @@ type WordDetails struct {
 	Pinyin       string          `json:"pinyin"`
 	Translation  string          `json:"translation"`
 	PartOfSpeech string          `json:"part_of_speech,omitempty"`
+	Tags         []string        `json:"tags,omitempty"`
 	Characters   []WordCharacter `json:"characters"`
 }
 
@@ -159,6 +160,7 @@ func (d *Dictionary) Describe(word string) *WordDetails {
 		Pinyin:       entry.Pinyin,
 		Translation:  entry.Translation,
 		PartOfSpeech: entry.PartOfSpeech,
+		Tags:         entry.Tags,
 		Characters:   characters,
 	}
 }

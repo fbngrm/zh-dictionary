@@ -112,6 +112,12 @@ test('describe breaks a word into characters', () => {
   assert.equal(createDictionary(data).character('好'), null);
 });
 
+test('tags', () => {
+  const dict = createDictionary({ 躺平: { pinyin: 'tǎngpíng', translation: 'to lie flat', tags: ['internet', 'slang'] } });
+  assert.deepEqual(dict.describe('躺平').tags, ['internet', 'slang']);
+  assert.equal('tags' in createDictionary(data).describe('好'), false);
+});
+
 test('describe with bundled data, both modes', () => {
   for (const mode of [zh, cedictMode]) {
     const bank = mode.describe('银行');

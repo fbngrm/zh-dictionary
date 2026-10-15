@@ -6,11 +6,17 @@ export interface DictionaryEntry {
   part_of_speech?: string;
   // Traditional form, only present when it differs from the simplified key.
   traditional?: string;
+  // Register or category, only present when one applies (zh data only).
+  tags?: Tag[];
   // Only present for entries originally generated with related-word data
   // (e.g. zh-patterns' story dictionary) — optional so apps that don't
   // populate it don't need to handle a required-but-empty field.
   related?: string[];
 }
+
+// vulgar: swear word, insult or vulgar; slang: informal slang; internet:
+// internet slang, meme or online buzzword; place: place name.
+export type Tag = 'vulgar' | 'slang' | 'internet' | 'place';
 
 // Shape of every word file under data/: simplified word → one entry, or
 // several when the word has more than one reading (e.g. 行 háng / xíng).
@@ -59,6 +65,7 @@ export interface WordDetails {
   pinyin: string;
   translation: string;
   part_of_speech?: string;
+  tags?: Tag[];
   characters: WordCharacter[];
 }
 

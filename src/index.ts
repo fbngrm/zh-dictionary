@@ -4,7 +4,7 @@ import type {
 import { splitPinyin, toneless } from './pinyin.js';
 
 export type {
-  CharacterData, Dictionary, DictionaryData, DictionaryEntry, HanziData, WordCharacter, WordDetails,
+  CharacterData, Dictionary, DictionaryData, DictionaryEntry, HanziData, Tag, WordCharacter, WordDetails,
 } from './types';
 export { splitPinyin, toneless } from './pinyin.js';
 
@@ -101,6 +101,7 @@ export function createDictionary(
         pinyin: entry.pinyin,
         translation: entry.translation,
         ...(entry.part_of_speech && { part_of_speech: entry.part_of_speech }),
+        ...(entry.tags && { tags: entry.tags }),
         characters,
       };
     }

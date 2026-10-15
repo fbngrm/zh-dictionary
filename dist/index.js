@@ -85,6 +85,7 @@ export function createDictionary(sources, options = {}) {
                 pinyin: entry.pinyin,
                 translation: entry.translation,
                 ...(entry.part_of_speech && { part_of_speech: entry.part_of_speech }),
+                ...(entry.tags && { tags: entry.tags }),
                 characters,
             };
         }

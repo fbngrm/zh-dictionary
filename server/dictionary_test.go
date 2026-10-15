@@ -14,7 +14,8 @@ const wordsJSON = `{
   "好": {"pinyin": "hǎo", "translation": "good", "part_of_speech": "adjective"},
   "行": [{"pinyin": "xíng", "translation": "to walk"}, {"pinyin": "háng", "translation": "row"}],
   "发": [{"pinyin": "fā", "translation": "to send out", "traditional": "發"},
-         {"pinyin": "fà", "translation": "hair", "traditional": "髮"}]
+         {"pinyin": "fà", "translation": "hair", "traditional": "髮"}],
+  "躺平": {"pinyin": "tǎngpíng", "translation": "to lie flat", "tags": ["internet", "slang"]}
 }`
 
 const hanziJSON = `{
@@ -103,6 +104,12 @@ func TestDescribe(t *testing.T) {
 	}
 	if got := d.Describe("好").Characters[0].Meaning; got != "good" {
 		t.Errorf("meaning of 好 = %q", got)
+	}
+	if got := d.Describe("躺平").Tags; !reflect.DeepEqual(got, []string{"internet", "slang"}) {
+		t.Errorf("tags of 躺平 = %q", got)
+	}
+	if got := asJSON(t, d.Describe("好")).(map[string]any); got["tags"] != nil {
+		t.Errorf("describe 好 has tags %v", got["tags"])
 	}
 }
 
