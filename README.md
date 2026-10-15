@@ -145,8 +145,8 @@ index.usedIn('女');                           // characters with 女 as a compo
 index.phoneticSeries('妈');                   // same phonetic part 马: 吗, 玛, 马, 码, 骂, …
 index.decompose('好');                        // { char: '好', decomposition: '⿰女子', components: [{ char: '女', … }, …] }
 index.etymology('妈');                        // { type: 'pictophonetic', hint: 'woman', semantic: '女', phonetic: '马', … }
-index.characterRank('好');                    // 54: the 54th most frequent character
-index.coverage('好');                         // share of running text covered by the 54 most frequent characters
+index.characterRank('好');                    // 62: the 62nd most frequent character
+index.coverage('好');                         // share of running text covered by the 62 most frequent characters
 index.hsk('爱好');                            // { hsk2: 3, hsk3: 1 }
 index.characterHsk('好');                     // lowest level of an HSK word containing 好
 ```
@@ -353,13 +353,13 @@ exported from `@fbngrm/zh-dictionary`. The raw files are exported as
 | [`data/etymology`](data/etymology) | [LGPL 3.0 or later](data/etymology/LICENSE) | credit Make Me a Hanzi; changes to this file stay LGPL |
 | [`data/strokes`](data/strokes) | [Arphic Public License](data/strokes/LICENSE) | include the license; changes to the stroke data stay under it |
 | [`data/hsk`](data/hsk) | [MIT](data/hsk/LICENSE) | keep the license notice |
-| [`data/frequency`](data/frequency) | CC BY 4.0 | credit Tatoeba and AISHELL (see its README) |
+| [`data/frequency`](data/frequency) | [CC BY-SA 4.0](data/frequency/LICENSE) | credit wordfreq and the SUBTLEX-CH authors (see its README); changes stay CC BY-SA |
 | [`data/sentences`](data/sentences) | CC BY 2.0 FR (Tatoeba), Apache 2.0 (AISHELL) | credit Tatoeba and its contributors, and AISHELL |
 
 Each mode exports `attribution`, the credit line for the data it ships.
 Show it where users can see it, for example on an About or licenses screen.
-Commercial use is allowed for all of it. CC BY-SA applies to the CEDICT data
-only, not to your app's code. See [data/cedict/README.md](data/cedict/README.md).
+Commercial use is allowed for all of it. CC BY-SA applies to the CEDICT and
+frequency data only, not to your app's code. See [data/cedict/README.md](data/cedict/README.md).
 
 Keep the datasets in separate files. Don't merge CC-CEDICT into `data/zh`,
 or our data would have to become CC BY-SA too.
@@ -372,8 +372,9 @@ npm run build:traditional   # traditional forms for data/zh (OpenCC)
 npm run build:hanzi         # character data for every character in use
 npm run build:makemeahanzi  # etymologies and stroke data
 npm run build:hsk           # HSK levels
-# example sentences and frequencies: needs local corpora and the Stanford
-# segmenter's output for their sentences, see the script
+pip install wordfreq==3.1.1 && python3 scripts/build-frequency.py  # word and character frequencies
+# example sentences: needs local corpora and the Stanford segmenter's output
+# for their sentences, see the script
 node scripts/build-sentences.mjs --tatoeba … --aishell1 … --aishell3 … --segmented …
 npm test                    # includes the server tests when Go is installed
 ```

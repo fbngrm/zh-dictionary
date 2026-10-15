@@ -3,7 +3,7 @@
   "version": "0.6.0",
   "private": true,
   "description": "Chinese–English word lookup for JS apps: pinyin, traditional forms, translations and character decomposition, with data shipped separately from the code.",
-  "license": "MIT AND CC0-1.0 AND CC-BY-SA-4.0 AND Unicode-3.0 AND LGPL-3.0-or-later AND Arphic-1999 AND CC-BY-2.0-FR AND Apache-2.0 AND CC-BY-4.0",
+  "license": "MIT AND CC0-1.0 AND CC-BY-SA-4.0 AND Unicode-3.0 AND LGPL-3.0-or-later AND Arphic-1999 AND CC-BY-2.0-FR AND Apache-2.0",
   "repository": "github:fbngrm/zh-dictionary",
   "type": "module",
   "sideEffects": false,

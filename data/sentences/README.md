@@ -4,11 +4,14 @@ Up to 5 example sentences per word and character: up to 3 from
 [Tatoeba](https://tatoeba.org/) with an English translation, and up to 2
 transcripts from the [AISHELL-1](https://www.openslr.org/33/) and
 [AISHELL-3](https://www.openslr.org/93/) speech corpora (no translation).
-A sentence is an example for a word only where both the longest dictionary
-match and the Stanford segmenter find the word (see
-[frequency](../frequency/README.md)). Easy, complete-looking sentences come
-first: around 8–16 characters with few rare words, and no AISHELL
-transcripts cut off mid-phrase (…负责人对) unless there is nothing else.
+Sentences are split into words by the longest dictionary match (data/zh
+and data/cedict), checked against the Stanford segmenter: a sentence is an
+example for a word only where the segmenter does not cut through the word or
+join it with its neighbours, so 让我们 is no example for 让我, nor
+二零零九年 for 二. Easy, complete-looking sentences come first: around 8–16
+characters with few rare words (by [frequency](../frequency/README.md)), and
+no AISHELL transcripts cut off mid-phrase (…负责人对) unless there is
+nothing else.
 Characters that rarely stand alone also get sentences where they are part of
 a word.
 

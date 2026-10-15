@@ -1,16 +1,18 @@
 {
   "name": "frequency",
-  "unit": "occurrences per million characters, averaged over the corpora",
-  "characters": {
-    "tatoeba": 342709,
-    "aishell1": 1938269,
-    "aishell3": 762323
+  "source": {
+    "name": "wordfreq",
+    "version": "3.1.1",
+    "wordlist": "large_zh",
+    "url": "https://github.com/rspeer/wordfreq",
+    "license": "CC-BY-SA-4.0"
   },
-  "sentences": {
-    "tatoeba": 35070,
-    "aishell1": 133826,
-    "aishell3": 68923
+  "unit": {
+    "words": "occurrences per million words",
+    "characters": "occurrences per million characters"
   },
-  "license": "CC-BY-4.0",
-  "attribution": "Character and word frequencies computed from Tatoeba (https://tatoeba.org/, CC BY 2.0 FR) and the AISHELL-1 and AISHELL-3 transcripts (Apache License 2.0)."
+  "words": 63175,
+  "characters": 8587,
+  "license": "CC-BY-SA-4.0",
+  "attribution": "Word frequencies from wordfreq by Robyn Speer (https://github.com/rspeer/wordfreq, doi:10.5281/zenodo.7199437), CC BY-SA 4.0. Its Chinese data draws on Wikipedia, OpenSubtitles 2018 (https://www.opensubtitles.org/), SUBTLEX-CH by Qing Cai and Marc Brysbaert (SUBTLEX is freely available data), Google Books Ngrams (http://books.google.com/ngrams), news, web text, Twitter and the Jieba word list."
 }

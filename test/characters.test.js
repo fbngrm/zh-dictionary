@@ -76,6 +76,9 @@ test('frequency, coverage and HSK levels', () => {
   assert.deepEqual(index.hsk('爱好'), { hsk2: 3, hsk3: 1 });
   assert.equal(index.characterHsk('好').hsk3, 1);
   assert.equal(index.characterRank('不存在'), null);
+  // From wordfreq, not the example sentences' corpora, which overuse 汤姆
+  // (Tom) and spell out numbers.
+  assert.ok(index.wordRank('汤姆') > 1000 && index.characterRank('零') > 1000);
 });
 
 test('stroke and sentence files', () => {

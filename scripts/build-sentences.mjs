@@ -1,15 +1,11 @@
 #!/usr/bin/env node
-// Builds, from Tatoeba and the AISHELL-1/AISHELL-3 transcripts:
-//
-// - data/frequency/frequency.json: how often each character and each
-//   dictionary word occurs per million characters, averaged over the three
-//   corpora with equal weight (AISHELL-1 alone is two thirds of the text, and
-//   it is news read aloud, with numbers spelled out).
-// - data/sentences/<n>.json: example sentences per word and character, up
-//   to 3 from Tatoeba (with an English translation) and 2 from AISHELL.
-//   Words are spread over 256 files by the code point of their first
-//   character (n = code point % 256, see sentenceFile()), so web apps fetch
-//   one small file per lookup.
+// Builds data/sentences/<n>.json from Tatoeba and the AISHELL-1/AISHELL-3
+// transcripts: example sentences per word and character, up to 3 from
+// Tatoeba (with an English translation) and 2 from AISHELL. Words are spread
+// over 256 files by the code point of their first character (n = code point
+// % 256, see sentenceFile()), so web apps fetch one small file per lookup.
+// Sentences are ranked with data/frequency (scripts/build-frequency.py), so
+// build that first.
 //
 // The corpora are large downloads, so the script reads local copies:
 //   node scripts/build-sentences.mjs \
@@ -152,12 +148,7 @@ function checkedWords(text) {
   });
 }
 
-// Counts per corpus, and per word the sentences it occurs in as a word.
-const CORPORA = ['tatoeba', 'aishell1', 'aishell3'];
-const charCounts = Object.fromEntries(CORPORA.map((c) => [c, new Map()]));
-const wordCounts = Object.fromEntries(CORPORA.map((c) => [c, new Map()]));
-const totals = Object.fromEntries(CORPORA.map((c) => [c, 0]));
-const inc = (map, key) => map.set(key, (map.get(key) ?? 0) + 1);
+// Per word the sentences it occurs in as a word.
 const byWord = new Map();
 const byChar = new Map();
 const push = (map, key, i) => {
@@ -165,43 +156,18 @@ const push = (map, key, i) => {
   map.get(key).push(i);
 };
 sentences.forEach((s, i) => {
-  for (const c of s.text) {
-    if (!HAN.test(c)) continue;
-    inc(charCounts[s.source], c);
-    totals[s.source]++;
-  }
-  const seenHere = new Set();
-  for (const w of checkedWords(s.text)) {
-    if (!lexicon.has(w)) continue;
-    inc(wordCounts[s.source], w);
-    if (!seenHere.has(w)) push(byWord, w, i);
-    seenHere.add(w);
+  for (const w of new Set(checkedWords(s.text))) {
+    if (lexicon.has(w)) push(byWord, w, i);
   }
   for (const c of new Set(s.text)) if (HAN.test(c)) push(byChar, c, i);
 });
-
-// Per million characters in each corpus, averaged; words seen fewer than
-// twice in all are left out.
-function perMillion(counts, keep) {
-  const keys = new Set(CORPORA.flatMap((c) => [...counts[c].keys()]));
-  const rate = (k) => CORPORA.reduce((sum, c) => sum + (counts[c].get(k) ?? 0) / totals[c] * 1e6, 0) / CORPORA.length;
-  return Object.fromEntries([...keys].filter(keep)
-    .map((k) => [k, Math.round(rate(k) * 100) / 100])
-    .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)));
-}
-const seenTimes = (counts, k) => CORPORA.reduce((n, c) => n + (counts[c].get(k) ?? 0), 0);
-const total = CORPORA.reduce((n, c) => n + totals[c], 0);
-const frequency = {
-  characters: perMillion(charCounts, () => true),
-  words: perMillion(wordCounts, (w) => seenTimes(wordCounts, w) >= 2),
-};
-writeFileSync(`${DATA_DIR}frequency/frequency.json`, `{"characters":${JSON.stringify(frequency.characters)},\n"words":${JSON.stringify(frequency.words)}}\n`);
 
 // Easy, complete-looking sentences first (in the spirit of GDEX, "good
 // dictionary examples"): around 8–16 characters, few rare words, and for
 // AISHELL, whose transcripts are often cut mid-phrase ("…负责人对"), not
 // starting or ending on a word that cannot start or end a sentence.
 // AISHELL-1 (news) comes after AISHELL-3.
+const frequency = JSON.parse(readFileSync(`${DATA_DIR}frequency/frequency.json`, 'utf8'));
 const wordRanks = new Map(Object.keys(frequency.words).map((w, i) => [w, i + 1]));
 const COMMON = 10000;
 const NO_END = new Set(['对', '在', '和', '与', '及', '将', '把', '被', '而', '并', '但', '为', '从', '向', '由', '于', '以', '是', '给', '跟', '让', '或', '一']);
@@ -253,19 +219,8 @@ writeFileSync(`${DATA_DIR}sentences/meta.json`, JSON.stringify({
   attribution: 'Example sentences from Tatoeba (https://tatoeba.org/) and its contributors, CC BY 2.0 FR, '
     + 'and from the AISHELL-1 and AISHELL-3 corpora by Beijing Shell Shell Technology Co., Ltd., Apache License 2.0.',
 }, null, 2) + '\n');
-writeFileSync(`${DATA_DIR}frequency/meta.json`, JSON.stringify({
-  name: 'frequency',
-  unit: 'occurrences per million characters, averaged over the corpora',
-  characters: totals,
-  sentences: counts,
-  license: 'CC-BY-4.0',
-  attribution: 'Character and word frequencies computed from Tatoeba (https://tatoeba.org/, CC BY 2.0 FR) '
-    + 'and the AISHELL-1 and AISHELL-3 transcripts (Apache License 2.0).',
-}, null, 2) + '\n');
-
 if (boundaries.size) {
   console.log(`second segmenter: ${checks.sentences} of ${sentences.length} sentences checked, `
     + `${checks.rejected} of ${checks.words} words rejected`);
 }
-console.log(`${sentences.length} sentences (${JSON.stringify(counts)}), ${total} characters; `
-  + `${Object.keys(frequency.characters).length} characters and ${Object.keys(frequency.words).length} words; examples for ${words.size} words`);
+console.log(`${sentences.length} sentences (${JSON.stringify(counts)}); examples for ${words.size} words`);
