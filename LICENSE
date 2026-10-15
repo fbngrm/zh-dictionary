@@ -25,3 +25,7 @@ SOFTWARE.
 This license covers the code only (src/, dist/, modes/, server/, scripts/, test/). The data
 under data/ is licensed separately; see data/zh/LICENSE (CC0 1.0),
 data/cedict/LICENSE (CC BY-SA 4.0) and data/hanzi/LICENSE (Unicode License v3).
+
+HSK fields, including those embedded in word and sentence data, use the source
+credited in data/hsk/meta.json; retain data/hsk/LICENSE (MIT). See each data
+folder README for its other licenses and attribution requirements.

@@ -21,5 +21,15 @@
     }
   },
   "license": "CC-BY-2.0-FR AND Apache-2.0",
-  "attribution": "Example sentences from Tatoeba (https://tatoeba.org/) and its contributors, CC BY 2.0 FR, and from the AISHELL-1 and AISHELL-3 corpora by Beijing Shell Shell Technology Co., Ltd., Apache License 2.0."
+  "attribution": "Example sentences from Tatoeba (https://tatoeba.org/) and its contributors, CC BY 2.0 FR, and from the AISHELL-1 and AISHELL-3 corpora by Beijing Shell Shell Technology Co., Ltd., Apache License 2.0.",
+  "grading": {
+    "versions": [
+      "hsk3_2025",
+      "hsk2"
+    ],
+    "method": "Highest listed token level, null when any Chinese token is unlisted; Intl.Segmenter zh, OpenCC tw to cn",
+    "hskSource": "../hsk/meta.json",
+    "corpus": "https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.0.0",
+    "coverageNote": "HSK 2025 mapping is incomplete; null does not mean beyond HSK."
+  }
 }

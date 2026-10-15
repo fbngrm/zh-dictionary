@@ -147,7 +147,7 @@ index.decompose('好');                        // { char: '好', decomposition: 
 index.etymology('妈');                        // { type: 'pictophonetic', hint: 'woman', semantic: '女', phonetic: '马', … }
 index.characterRank('好');                    // 62: the 62nd most frequent character
 index.coverage('好');                         // share of running text covered by the 62 most frequent characters
-index.hsk('爱好');                            // { hsk2: 3, hsk3: 1 }
+index.hsk('爱好');                            // { hsk2: 3, hsk3: 1, hsk3_2025: 2 }
 index.characterHsk('好');                     // lowest level of an HSK word containing 好
 ```
 
@@ -432,3 +432,16 @@ git push && git push --tags
 Tokens longer than `--max-len` (default 4 hanzi) are treated as likely
 word-segmentation artifacts and written to `data/zh/dictionary.skipped.json`
 for manual review instead of being sent to DeepSeek.
+
+### Versioned sentence audio and grades
+
+Word entries include optional `hsk` fields: `hsk2`, `hsk3` (2021), and
+`hsk3_2025` (2025 syllabus). The 2025 source mapping is incomplete; see
+[data/hsk](data/hsk/README.md). `describe()` preserves these fields.
+
+Examples carry both vocabulary grades and, for AISHELL-3, original pinyin
+and a relative MP3 path. `sentenceAudioUrl(id)` resolves a recording against
+the pinned public corpus. `sentenceMetadataUrl(source, id)` identifies the
+JSON shard containing its transcript, full token breakdown, and grades.
+See [sentence data](data/sentences/README.md) and the
+[public corpus](https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.0.0).

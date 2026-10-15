@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Builds data/hsk/hsk.json: the HSK 2.0 (levels 1–6) and HSK 3.0 (levels 1–6,
-// and 7 for the 7–9 band) level of every word on the official lists, from
+// and 7 for the 7–9 band) levels present in the source mapping, from
 // complete-hsk-vocabulary by Yanis Zafirópulos (MIT).
 //
 // Usage:
@@ -18,7 +18,7 @@ const words = inputIndex !== -1
   ? JSON.parse(readFileSync(`${process.argv[inputIndex + 1]}/complete.min.json`, 'utf8'))
   : await (await fetch(URL_)).json();
 
-// {"s":"好","l":["t1","n1","o1"],…}: "o" levels are HSK 2.0, "n" levels HSK 3.0.
+// Prefixes: o = HSK 2.0, n = 2021 standard, t = 2025 syllabus (incomplete).
 const hsk = {};
 for (const { s: word, l: levels } of words) {
   const level = (prefix) => Math.min(...levels.filter((l) => l[0] === prefix).map((l) => Number(l.slice(1))));
