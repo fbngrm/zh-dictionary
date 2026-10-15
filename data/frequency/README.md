@@ -11,9 +11,13 @@ Counted in about 3 million characters of text: Tatoeba's Mandarin sentences
 (everyday language) and the AISHELL-1 and AISHELL-3 transcripts (news and
 other text read aloud). Each corpus has equal weight, so AISHELL-1, which
 is two thirds of the text, does not dominate. Words are found by splitting
-sentences at the longest dictionary match (data/zh and data/cedict); words
-seen fewer than twice are left out. Expect some bias: numbers are spelled out
-in AISHELL, and Tatoeba's example sentences use 汤姆 (Tom) a lot.
+sentences at the longest dictionary match (data/zh and data/cedict),
+checked against the Stanford segmenter: a word only counts where the
+segmenter does not cut through it or join it with its neighbours, so 让我们
+does not count as 让我, nor 二零零九年 as 二 and 零. Words seen fewer than
+twice are left out. Expect some bias: character counts include the numbers
+AISHELL spells out (二, 零), and Tatoeba's example sentences use 汤姆 (Tom) a
+lot.
 
 `createCharacterIndex()` turns this into ranks (`characterRank`,
 `wordRank`) and text coverage (`coverage`).

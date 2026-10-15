@@ -4,8 +4,13 @@ Up to 5 example sentences per word and character: up to 3 from
 [Tatoeba](https://tatoeba.org/) with an English translation, and up to 2
 transcripts from the [AISHELL-1](https://www.openslr.org/33/) and
 [AISHELL-3](https://www.openslr.org/93/) speech corpora (no translation).
-Short sentences come first; characters that rarely stand alone also get
-sentences where they are part of a word.
+A sentence is an example for a word only where both the longest dictionary
+match and the Stanford segmenter find the word (see
+[frequency](../frequency/README.md)). Easy, complete-looking sentences come
+first: around 8–16 characters with few rare words, and no AISHELL
+transcripts cut off mid-phrase (…负责人对) unless there is nothing else.
+Characters that rarely stand alone also get sentences where they are part of
+a word.
 
 The ~48,000 words are spread over 256 files in `shards/` by the code point of
 their first character (`shards/<code point % 256>.json`, see

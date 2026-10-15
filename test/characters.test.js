@@ -35,6 +35,17 @@ test('words containing a character, most frequent first', () => {
   assert.deepEqual(ranked, [...ranked].sort((a, b) => index.wordRank(a) - index.wordRank(b)));
 });
 
+test('words containing a traditional character', () => {
+  const words = index.wordsWith('媽');
+  assert.ok(words.includes('妈妈'));
+  const traditional = (w) => [zhData[w]].flat().map((e) => e.traditional ?? w);
+  assert.ok(words.every((w) => traditional(w).some((t) => t.includes('媽'))));
+  // 干 is 乾 in 干净 but 幹 in 干部.
+  assert.ok(index.wordsWith('乾').includes('干净') && !index.wordsWith('乾').includes('干部'));
+  assert.ok(index.wordsWith('幹').includes('干部'));
+  assert.ok(index.wordsWith('媽', { position: 'start' }).every((w) => traditional(w).some((t) => t.startsWith('媽'))));
+});
+
 test('characters built from a component', () => {
   const chars = index.usedIn('女');
   assert.ok(chars.includes('好') && chars.includes('妈'));

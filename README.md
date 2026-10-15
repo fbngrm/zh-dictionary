@@ -372,8 +372,9 @@ npm run build:traditional   # traditional forms for data/zh (OpenCC)
 npm run build:hanzi         # character data for every character in use
 npm run build:makemeahanzi  # etymologies and stroke data
 npm run build:hsk           # HSK levels
-# example sentences and frequencies: needs local corpora, see the script
-node scripts/build-sentences.mjs --tatoeba … --aishell1 … --aishell3 …
+# example sentences and frequencies: needs local corpora and the Stanford
+# segmenter's output for their sentences, see the script
+node scripts/build-sentences.mjs --tatoeba … --aishell1 … --aishell3 … --segmented …
 npm test                    # includes the server tests when Go is installed
 ```
 

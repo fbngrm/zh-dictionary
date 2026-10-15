@@ -7,8 +7,20 @@ const own = (data, key) => data && hasOwnProperty.call(data, key) ? data[key] : 
 // are built on first use.
 export function createCharacterIndex(options) {
     const { hanzi, etymology, frequency, hsk } = options;
-    const words = [...new Set((Array.isArray(options.words) ? options.words : options.words ? [options.words] : [])
-            .flatMap((data) => Object.keys(data)))];
+    // Each word with the ways it is written, so a traditional character finds
+    // the words written with it (媽 → 妈妈; 乾 → 干净, not 干部).
+    const forms = new Map();
+    for (const data of Array.isArray(options.words) ? options.words : options.words ? [options.words] : []) {
+        for (const [word, value] of Object.entries(data)) {
+            if (!forms.has(word))
+                forms.set(word, new Set([word]));
+            for (const entry of Array.isArray(value) ? value : [value]) {
+                if (entry.traditional)
+                    forms.get(word).add(entry.traditional);
+            }
+        }
+    }
+    const written = (word) => [...forms.get(word) ?? [word]];
     // frequency.json lists characters and words most frequent first.
     const ranks = (counts) => new Map(Object.keys(counts ?? {}).map((k, i) => [k, i + 1]));
     let charRanks;
@@ -22,11 +34,10 @@ export function createCharacterIndex(options) {
     function wordsWith(char, { position = 'any', limit = Infinity } = {}) {
         if (!wordsByChar) {
             wordsByChar = new Map();
-            for (const word of words) {
-                const chars = [...word];
-                if (chars.length < 2)
+            for (const word of forms.keys()) {
+                if ([...word].length < 2)
                     continue;
-                for (const c of new Set(chars)) {
+                for (const c of new Set(written(word).flatMap((form) => [...form]))) {
                     if (!wordsByChar.has(c))
                         wordsByChar.set(c, []);
                     wordsByChar.get(c).push(word);
@@ -36,8 +47,8 @@ export function createCharacterIndex(options) {
                 list.sort(byWordRank);
         }
         const list = wordsByChar.get(char) ?? [];
-        const matches = position === 'start' ? list.filter((w) => w.startsWith(char))
-            : position === 'end' ? list.filter((w) => w.endsWith(char)) : list;
+        const matches = position === 'start' ? list.filter((w) => written(w).some((form) => form.startsWith(char)))
+            : position === 'end' ? list.filter((w) => written(w).some((form) => form.endsWith(char))) : list;
         return matches.slice(0, limit);
     }
     let charsByComponent;

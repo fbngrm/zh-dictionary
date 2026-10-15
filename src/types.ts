@@ -128,7 +128,9 @@ export interface DecompositionNode {
 }
 
 export interface CharacterIndex {
-  // Words of two or more characters containing `char`, most frequent first.
+  // Words of two or more characters containing `char` in their simplified or
+  // traditional form, most frequent first. Words are returned by their
+  // dictionary key (simplified).
   wordsWith(char: string, options?: { position?: 'start' | 'end' | 'any'; limit?: number }): string[];
   // Characters that have `component` as a direct component, most frequent first.
   usedIn(component: string): string[];
