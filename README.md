@@ -17,7 +17,7 @@ decomposition into components.
 
 | Mode | Import | Words | License |
 | --- | --- | --- | --- |
-| `zh` | `@fbngrm/zh-dictionary/zh` | [our own data](data/zh): ~19k learner words with part of speech | CC0 1.0 |
+| `zh` | `@fbngrm/zh-dictionary/zh` | [our own data](data/zh): ~22.6k learner words with part of speech and tags, including slang, swear words and place names | CC0 1.0 |
 | `cedict` | `@fbngrm/zh-dictionary/cedict` | [CC-CEDICT](data/cedict): ~121k words | CC BY-SA 4.0 |
 
 Both modes share the [character data](data/hanzi) (~15k characters, from
@@ -31,17 +31,17 @@ modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 The package installs straight from GitHub (it is not on the npm registry):
 
 ```bash
-npm install --allow-git=root github:fbngrm/zh-dictionary#v0.6.0
+npm install --allow-git=root github:fbngrm/zh-dictionary#v0.7.0
 # or
-yarn add github:fbngrm/zh-dictionary#v0.6.0
-pnpm add github:fbngrm/zh-dictionary#v0.6.0
+yarn add github:fbngrm/zh-dictionary#v0.7.0
+pnpm add github:fbngrm/zh-dictionary#v0.7.0
 ```
 
 which adds:
 
 ```json
 "dependencies": {
-  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.6.0"
+  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.7.0"
 }
 ```
 
@@ -109,6 +109,25 @@ character('說');
 (`⿰` = left/right, `⿱` = top/bottom, …). Call `character()` on a
 component to decompose it further.
 
+### Tags: slang, swear words, place names
+
+In zh mode, entries can carry `tags`: `vulgar` (swear words and insults),
+`slang`, `internet` (internet slang, memes, buzzwords) and `place` (place
+names). `describe()` includes the tags of the entry it describes.
+
+```ts
+import { lookup, lookupAll, describe } from '@fbngrm/zh-dictionary/zh';
+
+lookup('北京');   // { pinyin: 'Běijīng', translation: 'Beijing (capital of China)', tags: ['place'], … }
+lookup('躺平');   // { translation: 'lying flat; …', tags: ['internet', 'slang'], … }
+
+// Words with a standard and a slang meaning keep the standard one first:
+lookupAll('凉凉'); // [{ translation: 'cool; cold', … }, { translation: 'doomed; finished; done for', tags: ['internet', 'slang'], … }]
+
+// e.g. hide swear words in an app for children:
+const safe = lookupAll(word).filter((e) => !e.tags?.includes('vulgar'));
+```
+
 ### CC-CEDICT mode
 
 Same functions, larger vocabulary, no part of speech:
@@ -166,7 +185,7 @@ quick start, GitHub serves them directly:
 ```ts
 import { createDictionary } from '@fbngrm/zh-dictionary';
 
-const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.6.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.7.0/data';
 const [words, hanzi] = await Promise.all([
   fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
   fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
@@ -373,3 +392,35 @@ git push && git push --tags
 Tokens longer than `--max-len` (default 4 hanzi) are treated as likely
 word-segmentation artifacts and written to `data/zh/dictionary.skipped.json`
 for manual review instead of being sent to DeepSeek.
+
+### Slang, swear words and place names
+
+These were added with the same script, from two candidate lists in
+[`scripts/candidates/`](scripts/candidates):
+
+```bash
+# Place names from Wikidata (CC0): countries and territories, capitals,
+# cities with 1M+ people, Chinese and Taiwanese administrative divisions.
+node scripts/fetch-places.mjs > scripts/candidates/places.json
+
+# Slang, internet slang, youth jargon and swear words: DeepSeek proposes
+# terms per sub-theme, seeded with the official yearly buzzword lists, and a
+# separate DeepSeek pass keeps only real, commonly used ones.
+python3 scripts/brainstorm-terms.py --out scripts/candidates/terms.json
+
+python3 scripts/generate-dictionary.py --candidates scripts/candidates/places.json \
+  --tag place --context "place names: …" --max-len 13 --add-senses
+python3 scripts/generate-dictionary.py --candidates scripts/candidates/terms.json \
+  --context "slang, internet slang, youth jargon or vulgar words …" --max-len 13 --add-senses
+npm run build:traditional && npm run build:hanzi
+```
+
+`--tag` and the tags in `terms.json` are hints. DeepSeek keeps a tag only
+when it fits the word's meaning, and standard vocabulary gets none.
+`--add-senses` handles words that already exist: it tags the matching
+entry (北京 → `place`), or adds the missing meaning as a new tagged entry
+after the existing ones (汉堡: hamburger, then Hamburg).
+
+No third-party word lists were copied, so the data stays CC0. CC-CEDICT,
+Wiktionary, Wikipedia and LDNOOBW were deliberately not used, because their
+licenses require attribution or share-alike.
