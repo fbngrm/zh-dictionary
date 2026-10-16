@@ -31,17 +31,17 @@ modes it imports. Importing `zh` never pulls in the 14 MB CC-CEDICT file.
 The package installs straight from GitHub (it is not on the npm registry):
 
 ```bash
-npm install --allow-git=root github:fbngrm/zh-dictionary#v0.7.0
+npm install --allow-git=root github:fbngrm/zh-dictionary#v0.8.0
 # or
-yarn add github:fbngrm/zh-dictionary#v0.7.0
-pnpm add github:fbngrm/zh-dictionary#v0.7.0
+yarn add github:fbngrm/zh-dictionary#v0.8.0
+pnpm add github:fbngrm/zh-dictionary#v0.8.0
 ```
 
 which adds:
 
 ```json
 "dependencies": {
-  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.7.0"
+  "@fbngrm/zh-dictionary": "github:fbngrm/zh-dictionary#v0.8.0"
 }
 ```
 
@@ -160,7 +160,7 @@ the file:
 ```ts
 import { sentenceFile, strokeFile } from '@fbngrm/zh-dictionary';
 
-const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.6.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.8.0/data';
 const strokes = await (await fetch(`${base}/strokes/${strokeFile('好')}`)).json();
 // { strokes: ['M 330 202 Q …', …], medians: [[[x, y], …], …] }: one SVG path per stroke, in order
 const sentences = (await (await fetch(`${base}/sentences/${sentenceFile('银行')}`)).json())['银行'];
@@ -249,7 +249,7 @@ quick start, GitHub serves them directly:
 ```ts
 import { createDictionary } from '@fbngrm/zh-dictionary';
 
-const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.7.0/data';
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.8.0/data';
 const [words, hanzi] = await Promise.all([
   fetch(`${base}/cedict/cedict.json`).then((r) => r.json()),
   fetch(`${base}/hanzi/hanzi.json`).then((r) => r.json()),
