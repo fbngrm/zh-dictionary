@@ -40,3 +40,6 @@ Commercial use is allowed.
 npm run build:cedict   # downloads the latest release from MDBG
 npm test
 ```
+
+The added `hsk` fields retain the [separate source notices](../hsk/README.md),
+in addition to the CC-CEDICT terms.

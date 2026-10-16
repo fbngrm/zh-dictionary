@@ -1,0 +1,18 @@
+{
+  "name": "frequency",
+  "source": {
+    "name": "wordfreq",
+    "version": "3.1.1",
+    "wordlist": "large_zh",
+    "url": "https://github.com/rspeer/wordfreq",
+    "license": "CC-BY-SA-4.0"
+  },
+  "unit": {
+    "words": "occurrences per million words",
+    "characters": "occurrences per million characters"
+  },
+  "words": 63278,
+  "characters": 8587,
+  "license": "CC-BY-SA-4.0",
+  "attribution": "Word frequencies from wordfreq by Robyn Speer (https://github.com/rspeer/wordfreq, doi:10.5281/zenodo.7199437), CC BY-SA 4.0. Its Chinese data draws on Wikipedia, OpenSubtitles 2018 (https://www.opensubtitles.org/), SUBTLEX-CH by Qing Cai and Marc Brysbaert (SUBTLEX is freely available data), Google Books Ngrams (http://books.google.com/ngrams), news, web text, Twitter and the Jieba word list."
+}

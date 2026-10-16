@@ -37,9 +37,9 @@ func main() {
 func loadModes(dataDir string) (map[string]*mode, error) {
 	path := func(p string) string { return filepath.Join(dataDir, p) }
 	var hanzi map[string]Character
-	var hanziMeta, cedictMeta struct{ Attribution string }
+	var hanziMeta, cedictMeta, hskMeta struct{ Attribution string }
 	for p, v := range map[string]any{
-		"hanzi/hanzi.json": &hanzi, "hanzi/meta.json": &hanziMeta, "cedict/meta.json": &cedictMeta,
+		"hanzi/hanzi.json": &hanzi, "hanzi/meta.json": &hanziMeta, "cedict/meta.json": &cedictMeta, "hsk/meta.json": &hskMeta,
 	} {
 		if err := loadJSON(path(p), v); err != nil {
 			return nil, err
@@ -54,8 +54,8 @@ func loadModes(dataDir string) (map[string]*mode, error) {
 		return nil, err
 	}
 	return map[string]*mode{
-		"zh":     {NewDictionary(zh, hanzi), hanziMeta.Attribution},
-		"cedict": {NewDictionary(cedict, hanzi), cedictMeta.Attribution + " " + hanziMeta.Attribution},
+		"zh":     {NewDictionary(zh, hanzi), hanziMeta.Attribution + " " + hskMeta.Attribution},
+		"cedict": {NewDictionary(cedict, hanzi), cedictMeta.Attribution + " " + hanziMeta.Attribution + " " + hskMeta.Attribution},
 	}, nil
 }
 

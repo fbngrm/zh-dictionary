@@ -1,0 +1,36 @@
+{
+  "name": "sentences",
+  "sentences": {
+    "tatoeba": 35070,
+    "aishell1": 133826,
+    "aishell3": 68923
+  },
+  "words": 45916,
+  "sources": {
+    "tatoeba": {
+      "url": "https://tatoeba.org/",
+      "license": "CC-BY-2.0-FR"
+    },
+    "aishell1": {
+      "url": "https://www.openslr.org/33/",
+      "license": "Apache-2.0"
+    },
+    "aishell3": {
+      "url": "https://www.openslr.org/93/",
+      "license": "Apache-2.0"
+    }
+  },
+  "license": "CC-BY-2.0-FR AND Apache-2.0",
+  "attribution": "Example sentences from Tatoeba (https://tatoeba.org/) and its contributors, CC BY 2.0 FR, and from the AISHELL-1 and AISHELL-3 corpora by Beijing Shell Shell Technology Co., Ltd., Apache License 2.0.",
+  "grading": {
+    "versions": [
+      "hsk3_2025",
+      "hsk2"
+    ],
+    "method": "Highest listed token level, null when any Chinese token is unlisted; Intl.Segmenter zh, OpenCC tw to cn",
+    "hskSource": "../hsk/meta.json",
+    "corpus": "https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.1.0",
+    "coverageNote": "Full 2025 syllabus: 11,000 entries / 10,896 spellings. Lowest level across readings and senses.",
+    "implementation": "https://github.com/fbngrm/zh-grader/tree/v0.1.0"
+  }
+}

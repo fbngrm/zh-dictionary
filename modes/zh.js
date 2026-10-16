@@ -5,6 +5,7 @@ import { createDictionary } from '../dist/index.js';
 import data from '../data/zh/dictionary.json' with { type: 'json' };
 import hanzi from '../data/hanzi/hanzi.json' with { type: 'json' };
 import hanziMeta from '../data/hanzi/meta.json' with { type: 'json' };
+import hskMeta from '../data/hsk/meta.json' with { type: 'json' };
 
 export const { lookup, lookupAll, has, describe, character } = createDictionary(data, { hanzi });
-export const attribution = hanziMeta.attribution;
+export const attribution = `${hanziMeta.attribution} ${hskMeta.attribution}`;

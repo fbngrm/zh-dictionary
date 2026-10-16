@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 // Builds data/hanzi/hanzi.json: per-character readings, definition, radical,
 // stroke count, traditional/simplified variants and decomposition, for every
-// character used in data/zh and data/cedict plus their components.
+// character used in data/zh and data/cedict plus their components, with the
+// radical number, level in the Table of General Standard Chinese Characters,
+// reading frequencies, semantic variants and phonetic groups.
+// Also builds data/hanzi/unihan.json, the rest of what a full character entry
+// shows (as in Pleco's Unihan tab), kept separate so apps that bundle
+// hanzi.json stay small: Cantonese, Japanese, Korean, Vietnamese and Middle
+// Chinese readings, Cangjie and Four-Corner codes.
 //
 // Usage:
 //   node scripts/build-hanzi.mjs                    # download sources
@@ -37,7 +43,7 @@ const files = Object.fromEntries(await Promise.all(Object.entries(SOURCES).map(a
 const unihan = new Map();
 let unicodeVersion;
 for (const [name, content] of unzip(files['Unihan.zip'])) {
-  if (!/^Unihan_(Readings|Variants|IRGSources)\.txt$/.test(name)) continue;
+  if (!/^Unihan_(Readings|Variants|IRGSources|DictionaryLikeData|OtherMappings)\.txt$/.test(name)) continue;
   for (const line of content.toString('utf8').split('\n')) {
     unicodeVersion ??= line.match(/^# Unicode Version (\S+)/)?.[1];
     const m = line.match(/^U\+([0-9A-F]+)\t(k\w+)\t(.*)$/);
@@ -89,6 +95,46 @@ function readings(u) {
 
 const components = (char) => [...(ids.get(char) ?? '')].filter((c) => !NOT_A_COMPONENT.test(c));
 
+const list = (value) => value?.split(' ').filter(Boolean) ?? [];
+const codePoints = (value) => [...new Set(list(value).map((v) => String.fromCodePoint(parseInt(v.slice(2), 16))))];
+
+// The learner-facing extra Unihan fields, only where present.
+function unihanExtras(char, u) {
+  // "38.3": radical 38 plus 3 strokes; "149'.2": the simplified form of 149.
+  const [radicalNumber, extraStrokes] = (u.kRSUnicode?.split(' ')[0] ?? '').replace(/'+/, '').split('.');
+  // "2013:581": position in the 2013 Table of General Standard Chinese
+  // Characters; 1–3500 are level 1 (common), up to 6500 level 2, then level 3.
+  const tgh = Number(u.kTGH?.match(/2013:(\d+)/)?.[1]);
+  // "hǎo(6060) hāo(142) hào(115)": counts per reading in the Xiandai Hanyu
+  // Pinlu Cidian (1986).
+  const pinlu = Object.fromEntries(list(u.kHanyuPinlu).map((v) => v.match(/^(.+)\((\d+)\)$/)).filter(Boolean)
+    .map(([, reading, count]) => [reading, Number(count)]));
+  const semanticVariants = codePoints(u.kSemanticVariant?.replace(/<\S+/g, '')).filter((v) => v !== char);
+  return {
+    ...(radicalNumber && { radicalNumber: Number(radicalNumber) }),
+    ...(extraStrokes && { extraStrokes: Number(extraStrokes) }),
+    ...(tgh && { level: tgh <= 3500 ? 1 : tgh <= 6500 ? 2 : 3 }),
+    ...(Object.keys(pinlu).length && { readingFrequency: pinlu }),
+    ...(semanticVariants.length && { semanticVariants }),
+    // Groups in Casey's "Ten Thousand Characters": characters sharing a
+    // number share a phonetic element. Starred ("481*") entries are irregular.
+    ...(u.kPhonetic && { phoneticGroups: [...new Set(list(u.kPhonetic).map((v) => Number(v.replace(/\D+$/, ''))))] }),
+  };
+}
+
+// Other languages' readings and input codes, for data/hanzi/unihan.json.
+function unihanReadings(u) {
+  return {
+    ...(u.kCantonese && { cantonese: list(u.kCantonese) }),
+    ...(u.kJapanese && { japanese: list(u.kJapanese) }),
+    ...(u.kHangul && { korean: list(u.kHangul).map((v) => v.split(':')[0]) }),
+    ...(u.kVietnamese && { vietnamese: list(u.kVietnamese) }),
+    ...(u.kTang && { middleChinese: list(u.kTang).map((v) => v.replace(/^\*/, '')) }),
+    ...(u.kCangjie && { cangjie: u.kCangjie }),
+    ...(u.kFourCornerCode && { fourCorner: list(u.kFourCornerCode) }),
+  };
+}
+
 // Every character in either dataset (both scripts), then their components.
 const wanted = new Set();
 for (const file of ['zh/dictionary.json', 'cedict/cedict.json']) {
@@ -102,6 +148,7 @@ for (const file of ['zh/dictionary.json', 'cedict/cedict.json']) {
 for (const c of wanted) for (const part of components(c)) wanted.add(part);
 
 const hanzi = {};
+const unihanExtra = {};
 for (const char of [...wanted].sort((a, b) => a.codePointAt(0) - b.codePointAt(0))) {
   const u = unihan.get(char) ?? {};
   const radical = radicals.get(u.kRSUnicode?.split(/[ .]/)[0]);
@@ -116,13 +163,17 @@ for (const char of [...wanted].sort((a, b) => a.codePointAt(0) - b.codePointAt(0
     ...(ids.has(char) && { decomposition: ids.get(char), components: components(char) }),
     ...(variants('kTraditionalVariant')?.length && { traditional: variants('kTraditionalVariant') }),
     ...(variants('kSimplifiedVariant')?.length && { simplified: variants('kSimplifiedVariant') }),
+    ...unihanExtras(char, u),
   };
   if (Object.keys(entry).length) hanzi[char] = entry;
+  const more = unihanReadings(u);
+  if (Object.keys(more).length) unihanExtra[char] = more;
 }
 
 // One character per line keeps diffs readable.
-const body = Object.entries(hanzi).map(([c, e]) => `${JSON.stringify(c)}:${JSON.stringify(e)}`).join(',\n');
-writeFileSync(`${DATA_DIR}hanzi/hanzi.json`, `{\n${body}\n}\n`);
+const lines = (data) => `{\n${Object.entries(data).map(([c, e]) => `${JSON.stringify(c)}:${JSON.stringify(e)}`).join(',\n')}\n}\n`;
+writeFileSync(`${DATA_DIR}hanzi/hanzi.json`, lines(hanzi));
+writeFileSync(`${DATA_DIR}hanzi/unihan.json`, lines(unihanExtra));
 writeFileSync(`${DATA_DIR}hanzi/meta.json`, JSON.stringify({
   name: 'hanzi',
   sources: {

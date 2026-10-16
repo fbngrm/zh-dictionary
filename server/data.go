@@ -11,11 +11,12 @@ import (
 // data file (raw), so the API returns the same objects as the JS library;
 // the decoded fields are only used for lookups and describe().
 type Entry struct {
-	Pinyin       string   `json:"pinyin"`
-	Translation  string   `json:"translation"`
-	PartOfSpeech string   `json:"part_of_speech"`
-	Traditional  string   `json:"traditional"`
-	Tags         []string `json:"tags"`
+	Hsk          map[string]int `json:"hsk,omitempty"`
+	Pinyin       string         `json:"pinyin"`
+	Translation  string         `json:"translation"`
+	PartOfSpeech string         `json:"part_of_speech"`
+	Traditional  string         `json:"traditional"`
+	Tags         []string       `json:"tags"`
 	raw          json.RawMessage
 }
 

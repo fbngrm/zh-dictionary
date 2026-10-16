@@ -22,6 +22,23 @@ components:
   mark components with no encoded character. `components` lists the
   characters in it; look those up to decompose further.
 
+Also from Unihan:
+
+- `radicalNumber`, `extraStrokes`: the Kangxi radical number and the strokes
+  beyond the radical (`kRSUnicode`)
+- `level`: level in the 2013 Table of General Standard Chinese Characters,
+  1 = the 3500 common characters, 2 = the next 3000, 3 = the rest (`kTGH`)
+- `readingFrequency`: occurrences per reading in the Xiandai Hanyu Pinlu
+  Cidian (`kHanyuPinlu`)
+- `semanticVariants` (`kSemanticVariant`), `phoneticGroups`: Casey's
+  phonetic groups, where characters sharing a number share a phonetic
+  element (`kPhonetic`)
+
+`unihan.json` has the rest of what a full character entry shows, kept apart
+so `hanzi.json` stays small: `cantonese` (Jyutping), `japanese` (kana),
+`korean` (Hangul), `vietnamese`, `middleChinese` (Tang reconstructions),
+`cangjie` and `fourCorner` codes.
+
 Source versions are in [meta.json](meta.json).
 
 **License:** [Unicode License v3](LICENSE). Unihan data is

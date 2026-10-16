@@ -109,6 +109,70 @@ character('說');
 (`⿰` = left/right, `⿱` = top/bottom, …). Call `character()` on a
 component to decompose it further.
 
+Character data also has the Kangxi radical number and the strokes beyond
+the radical (`radicalNumber: 38, extraStrokes: 3`), the character's `level`
+in the 2013 Table of General Standard Chinese Characters (1 = the 3500
+common characters), how often each reading occurs (`readingFrequency`),
+`semanticVariants` and Casey's `phoneticGroups`. Readings in other
+languages and input codes are in a separate file, so bundles that don't
+need them stay small:
+
+```ts
+import unihan from '@fbngrm/zh-dictionary/data/hanzi-unihan.json' with { type: 'json' };
+unihan['好'];
+// { cantonese: ['hou2'], japanese: ['コウ', 'このむ', …], korean: ['호'], vietnamese: ['háo'],
+//   middleChinese: ['xɑ̀u', 'xɑ̌u'], cangjie: 'VND', fourCorner: ['4744.7'] }
+```
+
+### Character pages: words, components, phonetic series, frequency
+
+`createCharacterIndex` answers what a character page shows besides the
+entry itself. Pass the datasets you have; functions that need a missing one
+return empty results.
+
+```ts
+import { createCharacterIndex } from '@fbngrm/zh-dictionary';
+import words from '@fbngrm/zh-dictionary/data/zh.json' with { type: 'json' };
+import hanzi from '@fbngrm/zh-dictionary/data/hanzi.json' with { type: 'json' };
+import etymology from '@fbngrm/zh-dictionary/data/etymology.json' with { type: 'json' };
+import frequency from '@fbngrm/zh-dictionary/data/frequency.json' with { type: 'json' };
+import hsk from '@fbngrm/zh-dictionary/data/hsk.json' with { type: 'json' };
+
+const index = createCharacterIndex({ hanzi, words, etymology, frequency, hsk });
+index.wordsWith('好', { limit: 5 });          // words containing 好, most frequent first
+index.wordsWith('好', { position: 'start' }); // or only those beginning (or ending) with it
+index.usedIn('女');                           // characters with 女 as a component: 要, 她, 好, 姆, …
+index.phoneticSeries('妈');                   // same phonetic part 马: 吗, 玛, 马, 码, 骂, …
+index.decompose('好');                        // { char: '好', decomposition: '⿰女子', components: [{ char: '女', … }, …] }
+index.etymology('妈');                        // { type: 'pictophonetic', hint: 'woman', semantic: '女', phonetic: '马', … }
+index.characterRank('好');                    // 62: the 62nd most frequent character
+index.coverage('好');                         // share of running text covered by the 62 most frequent characters
+index.hsk('爱好');                            // { hsk2: 3, hsk3: 1, hsk3_2025: 2 }
+index.characterHsk('好');                     // lowest level of an HSK word containing 好
+```
+
+### Stroke order and example sentences
+
+Stroke data and example sentences come as many small files, so web apps
+fetch only what they show. `strokeFile(char)` and `sentenceFile(word)` name
+the file:
+
+```ts
+import { sentenceFile, strokeFile } from '@fbngrm/zh-dictionary';
+
+const base = 'https://raw.githubusercontent.com/fbngrm/zh-dictionary/v0.6.0/data';
+const strokes = await (await fetch(`${base}/strokes/${strokeFile('好')}`)).json();
+// { strokes: ['M 330 202 Q …', …], medians: [[[x, y], …], …] }: one SVG path per stroke, in order
+const sentences = (await (await fetch(`${base}/sentences/${sentenceFile('银行')}`)).json())['银行'];
+// [{ text: '我不喜欢在银行工作.', en: "I don't like working at the bank.", source: 'tatoeba', id: …, by: … },
+//  { text: '某银行北京分行相关负责人对', source: 'aishell1', id: 'BAC009…' }, …]
+```
+
+Stroke paths are on a 1024×1024 grid with y pointing up: draw them inside
+`<g transform="scale(1, -1) translate(0, -900)">`. Etymologies carry
+`matches`, the component each stroke belongs to, for colouring strokes by
+component. In Node, read the files with `require.resolve('@fbngrm/zh-dictionary/data/strokes/chars/597d.json')`.
+
 ### Tags: slang, swear words, place names
 
 In zh mode, entries can carry `tags`: `vulgar` (swear words and insults),
@@ -302,6 +366,8 @@ Deno and Bun all provide.
 | `character(char)` | `CharacterData \| null` |
 | `attribution` | `string`: credit line your app must show (see Licensing) |
 | `createDictionary(sources, { hanzi })` | the functions above, for your own data |
+| `createCharacterIndex({ hanzi, words, etymology, frequency, hsk })` | `wordsWith`, `usedIn`, `phoneticSeries`, `decompose`, `characterRank`, `wordRank`, `coverage`, `hsk`, `characterHsk`, `etymology` (bundled data only, not on the API server) |
+| `strokeFile(char)`, `sentenceFile(word)` | the file in `data/strokes/` or `data/sentences/` that has the character's strokes or the word's examples |
 
 Through the [API client](#api-client), the same functions return Promises,
 `attribution` is the function `attribution()`, and `batch(fn, words)` looks
@@ -310,7 +376,9 @@ up many words at once.
 Words can be given in simplified or traditional characters. All types
 (`DictionaryEntry`, `WordDetails`, `WordCharacter`, `CharacterData`, …) are
 exported from `@fbngrm/zh-dictionary`. The raw files are exported as
-`/data/zh.json`, `/data/cedict.json`, `/data/hanzi.json` and their
+`/data/zh.json`, `/data/cedict.json`, `/data/hanzi.json`,
+`/data/hanzi-unihan.json`, `/data/etymology.json`, `/data/frequency.json`,
+`/data/hsk.json`, `/data/strokes/…`, `/data/sentences/…` and their
 `*.meta.json` files.
 
 ## Licensing
@@ -321,11 +389,16 @@ exported from `@fbngrm/zh-dictionary`. The raw files are exported as
 | [`data/zh`](data/zh) | [CC0 1.0](data/zh/LICENSE) | nothing |
 | [`data/hanzi`](data/hanzi) | [Unicode License v3](data/hanzi/LICENSE) | include the Unicode notice |
 | [`data/cedict`](data/cedict) | [CC BY-SA 4.0](data/cedict/LICENSE) | credit CC-CEDICT; modified or merged CEDICT data stays CC BY-SA |
+| [`data/etymology`](data/etymology) | [LGPL 3.0 or later](data/etymology/LICENSE) | credit Make Me a Hanzi; changes to this file stay LGPL |
+| [`data/strokes`](data/strokes) | [Arphic Public License](data/strokes/LICENSE) | include the license; changes to the stroke data stay under it |
+| [`data/hsk`](data/hsk) | MIT for legacy mappings; original syllabus rights for 2025 | retain [source notices](data/hsk/README.md) |
+| [`data/frequency`](data/frequency) | [CC BY-SA 4.0](data/frequency/LICENSE) | credit wordfreq and the SUBTLEX-CH authors (see its README); changes stay CC BY-SA |
+| [`data/sentences`](data/sentences) | CC BY 2.0 FR (Tatoeba), Apache 2.0 (AISHELL) | credit Tatoeba and its contributors, and AISHELL |
 
 Each mode exports `attribution`, the credit line for the data it ships.
 Show it where users can see it, for example on an About or licenses screen.
-Commercial use is allowed for all of it. CC BY-SA applies to the CEDICT data
-only, not to your app's code. See [data/cedict/README.md](data/cedict/README.md).
+Commercial use is allowed for all of it. CC BY-SA applies to the CEDICT and
+frequency data only, not to your app's code. See [data/cedict/README.md](data/cedict/README.md).
 
 Keep the datasets in separate files. Don't merge CC-CEDICT into `data/zh`,
 or our data would have to become CC BY-SA too.
@@ -336,6 +409,12 @@ or our data would have to become CC BY-SA too.
 npm run build:cedict        # latest CC-CEDICT from MDBG
 npm run build:traditional   # traditional forms for data/zh (OpenCC)
 npm run build:hanzi         # character data for every character in use
+npm run build:makemeahanzi  # etymologies and stroke data
+npm run build:hsk           # HSK levels
+pip install wordfreq==3.1.1 && python3 scripts/build-frequency.py  # word and character frequencies
+# example sentences: needs local corpora and the Stanford segmenter's output
+# for their sentences, see the script
+node scripts/build-sentences.mjs --tatoeba … --aishell1 … --aishell3 … --segmented …
 npm test                    # includes the server tests when Go is installed
 ```
 
@@ -424,3 +503,16 @@ after the existing ones (汉堡: hamburger, then Hamburg).
 No third-party word lists were copied, so the data stays CC0. CC-CEDICT,
 Wiktionary, Wikipedia and LDNOOBW were deliberately not used, because their
 licenses require attribution or share-alike.
+
+### Versioned sentence audio and grades
+
+Word entries include optional `hsk` fields: `hsk2`, `hsk3` (2021), and
+`hsk3_2025` (2025 syllabus). The 2025 source covers all 11,000 entries; see
+[data/hsk](data/hsk/README.md). `describe()` preserves these fields.
+
+Examples carry both vocabulary grades and, for AISHELL-3, original pinyin
+and a relative MP3 path. `sentenceAudioUrl(id)` resolves a recording against
+the pinned public corpus. `sentenceMetadataUrl(source, id)` identifies the
+JSON shard containing its transcript, full token breakdown, and grades.
+See [sentence data](data/sentences/README.md) and the
+[public corpus](https://github.com/fbngrm/mandarin-sentence-audio/tree/v1.1.0).

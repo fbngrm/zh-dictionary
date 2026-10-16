@@ -1,5 +1,6 @@
 import { splitPinyin, toneless } from './pinyin.js';
 export { splitPinyin, toneless } from './pinyin.js';
+export { createCharacterIndex, sentenceFile, strokeFile } from './characters.js';
 // Object.prototype.hasOwnProperty rather than Object.hasOwn, for older
 // runtimes; guards against keys like "constructor".
 const { hasOwnProperty } = Object.prototype;
@@ -80,6 +81,7 @@ export function createDictionary(sources, options = {}) {
                 };
             });
             return {
+                ...(entry.hsk && { hsk: entry.hsk }),
                 word: simplified,
                 traditional: traditionalForm,
                 pinyin: entry.pinyin,
@@ -102,3 +104,4 @@ export function createDictionary(sources, options = {}) {
 function toArray(value) {
     return Array.isArray(value) ? value : [value];
 }
+export { sentenceAudioUrl, sentenceMetadataUrl, SENTENCE_CORPUS_BASE } from './corpus.js';

@@ -1,0 +1,11 @@
+{
+  "name": "strokes",
+  "source": {
+    "url": "https://github.com/skishore/makemeahanzi",
+    "commit": "bddc96d41bef78427ed0e034e9f7e31d71fd1b92"
+  },
+  "characters": 9574,
+  "license": "Arphic-1999",
+  "licenseUrl": "https://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE",
+  "attribution": "Stroke order data from Make Me a Hanzi by Shaunak Kishore (https://github.com/skishore/makemeahanzi), derived from the fonts AR PL KaitiM GB and AR PL UKai, © 1999 Arphic Technology Co., Ltd., Arphic Public License."
+}

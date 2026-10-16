@@ -1,4 +1,5 @@
 export interface DictionaryEntry {
+  hsk?: HskLevels;
   // Tone-marked pinyin, e.g. "kǒu zhào".
   pinyin: string;
   translation: string;
@@ -38,9 +39,135 @@ export interface CharacterData {
   components?: string[];
   traditional?: string[];
   simplified?: string[];
+  // Kangxi radical number and the strokes beyond the radical (好: 38, 3).
+  radicalNumber?: number;
+  extraStrokes?: number;
+  // Level in the 2013 Table of General Standard Chinese Characters: 1 = the
+  // 3500 common characters, 2 = the next 3000, 3 = the rest.
+  level?: 1 | 2 | 3;
+  // Occurrences per reading in the Xiandai Hanyu Pinlu Cidian (1986).
+  readingFrequency?: Record<string, number>;
+  // Characters with the same meaning, usable in its place.
+  semanticVariants?: string[];
+  // Casey's phonetic groups: characters sharing a number share a phonetic
+  // element.
+  phoneticGroups?: number[];
 }
 
 export type HanziData = Record<string, CharacterData>;
+
+// Shape of data/hanzi/unihan.json: other languages' readings and input codes.
+export interface UnihanReadings {
+  cantonese?: string[];
+  // Kana: on readings in katakana, kun readings in hiragana.
+  japanese?: string[];
+  korean?: string[];
+  vietnamese?: string[];
+  // Tang-era (Middle Chinese) reconstructions.
+  middleChinese?: string[];
+  cangjie?: string;
+  fourCorner?: string[];
+}
+
+export type UnihanData = Record<string, UnihanReadings>;
+
+// Shape of data/etymology (Make Me a Hanzi): how a character was formed.
+export interface Etymology {
+  type?: 'pictographic' | 'ideographic' | 'pictophonetic';
+  // For pictophonetic characters, what the semantic part means.
+  hint?: string;
+  // The component that gives the meaning and the one that gives the sound.
+  semantic?: string;
+  phonetic?: string;
+  // Make Me a Hanzi's own decomposition, which `matches` refers to.
+  decomposition?: string;
+  // Per stroke, the path to its component in `decomposition` ([1] = second
+  // part, [1, 0] = first part of the second part), or null.
+  matches?: (number[] | null)[];
+}
+
+export type EtymologyData = Record<string, Etymology>;
+
+// One file of data/strokes: SVG outlines of each stroke in stroke order,
+// and each stroke's median line, on a 1024×1024 grid with y pointing up
+// (draw with transform="scale(1, -1) translate(0, -900)").
+export interface StrokeData {
+  strokes: string[];
+  medians: [number, number][][];
+}
+
+export interface HskLevels {
+  // HSK 2.0 level 1–6.
+  hsk2?: number;
+  // HSK 3.0 (2025 syllabus) mapping; lowest level across readings/senses.
+  hsk3_2025?: number;
+  // HSK 3.0 (2021) level 1–6, or 7 for the 7–9 band.
+  hsk3?: number;
+}
+
+export type HskData = Record<string, HskLevels>;
+
+// Shape of data/frequency: occurrences per million characters, most
+// frequent first.
+export interface FrequencyData {
+  characters: Record<string, number>;
+  words: Record<string, number>;
+}
+
+// One example sentence from data/sentences.
+export interface SentenceGrade {
+  level: number | null;
+  highestKnownLevel: number | null;
+  coverage: number;
+  unlisted: string[];
+}
+
+export interface Sentence {
+  grades?: { hsk3_2025: SentenceGrade; hsk2: SentenceGrade };
+  pinyin?: string;
+  // Relative to the versioned public sentence corpus.
+  audio?: string;
+  text: string;
+  // English translation (Tatoeba sentences only).
+  en?: string;
+  source: 'tatoeba' | 'aishell1' | 'aishell3';
+  // Tatoeba sentence number, or the AISHELL utterance id.
+  id: number | string;
+  // Tatoeba: the English sentence's number and the contributor's username.
+  enId?: number;
+  by?: string;
+}
+
+// One file of data/sentences: word → example sentences.
+export type SentenceData = Record<string, Sentence[]>;
+
+export interface DecompositionNode {
+  char: string;
+  decomposition?: string;
+  components: DecompositionNode[];
+}
+
+export interface CharacterIndex {
+  // Words of two or more characters containing `char` in their simplified or
+  // traditional form, most frequent first. Words are returned by their
+  // dictionary key (simplified).
+  wordsWith(char: string, options?: { position?: 'start' | 'end' | 'any'; limit?: number }): string[];
+  // Characters that have `component` as a direct component, most frequent first.
+  usedIn(component: string): string[];
+  // Characters sharing the character's phonetic component, most frequent first.
+  phoneticSeries(char: string): string[];
+  // The decomposition tree, down to maxDepth levels (default: all).
+  decompose(char: string, maxDepth?: number): DecompositionNode;
+  // 1 = most frequent, null when not counted.
+  characterRank(char: string): number | null;
+  wordRank(word: string): number | null;
+  // Share of running text made up of this and all more frequent characters.
+  coverage(char: string): number | null;
+  hsk(word: string): HskLevels | null;
+  // The lowest level of any HSK word containing the character.
+  characterHsk(char: string): HskLevels | null;
+  etymology(char: string): Etymology | null;
+}
 
 // One character of a word, as returned by describe().
 export interface WordCharacter {
@@ -60,6 +187,7 @@ export interface WordCharacter {
 }
 
 export interface WordDetails {
+  hsk?: HskLevels;
   word: string;
   traditional: string;
   pinyin: string;

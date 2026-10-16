@@ -4,9 +4,12 @@ import type {
 import { splitPinyin, toneless } from './pinyin.js';
 
 export type {
-  CharacterData, Dictionary, DictionaryData, DictionaryEntry, HanziData, Tag, WordCharacter, WordDetails,
+  CharacterData, CharacterIndex, DecompositionNode, Dictionary, DictionaryData, DictionaryEntry, Etymology,
+  EtymologyData, FrequencyData, HanziData, HskData, HskLevels, Sentence, SentenceGrade, SentenceData, StrokeData, Tag, UnihanData,
+  UnihanReadings, WordCharacter, WordDetails,
 } from './types';
 export { splitPinyin, toneless } from './pinyin.js';
+export { createCharacterIndex, sentenceFile, strokeFile } from './characters.js';
 
 // Object.prototype.hasOwnProperty rather than Object.hasOwn, for older
 // runtimes; guards against keys like "constructor".
@@ -96,6 +99,7 @@ export function createDictionary(
       });
 
       return {
+        ...(entry.hsk && { hsk: entry.hsk }),
         word: simplified,
         traditional: traditionalForm,
         pinyin: entry.pinyin,
@@ -120,3 +124,5 @@ export function createDictionary(
 function toArray(value: DictionaryEntry | DictionaryEntry[]): DictionaryEntry[] {
   return Array.isArray(value) ? value : [value];
 }
+
+export { sentenceAudioUrl, sentenceMetadataUrl, SENTENCE_CORPUS_BASE } from './corpus.js';

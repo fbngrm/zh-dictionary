@@ -41,7 +41,8 @@ Usage:
                         city Hamburg).
 
 Output: data/zh/dictionary.json — { "word": {"pinyin", "translation",
-"part_of_speech"[, "tags"]}, ... }. Resumable: skips words already present
+"part_of_speech"[, "tags"]}, ... }, keyed by simplified words (candidates written
+in traditional characters are left out). Resumable: skips words already present
 unless --force.
 """
 import os
@@ -73,6 +74,23 @@ if not API_KEY:
     sys.exit(1)
 
 CHAT_URL = f'{BASE_URL}/chat/completions'
+
+# Words are keyed by their simplified form, so candidates written in
+# traditional characters (會, 中國, or mis-converted ones like 國傢) are left
+# out: those with a character only traditional text uses (one with a
+# simplified form that is not itself a CC-CEDICT headword), or that are
+# CC-CEDICT's traditional form of another word (瞭解 for 了解).
+HANZI = json.loads((SCRIPT_DIR / '../data/hanzi/hanzi.json').read_text(encoding='utf-8'))
+CEDICT = json.loads((SCRIPT_DIR / '../data/cedict/cedict.json').read_text(encoding='utf-8'))
+TRADITIONAL_FORMS = {
+    e['traditional'] for w, v in CEDICT.items() for e in (v if isinstance(v, list) else [v])
+    if e.get('traditional') and e['traditional'] != w
+}
+
+def is_traditional(word):
+    if word in TRADITIONAL_FORMS and word not in CEDICT:
+        return True
+    return any(HANZI.get(c, {}).get('simplified') and c not in CEDICT for c in word)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--candidates', required=True, help='JSON array of candidate words, or object word → possible tags')
@@ -270,6 +288,8 @@ def main():
         existing = json.loads(OUT_PATH.read_text(encoding='utf-8'))
 
     gap = sorted(candidates - known)
+    traditional = [w for w in gap if is_traditional(w)]
+    gap = [w for w in gap if not is_traditional(w)]
     in_scope = [w for w in gap if len(w) <= MAX_TOKEN_LEN]
     out_of_scope = [w for w in gap if len(w) > MAX_TOKEN_LEN]
 
@@ -282,6 +302,8 @@ def main():
               and not any(set(e.get('tags', ())) & set(HINTS[w]) for e in as_list(existing[w]))]
 
     print(f'Candidate gap: {len(gap)} words not in --known')
+    if traditional:
+        print(f'  left out, written in traditional characters: {len(traditional)} ({" ".join(traditional[:10])}{" …" if len(traditional) > 10 else ""})')
     print(f'  in scope (<= {MAX_TOKEN_LEN} chars): {len(in_scope)}, {len(pending)} pending')
     print(f'  out of scope (likely segmentation artifacts, written to {SKIPPED_PATH.name}): {len(out_of_scope)}')
     if args.add_senses:
