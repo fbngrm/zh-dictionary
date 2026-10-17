@@ -3,11 +3,18 @@
 Second opinion on the English glosses of the HSK 3.0 (2025) words in
 data/zh/dictionary.json. Report only, the dictionary isn't changed.
 
-1. CEDICT check: an entry is flagged when its translation shares no content
-   word with any CEDICT translation of the same word (a "variant of X" CEDICT
-   entry also counts with X's translations).
+1. Flags, per entry:
+   - cross-reference only: the gloss is just "variant of X" / "see X" / "used in X"
+     (always wrong as a gloss)
+   - Chinese in gloss: often a CEDICT reference cut to its last character,
+     e.g. "see also 季" for 旺季
+   - differs from CEDICT: no content word in common with any CEDICT translation
+     of the word (a "variant of X" CEDICT entry also counts with X's)
+   An entry tagged vulgar, slang, internet or place is skipped when the word
+   also has an untagged entry: it is an extra sense, not the word's gloss.
 2. DeepSeek check: each flagged entry is judged against its pinyin and the
-   CEDICT glosses; a wrong one gets a corrected gloss.
+   CEDICT glosses; a wrong one gets a corrected gloss. DeepSeek is a second
+   opinion: its verdicts on borderline entries vary between runs.
 
 Usage:
   DEEPSEEK_API_KEY=<key> python3 scripts/review-glosses.py review-glosses.json
@@ -28,6 +35,9 @@ _spec.loader.exec_module(review_tags)
 # CEDICT markup and articles; meaning words like "it" or "or" stay.
 STOP = {'the', 'a', 'an', 'of', 'to', 'sth', 'sb', 'etc', 'used', 'also', 'form', 'variant', 'erhua',
         'bound', 'coll', 'lit', 'fig', 'cl'}
+EXTRA_SENSE_TAGS = {'vulgar', 'slang', 'internet', 'place'}
+CJK = re.compile(r'[\u4e00-\u9fff]')
+CROSS_REF_ONLY = re.compile(r'^(?:(?:old |erhua )?variant of|see(?: also)?|used in) [\u4e00-\u9fff]+$')
 VARIANT_OF = re.compile(r'(?:variant|form) of (?:[^|\[\s]+\|)?([^\[\s]+)\[')
 
 
@@ -65,17 +75,18 @@ def cedict_glosses(cedict, word):
 
 
 def judge(items):
-    """items: [(word, entry, cedict glosses)] → [{"ok": bool, "gloss": str}]"""
+    """items: [(word, entry, cedict glosses, reasons)] → [{"ok": bool, "gloss": str}]"""
     listing = '\n'.join(
-        f'{i + 1}. {w} ({e["pinyin"]}) — dictionary: "{e["translation"]}" — CEDICT: "{" / ".join(c)[:300]}"'
-        for i, (w, e, c) in enumerate(items))
+        f'{i + 1}. {w} ({e["pinyin"]}) — dictionary: "{e["translation"]}" — CEDICT: "{" / ".join(c)[:300] or "none"}"'
+        for i, (w, e, c, _) in enumerate(items))
     prompt = f"""Check the English glosses of these Mandarin Chinese dictionary entries.
 {listing}
 
 For each entry decide whether the dictionary gloss is a correct English meaning of the word as read with that
 pinyin, in standard modern usage. It does not have to list every sense, and different wording from CEDICT is
-fine. If it is wrong (a different word, a wrong sense, a proper noun instead of the common word), give a correct
-short gloss in the dictionary's style; otherwise repeat the dictionary gloss.
+fine. It is wrong if it is a different word, a wrong sense, a proper noun instead of the common word, only a
+reference to another word, or contains a garbled Chinese reference (e.g. "see also 季" where CEDICT says 旺季).
+If it is wrong, give a correct short gloss in the dictionary's style; otherwise repeat the dictionary gloss.
 Return JSON with one result per entry, in the same order:
 {{"results": [{{"word": "...", "ok": true, "gloss": "..."}}, ...]}}"""
     return review_tags.ask(prompt, len(items))
@@ -91,24 +102,39 @@ def main():
 
     checked, flagged = 0, []
     for word in hsk:
-        for e in entries(dictionary, word):
-            glosses = cedict_glosses(cedict, word)
-            if not e.get('translation') or not glosses:
+        senses = entries(dictionary, word)
+        plain = [e for e in senses if not EXTRA_SENSE_TAGS & set(e.get('tags', ()))]
+        for e in senses:
+            gloss = e.get('translation') or ''
+            if not gloss or (plain and e not in plain):
                 continue
             checked += 1
-            if not overlaps(e['translation'], ' '.join(glosses)):
-                flagged.append((word, e, glosses))
+            glosses = cedict_glosses(cedict, word)
+            reasons = []
+            if CROSS_REF_ONLY.match(gloss):
+                reasons.append('cross-reference only')
+            if CJK.search(gloss):
+                reasons.append('Chinese in gloss')
+            if glosses and not overlaps(gloss, ' '.join(glosses)):
+                reasons.append('differs from CEDICT')
+            if reasons:
+                flagged.append((word, e, glosses, reasons))
 
     batches = [flagged[i:i + 25] for i in range(0, len(flagged), 25)]
     with ThreadPoolExecutor(max_workers=review_tags.WORKERS) as pool:
         verdicts = [v for batch in pool.map(judge, batches) for v in batch]
 
-    report = [{'word': w, 'pinyin': e['pinyin'], 'dictionary': e['translation'], 'cedict': c,
-               'ok': bool(v.get('ok')), 'suggested': v.get('gloss', '')}
-              for (w, e, c), v in zip(flagged, verdicts)]
+    report = [{'word': w, 'pinyin': e['pinyin'], 'dictionary': e['translation'], 'cedict': c, 'reasons': reasons,
+               # "wrong" with the same gloss suggested back counts as right
+               'ok': (bool(v.get('ok')) or v.get('gloss', '').strip() == e['translation'].strip())
+                     and 'cross-reference only' not in reasons,
+               'suggested': v.get('gloss', '')}
+              for (w, e, c, reasons), v in zip(flagged, verdicts)]
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     wrong = [r for r in report if not r['ok']]
-    print(f'{checked} HSK glosses checked; {len(flagged)} disagree with CEDICT; DeepSeek: {len(wrong)} wrong')
+    by_reason = {k: sum(k in r['reasons'] for r in report)
+                 for k in ('cross-reference only', 'Chinese in gloss', 'differs from CEDICT')}
+    print(f'{checked} HSK glosses checked; flagged {len(flagged)} {by_reason}; wrong {len(wrong)}')
     for r in wrong:
         print(f"  {r['word']} ({r['pinyin']}): \"{r['dictionary']}\" → \"{r['suggested']}\"")
 
